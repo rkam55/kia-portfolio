@@ -1,0 +1,812 @@
+body {
+    color: black;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p,
+li {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+li {
+    transition: 0.5s;
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 8%;
+}
+
+article>img {
+    width: 80px;
+    margin: 0 auto 5px;
+    opacity: 0.7;
+    filter: invert(1);
+}
+
+article>h1 {
+    margin-bottom: 50px;
+}
+
+article>div {
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+}
+
+article>div>:first-child {
+    margin-bottom: 50px;
+}
+
+article>div>:first-child h2 {
+    margin-bottom: 10px;
+}
+
+article>div>:first-child p span {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+input:not(input[type = "range"]) {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #aaa;
+}
+
+input[type="text"] {
+    text-align: left;
+    width: 100%;
+    padding: 8px;
+    margin: 5px auto;
+    border: 1px solid #aaa;
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    margin: auto 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+}
+
+textarea::placeholder {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    appearance: none;
+    background: url('image/arrow_btn2.png') no-repeat;
+    background-position: right 8px center;
+    background-size: 10px;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/*design*/
+
+header{
+    position: unset;
+    background-color: #2d2d37;
+}
+
+.board>div>:nth-child(2) h4 {
+    margin: 20px;
+}
+
+.board>div>:nth-child(2)>input {
+    margin: 10px 0;
+}
+
+.board>div>:nth-child(2)>:nth-child(5) {
+    margin: 20px 0 40px;
+    justify-content: left;
+}
+
+.board>div>:nth-child(2)>:nth-child(5) label {
+    width: 15%;
+    max-width: 60px;
+    height: 40px;
+    max-height: 60px;
+    border: 0;
+    background: #ddd;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.board>div>:nth-child(2)>:nth-child(5) label:hover {
+    background-color: #222;
+}
+
+.board>div>:nth-child(2)>:nth-child(5) label img {
+    position: absolute;
+    width: 15px;
+    max-width: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+
+.board>div>:nth-child(2)>:nth-child(5) input[type="file"] {
+    display: none;
+}
+
+.board>div>:nth-child(2)>:last-child button {
+    width: 48%;
+}
+
+.board>div>:nth-child(2)>:last-child button:first-of-type{
+    border: 1px solid #222;
+}
+
+.board-see>div>:nth-child(2) h4 {
+    font-size: 1.2rem;
+}
+
+.board-see>div>:nth-child(2)>:first-child p {
+    margin: 10px 0 50px;
+}
+
+.board-see>div>:nth-child(2)>:nth-child(2) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+.board-see>div>:nth-child(3) section div img {
+    transition: 0.3s;
+    width: 90%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.board-see>div>:nth-child(3) section>:last-child {
+    margin: 40px 0;
+}
+
+.board-see>div>:nth-child(4) {
+    text-align: left;
+}
+
+.board-see>div>:nth-child(4) section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.board-see>div>:nth-child(4) section img:first-of-type {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+}
+
+.board-see>div>:nth-child(4) section img:last-of-type {
+    width: 15px;
+    height: 15px;
+}
+
+.board-see>div>:nth-child(4) section>div {
+    width: 80%;
+}
+
+.board-see>div>:nth-child(4) h5 {
+    margin-bottom: 5px;
+}
+
+.board-see>div>:last-child {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.board-see>div>:last-child textarea {
+    margin-bottom: 20px;
+}
+
+.board-caption>div>:nth-child(2) section {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.board-caption>div>:nth-child(2) section>:first-child {
+    overflow: hidden;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.board-caption>div>:nth-child(2) section div img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.board-caption>div>:nth-child(2) section div img:hover {
+    transform: scale(1.1);
+}
+
+.board-caption>div>:nth-child(2) section>:last-child {
+    margin: 30px auto 20px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.board-caption>div>:nth-child(2) section>:last-child p:first-of-type {
+    margin: 10px 0 20px;
+}
+
+.board-caption>div>:nth-child(2) section>:last-child p:last-of-type {
+    color: #aaa;
+}
+
+.board-caption>div>button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.faq>div>:nth-child(2)>:first-child>div {
+    border-bottom: 2px solid #222;
+}
+
+.faq>div>:nth-child(2)>:first-child>div input {
+    border: 0;
+}
+
+.faq>div>:nth-child(2)>:first-child>div input::placeholder {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.faq>div>:nth-child(2)>:first-child>div img {
+    filter: invert(1);
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+}
+
+.faq>div>:nth-child(2)>:first-child h5 {
+    margin: 20px 0 30px;
+}
+
+.faq>div>:nth-child(2)>:first-child button {
+    color: white;
+    background-color: rgb(69, 145, 189);
+    border: 0;
+    font-weight: 300;
+}
+
+.faq>div>:nth-child(2)>:first-child button a{
+    color: white;
+}
+
+.faq>div>:nth-child(2)>:first-child button a:hover{
+    color: white;
+}
+
+.faq>div>:nth-child(2)>:first-child button:hover {
+    background-color: #2d2d37;
+}
+
+.faq>div>:nth-child(2)>:nth-child(2) {
+    margin: 50px 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq>div>:nth-child(2)>:nth-child(2) li {
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.faq>div>:nth-child(2)>:nth-child(2) li:hover {
+    color: white;
+    background-color: #2d2d37;
+    border: 1px solid #2d2d37;
+}
+
+.faq>div>.qna-contents section {
+    text-align: left;
+}
+
+.faq>div>.qna-contents section>div .listq {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.faq>div .qna-contents section>div .listq:hover,
+.faq>div .qna-contents section>div .best-listq:hover {
+    color: rgb(69, 145, 189);
+}
+
+.faq>div .qna-contents section>div>:last-child {
+    background-color: #f5f5f5;
+    padding: 20px 5% 40px;
+}
+
+.faq>div>:nth-child(2) section>div>:last-child {
+    display: none;
+}
+
+.qna-answer-see {
+    display: block !important;
+}
+
+.faq>div .qna-contents section>div>:last-child img {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+}
+
+.qna-tapsee {
+    color: white;
+    background-color: #2d2d37;
+    border: 1px solid #2d2d37;
+}
+
+#list2,
+#list3,
+#list4 {
+    display: none;
+}
+
+.number {
+    margin: 20px 0 40px;
+}
+
+.number span {
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.numberPic {
+    color: rgb(95, 155, 189);
+    font-size: 1.5rem;
+}
+
+.faq>div>:nth-child(3) {
+    text-align: left;
+}
+
+.faq>div>:nth-child(3) h4 {
+    margin: 70px 0 20px;
+    text-transform: uppercase;
+}
+
+.faq>div>:nth-child(3)>div section>div>:first-child {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.faq>div>:nth-child(3)>div section>div>:last-child {
+    display: none;
+}
+
+.qna-board>div>:nth-child(2) h5 {
+    text-align: left;
+}
+
+.qna-board>div>:nth-child(2)>:first-child button {
+    cursor: pointer;
+}
+
+.qna-board>div>:nth-child(2)>div {
+    margin-bottom: 20px;
+}
+
+.qna-board>div>:nth-child(2)>div>p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.qna-board>div>:nth-child(2)>div>p::after {
+    content: "*";
+    color: rgb(69, 145, 189);
+    margin-left: 3px;
+    font-size: 0.9rem;
+}
+
+.qna-board>div>:nth-child(2)>div select {
+    width: 48%;
+}
+
+.qna-board>div>:nth-child(2)>div input,
+.qna-board>div>:nth-child(2)>div textarea {
+    margin: 0;
+}
+
+.qna-board>div>:nth-child(2)>button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.qna-submit>div img {
+    width: 50px;
+    margin: 0 auto 20px;
+}
+
+.qna-submit>div p {
+    margin: 20px 0;
+}
+
+.qna-submit>div div {
+    margin-top: 80px;
+}
+
+.qna-submit>div div button {
+    width: 48%;
+    border: 1px solid #222;
+}
+
+.my-qna-list>div>:nth-child(2)>h5 {
+    margin-bottom: 20px;
+}
+
+.my-qna-list>div>:nth-child(2)>h5 span {
+    font-size: 1.2rem;
+    color: rgb(69, 145, 189);
+}
+
+.my-qna-list>div>:nth-child(2) div section>:first-child {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+}
+
+.my-qna-list>div>:nth-child(2) div section>:first-child {
+    padding: 20px 0;
+}
+
+.my-qna-list>div>:nth-child(2) div section>:first-child button {
+    padding: 0;
+    border: 0;
+    color: #aaa;
+}
+
+.my-qna-list>div>:nth-child(2) div section:first-of-type>:first-child button {
+    color: rgb(69, 145, 189)
+}
+
+.my-qna-list>div>:nth-child(2) div section>:first-child p {
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.my-qna-list>div>:nth-child(2) div section>:first-child img {
+    transform: rotate(180deg);
+    width: 12px;
+    margin: auto 0;
+    opacity: 0.7;
+}
+
+.my-qna-list>div>:nth-child(2) div section>:last-child {
+    background-color: #f5f5f5;
+    padding: 20px 5%;
+    text-align: left;
+    display: none;
+}
+
+.my-qna-list>div>:nth-child(2) div section>:last-child div:first-of-type {
+    margin-bottom: 30px;
+}
+
+.my-qna-list>div>:nth-child(2) div section>:last-child div h5 {
+    margin-bottom: 10px;
+}
+
+.news>div>:nth-child(2)>h5 {
+    text-align: left;
+}
+
+.news>div>:nth-child(2)>h5 span {
+    font-size: 1.2rem;
+    color: rgb(69, 145, 189);
+}
+
+.news>div>:nth-child(2)>div:first-of-type {
+    margin: 20px 0 40px;
+}
+
+.news>div>:nth-child(2)>div:first-of-type select {
+    width: 25%;
+}
+
+.news>div>:nth-child(2)>div:first-of-type div {
+    width: 72%;
+    padding: 8px;
+    border: 1px solid #aaa;
+}
+
+.news>div>:nth-child(2)>div:first-of-type div input {
+    padding: 0;
+    border: 0;
+}
+
+.news>div>:nth-child(2)>div:first-of-type div img {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+    filter: invert(1);
+}
+
+.news>div>:nth-child(2) section {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news>div>:nth-child(2) section>:first-child {
+    overflow: hidden;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.news>div>:nth-child(2) section div img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.news>div>:nth-child(2) section div img:hover {
+    transform: scale(1.1);
+}
+
+.news>div>:nth-child(2) section>:last-child {
+    margin: 20px auto;
+    max-width: 520px;
+}
+
+.news>div>:nth-child(2) section>:last-child p:first-of-type {
+    margin: 10px 0 20px;
+}
+
+.news>div>:nth-child(2) section>:last-child p:last-of-type {
+    color: #aaa;
+}
+
+
+/* laptop 1366px*/
+
+@media screen and (min-width: 1366px) {
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    input:not(input[type = "range"]) {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    article {
+        padding: 100px 0;
+    }
+
+    article>div {
+        padding: 70px;
+    }
+
+    article>div>:first-child {
+        margin-bottom: 80px;
+    }
+
+    textarea::placeholder {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    select {
+        padding: 15px;
+        font-size: 0.9rem;
+        background-position: right 15px center;
+    }
+
+    .board-see>div>:nth-child(3) section:first-of-type {
+        margin-top: 100px;
+    }
+
+    .board-see>div>:nth-child(3) section>:last-child {
+        margin: 70px 0;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .board-see>div>:nth-child(4) section img:first-of-type {
+        width: 30px;
+        height: 30px;
+    }
+
+    .board-see>div>:nth-child(4) section>div {
+        width: 90%;
+    }
+
+    .board-caption>div>:nth-child(2) section {
+        margin: 30px 0;
+    }
+
+    .board-caption>div>:nth-child(2) section>:first-child {
+        width: 300px;
+        margin: 0;
+    }
+
+    .board-caption>div>:nth-child(2) section>:last-child {
+        margin: 0;
+    }
+
+    .faq>div>:nth-child(2)>:first-child>div input::placeholder {
+        font-size: 1.1rem;
+    }
+
+    .faq>div>:nth-child(2)>:first-child h5 {
+        margin: 40px 0 50px;
+        font-size: 1.2rem;
+    }
+
+    .faq>div>:nth-child(2)>:first-child button {
+        padding: 8px 25px;
+    }
+
+    .faq>div>:nth-child(2)>:nth-child(2) {
+        margin: 80px 0 40px;
+    }
+
+    .faq>div>:nth-child(2)>:nth-child(2) li {
+        padding: 20px 0;
+    }
+
+    .faq>div>.qna-contents section>div .listq {
+        padding: 25px 0;
+    }
+
+    .faq>div .qna-contents section>div>:last-child {
+        background-color: #f5f5f5;
+        padding: 30px 20px 50px;
+    }
+
+    .faq>div>:nth-child(3)>div section>div>:first-child {
+        padding: 25px 0;
+    }
+
+    .my-qna-list>div>:nth-child(2)>h5{
+        font-size: 1.1rem;
+    }
+
+    .my-qna-list>div>:nth-child(2)>h5 span {
+        font-size: 1.5rem;
+    }
+
+    .my-qna-list>div>:nth-child(2) div section>:last-child {
+        padding: 30px 20px 50px;
+    }
+
+    .my-qna-list>div>:nth-child(2) div section>:last-child div:first-of-type {
+        margin-bottom: 50px;
+    }
+
+    .qna-board>div>:nth-child(2)>:first-child {
+        margin-bottom: 50px;
+    }
+
+    .qna-board>div>:nth-child(2) h5 {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+
+    .qna-board>div>:nth-child(2)>:first-child button {
+        padding: 8px 30px;
+    }
+    
+    .news>div>:nth-child(2)>div:first-of-type{
+        margin-bottom: 80px;
+    }
+
+    .news>div>:nth-child(2)>div:first-of-type div {
+        padding: 15px;
+    }
+
+    .news>div>:nth-child(2) section {
+        margin: 30px 0;
+    }
+
+    .news>div>:nth-child(2) section>:first-child {
+        width: 300px;
+        margin: 0;
+    }
+
+    .news>div>:nth-child(2) section>:last-child {
+        margin: 0;
+    }
+
+
+}

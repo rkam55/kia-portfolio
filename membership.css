@@ -1,0 +1,589 @@
+body {
+    color: black;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p,
+li {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+li {
+    transition: 0.5s;
+}
+
+article {
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 8%;
+}
+
+article>img {
+    width: 80px;
+    margin: 0 auto 5px;
+    opacity: 0.7;
+    filter: invert(1);
+}
+
+article>h1 {
+    margin-bottom: 50px;
+}
+
+article>div {
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+}
+
+article>div>:first-child {
+    margin-bottom: 50px;
+}
+
+article>div>:first-child h2 {
+    margin-bottom: 10px;
+}
+
+article>div>:first-child p span {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+input:not(input[type="range"]) {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #aaa;
+}
+
+input[type="text"] {
+    text-align: left;
+    width: 100%;
+    padding: 8px;
+    margin: 5px auto;
+    border: 1px solid #aaa;
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    margin: auto 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+}
+
+textarea::placeholder {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/*design*/
+
+header {
+    position: unset;
+    background-color: #2d2d37;
+}
+
+.login>div>:nth-child(2)>:first-child input {
+    margin: 5px 0;
+}
+
+.login>div>:nth-child(2)>:nth-child(2) {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login>div>:nth-child(2)>:nth-child(2)>:first-child {
+    width: 35%;
+    font-weight: bold;
+    justify-content: left;
+}
+
+.login>div>:nth-child(2)>:nth-child(2)>:first-child input {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.login>div>:nth-child(2)>:nth-child(2)>:last-child {
+    width: 45%;
+    justify-content: right;
+}
+
+.login>div>:nth-child(2)>:nth-child(2)>:last-child button {
+    padding: 0;
+    border: 0;
+    background: none;
+    margin-left: 10px;
+}
+
+.login>div>:nth-child(2)>:nth-child(3) button {
+    width: 100%;
+}
+
+.login>div>:nth-child(2)>:nth-child(3) button:first-of-type {
+    margin: 30px 0 10px;
+    border: 1px solid #222;
+}
+
+.login>div>:nth-child(2)>:nth-child(3) button:last-of-type {
+    cursor: pointer;
+}
+
+.login>div>:nth-child(2)>:last-child {
+    margin-top: 40px;
+}
+
+.login>div>:nth-child(2)>:last-child>p {
+    margin: 8px 0 30px;
+}
+
+.login>div>:nth-child(2)>:last-child button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.login>div>:nth-child(2)>:last-child button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.login>div>:nth-child(2)>:last-child button p {
+    margin: auto 0;
+}
+
+.login>div>:nth-child(2)>:last-child button:hover {
+    border: 1px solid #2d2d37;
+    color: black;
+}
+
+.find-login>div>:last-child>ul {
+    width: 190px;
+    margin: 0 auto 30px;
+}
+
+.find-login>div>:last-child>ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tapsee-find {
+    color: rgb(69, 145, 189);
+}
+
+.find-login>div>:last-child section>div p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.find-login>div>:last-child section>div input {
+    margin-bottom: 20px;
+}
+
+.find-login>div>:last-child section>button {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.find-login>div>:last-child section:last-of-type>:first-child input {
+    margin-bottom: 10px;
+}
+
+.find-login>div>:last-child section:last-of-type>:nth-child(2) {
+    justify-content: left;
+    margin-bottom: 80px;
+}
+
+.find-login>div>:last-child section:last-of-type>:nth-child(2) p {
+    margin: auto 0;
+}
+
+.find-login>div>:last-child section:last-of-type>:nth-child(2) button {
+    padding: 0;
+    border: 0;
+    margin-left: 10px;
+    color: #aaa;
+}
+
+.find-login>div>:last-child section:last-of-type>:nth-child(2) button:hover {
+    color: rgb(69, 145, 189);
+}
+
+.find-pw {
+    display: none;
+}
+
+.join>div>:last-child>h4 {
+    margin: 20px;
+}
+
+.join>div>:last-child div {
+    margin-bottom: 20px;
+}
+
+.join>div>:last-child div p {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.join>div>:last-child div p:not(.join>div>:last-child>:last-child p)::after {
+    content: "*";
+    color: rgb(69, 145, 189);
+    margin-left: 3px;
+    font-size: 0.9rem;
+}
+
+.join>div>:last-child div:first-of-type input {
+    width: 66.6%;
+    margin: 0;
+}
+
+.join>div>:last-child>div:first-of-type button {
+    width: 30%;
+}
+
+.join>div>:last-child div input[type="email"] {
+    text-align: left;
+    width: 100%;
+}
+
+.join>div>:last-child div input[type="email"] {
+    text-align: left;
+    width: 100%;
+}
+
+.join>div>:last-child div input[type="tel"] {
+    width: 56%;
+}
+
+.join>div>:last-child>div:nth-of-type(6) button {
+    width: 41%;
+}
+
+.join>div>:last-child>div:nth-of-type(7) input {
+    padding: 0;
+    border: 0;
+}
+
+.join>div>:last-child>div:nth-of-type(7) {
+    margin: 0;
+}
+
+.join>div>:last-child>div:nth-of-type(7) div {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+}
+
+.join>div>:last-child>div:nth-of-type(7) div img {
+    width: 20px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.join>div>:last-child>div:nth-of-type(8) div {
+    padding: 8px;
+    border: 1px solid #aaa;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.join>div>:last-child>div:nth-of-type(8) div select {
+    border: none;
+    margin-left: 10px;
+    padding: 0 0 0 0;
+    color: black;
+}
+
+.join>div>:last-child>div:nth-of-type(8) div select:first-of-type {
+    margin-left: 0;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>:first-child {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    justify-content: left;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>:first-child input {
+    width: auto;
+    margin: auto 0;
+    margin-right: 10px;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>:first-child p {
+    margin: auto 0px;
+    font-weight: 300;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>div div {
+    display: flex;
+    justify-content: left;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>div div input {
+    width: auto;
+    margin: auto 0;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>div div p {
+    width: auto;
+    margin: auto 10px;
+    font-weight: 300;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>div div p span {
+    color: #aaa;
+}
+
+.join>div>:last-child>div:last-of-type>:nth-child(2)>div div button {
+    padding: 0;
+    border: 0;
+}
+
+.join>div>:last-child>div:last-of-type>div div button:hover {
+    background: none;
+}
+
+.join-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.terms>div p:first-of-type {
+    background-color: #f5f5f5;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.terms>div p:first-of-type::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terms>div p:first-of-type::-webkit-scrollbar-button {
+    display: none;
+}
+
+.terms>div p:first-of-type::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 20px;
+    background-clip: padding-box;
+}
+
+.terms>div p:first-of-type::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+.terms>div p:last-of-type {
+    margin: 20px 0 40px;
+    font-weight: bold;
+}
+
+.terms>div button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.terms>div button:last-of-type {
+    border: 1px solid #222;
+}
+
+.sign>div>h5 span {
+    font-family: 'Cabin', sans-serif;
+}
+
+.sign>div>img {
+    width: 50px;
+    margin: 0 auto 20px;
+}
+
+.sign>div>div button {
+    width: 48%;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
+.sign>div>div button:last-of-type {
+    border: 1px solid #222;
+}
+
+.account>div>div img {
+    width: 50px;
+    margin: 40px auto 20px;
+}
+
+.account>div>div p:first-of-type {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.account>div>div button {
+    width: 100%;
+    margin-top: 80px;
+    border: 1px solid #222;
+}
+
+.survey>div>:first-child h2,
+.secession>div>:first-child h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.survey>div>div h5 {
+    margin-bottom: 10px;
+}
+
+.survey>div>:nth-child(2) select {
+    width: 100%;
+    margin: 5px auto;
+    margin-bottom: 20px;
+}
+
+.survey>div>button {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.secession>div>div img {
+    width: 50px;
+    margin: 40px auto 20px;
+}
+
+.secession>div>div p {
+    margin: 20px auto 80px;
+}
+
+.secession>div>div button {
+    width: 100%;
+}
+
+/* laptop 1366px*/
+
+@media screen and (min-width: 1366px) {
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    input:not(input[type="range"]) {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    article {
+        width: 500px;
+        padding: 100px 0;
+    }
+
+    textarea::placeholder {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    select {
+        padding: 15px;
+        font-size: 0.9rem;
+        background-position: right 15px center;
+    }
+
+    .join>div>:last-child div {
+        margin-bottom: 30px;
+    }
+
+    .join>div>:last-child>div:nth-of-type(7) div {
+        padding: 15px;
+    }
+
+    .join>div>:last-child>div:nth-of-type(8) div {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .join>div>:last-child>div:nth-of-type(8) div select {
+        font-size: 0.9rem;
+    }
+
+}

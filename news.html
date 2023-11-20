@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>KIA-NEWS-KJE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="posting.css">
+    <style type="text/css"></style>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"></script>
+</head>
+
+
+<body>
+
+
+    <header id="nav-scroll">
+        <div>
+
+            <a href="index.html">
+                <img class="logo-img" src="image/logo-kia-white.svg">
+            </a>
+
+            <nav class="menu-nav" id="menu-nav">
+                <div>
+                    <div class="mo">
+                        <p class="nav-close-btn" onclick="closeNavMenu()">✕</p>
+                        <div class="display-flex-flow">
+                            <button id="members-btn" class="black-btn">
+                                <img src="image/icon-members.svg">
+                                <a>기아 멤버스</a>
+                            </button>
+                            <button id="driving-btn"><a>드라이빙 아카데미</a></button>
+                        </div>
+                        <div>
+                            <div class="display-flex-flow">
+                                <div>
+                                    <h4>로그인 <span>해주세요</span></h4>
+                                    <p>회원가입 후 더 많은 혜택을 받아보세요</p>
+                                </div>
+                                <div>
+                                    <a href="join.html">+ 간편회원가입</a>
+                                </div>
+                            </div>
+                            <div class="display-flex-flow">
+                                <button><a href="login.html">로그인</a></button>
+                                <button><a href="login.html">장바구니</a></button>
+                            </div>
+                        </div>
+                        <div class="display-flex">
+                            <input type="text" placeholder="궁금하신 제품을 찾아보세요.">
+                            <img src="image/icon-search-white.png">
+                        </div>
+                    </div>
+                    <ul id="mainMenu" class="mainMenu">
+                        <li><a href="purchase.html">purchase</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="event.html">event</a></li>
+                        <li><a href="qna.html">qna</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="join.html">join us</a></li>
+                        <li><a href="remove.html">remove</a></li>
+                    </ul>
+                    <div class="display-flex-flow mo">
+                        <section class="navCateButton" id="nav-calculator">
+                            <img src="image/icon-calculator.svg">
+                            <p>견적 내기</p>
+                        </section>
+                        <section class="navCateButton" id="nav-model">
+                            <img src="image/icon-calculator2.svg">
+                            <p>카탈로그/가격표</p>
+                        </section>
+                        <section class="navCateButton" id="cate-btn3">
+                            <img src="image/icon-cartest.svg">
+                            <p>시승 신청</p>
+                        </section>
+                        <section class="navCateButton" id="cate-btn4">
+                            <img src="image/icon-present.svg">
+                            <p>KIA 이벤트</p>
+                        </section>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-icons">
+                <div class="pc">
+                    <a href="login.html"><img src="image/icon-mypage.png"></a>
+                </div>
+                <div class="select-lan">
+                    <img class="language-btn" src="image/icon-language-global.svg">
+                    <ul class="lan-options">
+                        <li class="lan-option">kr</li>
+                        <li class="lan-option">en</li>
+                        <li class="lan-option">cn</li>
+                    </ul>
+                </div>
+                <div>
+                    <img class="search-btn" src="image/icon-search-white.png">
+                </div>
+                <div class="mo">
+                    <img class="nav-open-btn" id="nav-open-btn" src="image/icon-menu.png">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <article class="news">
+
+        <img src="image/logo-kia-white.svg">
+        <h1>news</h1>
+
+        <div>
+            <div>
+                <h2>kia 소식</h2>
+                <p>kIA 소식을 한 눈에 모아보세요.</p>
+            </div>
+            <div>
+                <h5>총 <span>102</span>건</h5>
+                <div class="display-flex">
+                    <select>
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                    </select>
+                    <div class="display-flex">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <img src="image/icon-search-white.png">
+                    </div>
+                </div>
+                <section>
+                    <div>
+                        <img src="image/news-con1.jpg">
+                    </div>
+                    <div>
+                        <h4>기아, 온실가스 감축 위한 ‘다자 협력’ 나선다</h4>
+                        <p>기아가 민·관 협력을 통해 온실가스 줄이기에 본격적으로 나선다. 차세대 자원순환 방법으로 평가받는 ‘바이오차(Bio-char)’ 프로젝트 투자를 통해 국내 온실가스
+                            감축에 기여하고 ESG 활동도 강화한다는 계획이다.</p>
+                        <p>2023-11-14</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="image/news-con2.jpg">
+                    </div>
+                    <div>
+                        <h4>기아, ‘더 뉴 카니발’ 사전계약 개시</h4>
+                        <p>기아가 이달 출시 예정인 ‘더 뉴 카니발’의 주요 사양과 가격을 공개하고 8일(수)부터 사전계약을 시작한다. 더 뉴 카니발은 2020년 8월 4세대 카니발 출시 이후
+                            3년 만에 새롭게 선보이는 상품성 개선 모델이다.</p>
+                        <p>2023-11-07</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="image/purchase-feature1.jpg">
+                    </div>
+                    <div>
+                        <h4>기아 레이 EV, 이제 카셰어링으로 만난다</h4>
+                        <p>기아가 쏘카와 협업해 고객이 레이 EV를 보다 쉽게 경험할 수 있도록 한다.
+
+                            기아와 쏘카는 전국의 쏘카 공유차량 대여지점인 쏘카존에 ‘더 기아 레이 EV(이하 레이 EV)’를 배치하고 차량 공유 서비스를 실시한다고 6일(월) 밝혔다.</p>
+                        <p>2023-11-06</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="image/news-con3.jpg">
+                    </div>
+                    <div>
+                        <h4>기아, 더 뉴 K5 출시</h4>
+                        <p>기아가 ‘더 뉴 K5(The new K5, 이하 K5)’를 2일(목) 출시했다.
+
+                            이날 기아가 출시한 K5는 지난 2019년 출시한 3세대 K5의 상품성 개선 모델로 미래적이고 역동적인 디자인과 다양한 첨단사양을 적용해 더욱 높은 상품성을 갖췄다.
+                        </p>
+                        <p>2023-11-02</p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="image/news-con4.jpg">
+                    </div>
+                    <div>
+                        <h4>기아, 자동차 부품용 신소재 공동 개발</h4>
+                        <p>기아가 협력사와 함께 세계 최초 기술을 적용한 차량 부품 신소재 공동 개발에 성공했다. 협력사 관계자는 “기아가 오랜 기간 협력을 지원하고 상호 성장할 수 있게 해줘
+                            감사하다”며, “앞으로도 기술개발을 위한 협력에 함께할 수 있기를 기대한다”고 밝혔다. </p>
+                        <p>2023-11-02</p>
+                    </div>
+                </section>
+                <div class="number" id="number2">
+                    <span class="numberPic">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <script>
+        // 뉴스 넘버 클릭
+        const newsNumbers = document.querySelectorAll(".news .number > span");
+        for (let i = 0; i < newsNumbers.length; i++) {
+            newsNumbers[i].addEventListener("click", function () {
+
+                clearNewsPage();
+                this.classList.add("numberPic");
+            });
+        }
+        function clearNewsPage() {
+            for (let i = 0; i < newsNumbers.length; i++) {
+                newsNumbers[i].classList.remove("numberPic");
+            }
+        }
+    </script>
+
+
+    <footer>
+        <div>
+            <div>
+                <img src="image/logo-kia-white.svg">
+            </div>
+            <ul class="display-flex-flow">
+                <li>판매 네트워크
+                    <ul class="pc">
+                        <li>지점/대리점</li>
+                        <li>영업담당</li>
+                        <li>전시 차량</li>
+                        <li>시승 거점</li>
+                        <li>출고 센터</li>
+                    </ul>
+                </li>
+                <li>견적 내기
+                    <ul class="pc">
+                        <li>EV & PBV</li>
+                        <li>승용</li>
+                        <li>RV</li>
+                        <li>택시 & 상용</li>
+                    </ul>
+                </li>
+                <li>구매 상담 신청</li>
+                <li>시승 신청</li>
+                <li>기아렌터카
+                    <ul class="pc">
+                        <li>기아플렉스</li>
+                        <li>원하는 상품 찾기</li>
+                        <li>제공 서비스</li>
+                        <li>기아플렉스 모바일 앱</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="display-flex-flow mo">
+                <img src="image/logo-kia-members.png">
+                <img src="image/icon-facebook.svg">
+                <img src="image/icon-instagram.svg">
+                <img src="image/icon-youtube.svg">
+            </div>
+            <div>
+                <h3>kia center</h3>
+                <ul>
+                    <li>고객센터 080-200-2000</li>
+                    <li>평일 : 08:30 ~ 18:00</li>
+                    <li>점심: 12:00 ~ 13:00</li>
+                    <li>주말, 공휴일 휴무 입니다.</li>
+                </ul>
+            </div>
+            <ul>
+                <li><span>개인정보 처리방침</span></li>
+                <li>프라이버시 센터</li>
+                <li>이용약관</li>
+                <li>윤리경영 사이버감사실</li>
+                <li>전자공고</li>
+                <li>사이트맵</li>
+            </ul>
+            <div>
+                <div class="pc-flex">
+                    <img src="image/logo-kia-members.png">
+                    <img src="image/icon-facebook.svg">
+                    <img src="image/icon-instagram.svg">
+                    <img src="image/icon-youtube.svg">
+                </div>
+                <p><span>© Kia Corp</span>. All rights reserved</p>
+                <div class="select-menu">
+                    <div>
+                        <ul class="options">
+                            <li class="option">
+                                <span class="option-text">현대자동차그룹</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">기아멤버스</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">기아 드라이빙 아카데미</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">인재채용</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">IR</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-btn" id="site-select-button">
+                        <span class="sBtn-text active">Family site</span>
+                        <img src="image/icon-footer-select.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="calculator">
+        <div>
+            <p class="close-calculator" onclick="closeCalculator()">✕</p>
+            <h3>할부 계산기</h3>
+            <ul id="cal-listtap">
+                <li class="tapsee">카니발</li>
+                <li>3.5 가솔린</li>
+                <li>프레스티지</li>
+            </ul>
+            <div class="pay">
+                <p>선수금</p>
+                <div class="slidecontainer flex_between_center">
+                    <div class="pst">
+                        <p class="p2-1">32만원</p>
+                        <p class="p2-2">2,882만원</p>
+                        <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                            tooltips="">
+                    </div>
+                    <p class="box"><span id="demo"></span> 만원</p>
+                </div>
+            </div>
+            <div>
+                <p>할부 기간</p>
+                <div class="slidecontainer flex_between_center">
+                    <div class="pst">
+                        <p class="p2-1">3개월</p>
+                        <p class="p2-2">60개월</p>
+                        <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                    </div>
+                    <p class="box"><span id="value"></span> 개월</p>
+                </div>
+            </div>
+            <button><a>할부 상품 자세히 보기</a></button>
+        </div>
+        <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
+    </div>
+
+
+    <div class="model">
+        <div>
+            <p class="close-model" onclick="closeModel()">✕</p>
+            <h3>모델 비교</h3>
+            <ul id="model-listtap">
+                <li class="tapsee">카니발</li>
+                <li>3.5 가솔린</li>
+                <li>프레스티지</li>
+            </ul>
+            <div>
+                <section class="model1" id="model-list1">
+                    <div>
+                        <div>
+                            <div>
+                                <img src="image/icon-plus.png">
+                                <p>비교할 모델을 추가해주세요.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>가격<br>
+                                <span>31,800,000원</span>
+                            </li>
+                            <li>복합 연비<br>
+                                <span>9.1 km/ℓ</span>
+                            </li>
+                            <li>최고 출력<br>
+                                <span>294 ps / 6,400 rpm</span>
+                            </li>
+                            <li>최대 토크<br>
+                                <span>36.2 kg.m / 5,000 rpm</span>
+                            </li>
+                            <li>3년 유지비<br>
+                                <span>14,107,685원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="model2" id="model-list2">
+                    <div>
+                        <div>
+                            <div>
+                                <img src="image/icon-plus.png">
+                                <p>비교할 모델을 추가해주세요.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>가격<br>
+                                <span>40,730,000원</span>
+                            </li>
+                            <li>복합 연비<br>
+                                <span>15.2 km/ℓ</span>
+                            </li>
+                            <li>최고 출력<br>
+                                <span>180 ps / 5,500 rpm</span>
+                            </li>
+                            <li>최대 토크<br>
+                                <span>27 kg.m / 1,500~4,500 rpm</span>
+                            </li>
+                            <li>3년 유지비<br>
+                                <span>10,123,011원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="model3" id="model-list3">
+                    <div>
+                        <div>
+                            <div>
+                                <img src="image/icon-plus.png">
+                                <p>비교할 모델을 추가해주세요.</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>가격<br>
+                                <span>55,340,000원</span>
+                            </li>
+                            <li>복합 연비<br>
+                                <span> 9.3 km/ℓ</span>
+                            </li>
+                            <li>최고 출력<br>
+                                <span>257 ps / 3,800 rpm</span>
+                            </li>
+                            <li>최대 토크<br>
+                                <span>36.2 kg.m / 1,500~3,000 rpm</span>
+                            </li>
+                            <li>3년 유지비<br>
+                                <span>15,322,685원</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="model-black"></div> <!---창 띄우면 바깥배경 어둡게? -->
+    </div>
+
+
+    <div class="search-pop">
+        <div>
+            <div class="display-flex-flow">
+                <input type="text" placeholder="search">
+                <img src="image/icon-search-white.png">
+            </div>
+            <div class="display-flex-flow">
+                <p>인기 검색어</p>
+                <div>
+                    <button>카니발</button>
+                    <button>소렌토</button>
+                    <button>스포티지</button>
+                    <button>K5</button>
+                </div>
+            </div>
+            <div>
+                <button class="close-search">닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

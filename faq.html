@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>KIA-FAQ-KJE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="posting.css">
+    <style type="text/css"></style>
+     <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"></script>
+</head>
+
+
+<body>
+
+
+    <header id="nav-scroll">
+        <div>
+    
+            <a href="index.html">
+                <img class="logo-img"
+                src="image/logo-kia-white.svg">
+            </a>
+    
+            <nav class="menu-nav" id="menu-nav">
+                <div>
+                    <div class="mo">
+                        <p class="nav-close-btn" onclick="closeNavMenu()">✕</p>
+                        <div class="display-flex-flow">
+                            <button id="members-btn" class="black-btn">
+                                <img
+                                    src="image/icon-members.svg">
+                                <a>기아 멤버스</a>
+                            </button>
+                            <button id="driving-btn"><a>드라이빙 아카데미</a></button>
+                        </div>
+                        <div>
+                            <div class="display-flex-flow">
+                                <div>
+                                    <h4>로그인 <span>해주세요</span></h4>
+                                    <p>회원가입 후 더 많은 혜택을 받아보세요</p>
+                                </div>
+                                <div>
+                                    <a href="join.html">+ 간편회원가입</a>
+                                </div>
+                            </div>
+                            <div class="display-flex-flow">
+                                <button><a href="login.html">로그인</a></button>
+                                <button><a href="login.html">장바구니</a></button>
+                            </div> 
+                        </div>
+                        <div class="display-flex">
+                            <input type="text" placeholder="궁금하신 제품을 찾아보세요.">
+                            <img src="image/icon-search-white.png">
+                        </div>
+                    </div>
+                    <ul id="mainMenu" class="mainMenu">
+                        <li><a href="purchase.html">purchase</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="event.html">event</a></li>
+                        <li><a href="qna.html">qna</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="join.html">join us</a></li>
+                        <li><a href="remove.html">remove</a></li>
+                    </ul>
+                    <div class="display-flex-flow mo">
+                        <section class="navCateButton" id="nav-calculator">
+                            <img
+                                src="image/icon-calculator.svg">
+                            <p>견적 내기</p>
+                        </section>
+                        <section class="navCateButton" id="nav-model">
+                            <img
+                                src="image/icon-calculator2.svg">
+                            <p>카탈로그/가격표</p>
+                        </section>
+                        <section class="navCateButton" id="cate-btn3">
+                            <img
+                                src="image/icon-cartest.svg">
+                            <p>시승 신청</p>
+                        </section>
+                        <section class="navCateButton" id="cate-btn4">
+                            <img
+                                src="image/icon-present.svg">
+                            <p>KIA 이벤트</p>
+                        </section>
+                    </div>
+                </div>
+            </nav>
+    
+            <div class="header-icons">
+                <div class="pc">
+                    <a href="login.html"><img src="image/icon-mypage.png"></a>
+                </div>
+                <div class="select-lan">
+                    <img class="language-btn"
+                        src="image/icon-language-global.svg">
+                    <ul class="lan-options">
+                        <li class="lan-option">kr</li>
+                        <li class="lan-option">en</li>
+                        <li class="lan-option">cn</li>
+                    </ul>
+                </div>
+                <div>
+                    <img class="search-btn"
+                        src="image/icon-search-white.png">
+                </div>
+                <div class="mo">
+                    <img class="nav-open-btn" id="nav-open-btn"
+                        src="image/icon-menu.png">
+                </div>
+            </div>
+    
+        </div>
+    </header>
+
+
+    <article class="faq">
+
+        <img src="image/logo-kia-white.svg">
+        <h1>faq</h1>
+
+        <div>
+            <div>
+                <h2>문의하기</h2>
+            </div>
+            <div class="qna-contents">
+                <div>
+                    <div class="display-flex">
+                        <input type="text" placeholder="궁금하신 내용을 입력해주세요.">
+                        <img src="image/icon-search-white.png">
+                    </div>
+                    <h5>찾으시는 질문이 없으신가요?<br>kia 1:1 상담에 문의해주세요.</h5>
+                    <button><a href="qna.html">1:1 상담하기</a></button>
+                </div>
+                <ul class="qna-listtap">
+                    <li class="qna-tapsee">차량 구매</li>
+                    <li>차량 정비</li>
+                    <li>기아멤버스</li>
+                    <li>기타</li>
+                </ul>
+                <section id="list1">
+                    <div>
+                        <div class="listq">
+                            <h5>Q. EV케어 프로그램이란 무엇인가요?</h5>
+                        </div>
+                        <div>
+                            <p>기아 EV를 구매한 기아멤버스 회원이시라면 EV스타일케어, EV세이프티 케어에 가입하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. Kia EV 그린패스는 어떤 서비스인가요?</h5>
+                        </div>
+                        <div>
+                            <p>멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다. 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을
+                                통해 정기 자동 결제가 이루어집니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 광고 정보 수신 동의 확인 문자를 받았습니다.</h5>
+                        </div>
+                        <div>
+                            <p>기아차량 보유 고객 중 광고성 정보 수신에 동의하신 고객님께 수신동의 여부를 확인하는 메시지 입니다. 이는 광고성 정보 수신에 동의한 고객님께 2년마다 수신동의
+                                여부를 확인하는 것이 의무화 되면서 수신동의 확인을 위해 메시지를 발송해드렸습니다. 또한, 수신 동의 철회 시 상품정보, 혜택정보, 프로모션 및 이벤트 안내
+                                등을 받아보실 수 없으며, 광고성 정보 수신동의 철회 시 고객센터(080-200-2000)로 문의하여 주시기 바랍니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아 전기차 구매시 보조금은 어떻게 되나요?</h5>
+                        </div>
+                        <div>
+                            <p>전기차 보조금은 전기차를 구매할 때 정부와 지자체에서 정한 전기자동차 보조금 지원대상 자동차를 신규로 구매해 국내에 등록할 경우 보조금을 지급하는 제도입니다.
+                                (구매보조금 지급 상한액은 아래표를 참고해주세요.) </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아 표준 서비스 용품이 무엇인가요?</h5>
+                        </div>
+                        <div>
+                            <p>기아는 이면 할인 판매 및 과다 서비스 용품 제공 행위를 금지하고, 공정한 판매 실천과 고객님께 최고의 서비스를 제공해 드리고자 차량 구입 시 표준 서비스
+                                용품을 드리고 있습니다. 표준 서비스 용품은 차량 계약 시 썬팅 시공권과 기아 컬렉션 KIT 중 택1하여 선택하실 수 있습니다. <br> * 하기 구성품은
+                                2020년 2월 기준이며, 서비스 용품 및 구성품은 변경될 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 시승 신청은 어떻게 해야 하나요?</h5>
+                        </div>
+                        <div>
+                            <p>기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다.
+                                <br>시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다.
+                                <br>* 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="list2">
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 내비게이션 무선 업데이트는 어떻게 하나요?</h5>
+                        </div>
+                        <div>
+                            <p>일정 시간 이상 주행 시, 최신 버전의 지도와 소프트웨어로 자동 업데이트가 진행되며,
+
+                                <br>주행 종료 후 시동을 끌 때 팝업 표시창의 ‘시작’ 버튼을 누르면 시스템 업데이트까지 최종 완료됩니다.
+
+                                <br>* 업데이트 상태 확인은 '설정-일반-SW정보/업데이트' 에서 확인할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 내비게이션 업데이트 주기가 어떻게 되나요?</h5>
+                        </div>
+                        <div>
+                            <p>내비게이션은 연 6회 정기 유/무선 업데이트를 통해 최신 지도 및 안정적인 내비게이션 시스템 & 신규 기능 적용을 제공하고 있으며, OTA 무선 업데이트를 통해
+                                더욱 편리한 업데이트 경험을 제공하고 있습니다.
+                                <br>(단속 카메라 반영 등 기본 정보는 수시로 업데이트 중에 있음)
+
+                                <br>* OTA 무선 업데이트를 위해서는 기아커넥트 서비스 가입이 필요하며, 표준형5W/고급형6세대가 적용된 차종에서 제공됩니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 빌트인 캠 녹화영상 관리 방법이 궁금합니다.</h5>
+                        </div>
+                        <div>
+                            <p>주행 중 상시 영상은 최대 3시간, 주차 중 상시 영상은 최대 20시간, 주행/주차 중 충격감지 이벤트는 최대 40건, 수동 스위치 녹화는 최대 30건 까지
+                                저장 가능합니다.
+
+                                <br>저장공간 초과 시 가장 이른 녹화영상부터 자동 삭제되므로, 중요파일은 보관함[★]에 저장하시거나 사고 직후에도 차량 주행 필요 시 '주행중 녹화기능'을
+                                꺼주세요.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 차량 실내 자동 환기 설정은 어떻게 하나요?</h5>
+                        </div>
+                        <div>
+                            <p>히터 및 에어컨 작동 상태에서 버튼을 눌러 모드 선택 후, A/C 버튼을 누른 상태에서 내기 버튼을 3초 이내 5회 이상 누르십시오.
+
+                                <br>* 자세한 설정 방법은 별도로 지급되는 인포테인먼트 시스템 간편 설명서 내에 QR코드로 웹에 접속하여 확인할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="list3">
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아멤버스 모바일카드 발급 방법.</h5>
+                        </div>
+                        <div>
+                            <p>기아멤버스 모바일 카드는 기아멤버스 사이트 또는 Mykia 어플리케이션에 회원가입(카드회원까지 가입 필수)을 하시면 발급 받으실 수 있습니다. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아멤버스 카드를 모바일/실물중에 선택해서 받을 수 있나요?</h5>
+                        </div>
+                        <div>
+                            <p>2018년 4월 2일부터 기아자동차 구입 시 멤버십 가입 신청서에 "모바일카드"를 선택하신 경우, 별도의 실물 카드 발급 없이 모바일카드 발급 안내 문자가
+                                발송되고 있습니다.
+
+                                <br>수신하신 문자에 포함된 URL로 접속하신 후 모바일카드 발급 및 사용이 가능하십니다.
+
+                                <br>(단, 문자수신 동의 여부에 ‘거부’ 를 선택하시면 모바일카드 관련 안내 문자 수신이 불가할 수 있습니다.)
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아멤버스 포인트 소멸시점은 언제인가요?</h5>
+                        </div>
+                        <div>
+                            <p>기아멤버스 포인트 유효기간은 적립시점으로부터 5년입니다.
+                                <br>기아멤버스 포인트 소멸은 포인트 활용기간을 좀 더 확보할 수 있도록 초기 적립시점의 익월 1일에
+                                일괄적으로 소멸 됩니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아멤버스 분실 시에도 포인트를 사용할 수 있나요?</h5>
+                        </div>
+                        <div>
+                            <p>적립된 멤버스포인트는 카드 없이도 오토큐에서 사용이 가능합니다.
+
+                                <br>오토큐에서 실물 카드 없이 멤버스포인트 사용 시 아래와 같은 방법으로 이용하시면 됩니다.
+
+                                <br> - 차량명의자와 휴대폰명의자가 동일한 경우 휴대폰 인증하여 사용 가능
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="list4">
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 기아 커넥트 스토어는 어떻게 이용하나요?</h5>
+                        </div>
+                        <div>
+                            <p>차량 구매 순간의 선택이 카 라이프의 전부를 결정한 것은 아닙니다.
+
+                                이제 차량 구매 후에도 기아 커넥트 스토어(connectstore.kia.com)가 제공하는
+
+                                새로운 기능들을 언제 어디서든지 추가로 구매해 평생, 또는 원하는 기간 동안 이용하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 완속 충전 케이블은 언제 사용하나요?</h5>
+                        </div>
+                        <div>
+                            <p>일부 완속 충전기는 관리의 어려움 등의 이유로 충전 케이블 미 설치합니다.
+                                이런 경우 개인용 완속 충전 케이블 사용합니다.</p>
+                            <img
+                                src="image/36_mo_charging_01_656_394.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 완속과 급속 충전기는 어떻게 구분하나요?</h5>
+                        </div>
+                        <div>
+                            <p>국가표준으로 지정된 충전구의 핀 갯수로 구분됩니다.
+                                <br>핀이 5개인 AC단상은 완속 충전기
+                                <br>핀이 7개인 DC콤보는 급속 충전기
+                                <br>핀이 10개인 DC차데모는 급속 충전기
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 충전카드는 어떻게 발급받아야 하나요?</h5>
+                        </div>
+                        <div>
+                            <p>저공해차 통합 누리집 사이트(WWW.EV.OR.KR)에서 공공 충전 멤버십 카드 발급가능하며,
+                                기타 충전사업자별 민간 충전 멤버십 카드는 사업자별 창구를 통해 발급가능합니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 결제방식은 어떻게 되나요?</h5>
+                        </div>
+                        <div>
+                            <p>충전카드가 없어도 교통카드나 신용카드로 비회원 충전할 수 있으며,
+                                충전 멤버십 카드 보유시 신청 창구를 통해 결제카드 등록이 가능합니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="listq">
+                            <h5>Q. 급속충전기는 어떠한 사용제약이 있나요?</h5>
+                        </div>
+                        <div>
+                            <p>환경부 급속충전기는 1회 충전당 40분 컷을 적용하고 있습니다. (사용자 재인증 후 추가 충전 가능)
+                                한전 및 다른 충전사업자 충전기도 다른 차량이 대기할 경우 적당량을 충전하고 양보하는 것이 좋습니다.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="number" id="number1">
+                    <span class="numberPic">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+            </div>
+
+            <div>
+                <h4>자주 묻는 질문 best 5</h4>
+                <div class="qna-contents">
+                    <section id="best-list1">
+                        <div>
+                            <div class="best-listq">
+                                <h5>Q. Kia Digital Key(NFC)란 무엇인가요?</h5>
+                            </div>
+                            <div>
+                                <p>Kia Digital Key는 NFC 안테나가 장착된 스마트폰 또는 카드 키로 차량의 도어를 열고 시동을 걸 수 있는 새로운 서비스입니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="best-list2">
+                        <div>
+                            <div class="best-listq">
+                                <h5>Q. 스마트 키 배터리 교환방법을 알려주세요.</h5>
+                            </div>
+                            <div>
+                                <p>스마트 키의 사용횟수와 기간에 따라 배터리 성능이 저하되었을 경우 배터리 교환이 필요합니다. 배터리 교환 시 차종별 스마트 키 배터리 용량을 확인 후
+                                    배터리를 구입하여 교환하시면 됩니다. </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="best-list3">
+                        <div>
+                            <div class="best-listq">
+                                <h5>Q. 직영 서비스센터 운영 시간은 어떻게 되나요?</h5>
+                            </div>
+                            <div>
+                                <p>직영 서비스센터의 업무시간은 평일(월~금) 08:30~17:30까지 이며, 중식시간은 12:30~13:30 입니다. 직영서비스센터는 예약제로 운영되므로
+                                    방문 전 사전 예약 바랍니다.<br>토탈 예약 센터 안내 (1899-0200) </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="best-list4">
+                        <div>
+                            <div class="best-listq">
+                                <h5>Q. MyKia는 어떤 서비스 인가요?</h5>
+                            </div>
+                            <div>
+                                <p>날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다. 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를
+                                    통해 확인해 보세요. 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="best-list5">
+                        <div>
+                            <div class="best-listq">
+                                <h5>Q. 기아 통합 계정이 무엇인가요?</h5>
+                            </div>
+                            <div>
+                                <p>기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를
+                                    사용하기 위한 계정으로, 하나의 ID로 모든 서비스를 이용할 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <script>
+        // QNA 문의하기 탭메뉴
+        const qnaTapList = document.querySelectorAll(".qna-listtap > li");
+
+        for (let i = 0; i < qnaTapList.length; i++) {
+            qnaTapList[i].addEventListener("click", function () {
+
+                clearQnaTap();
+                this.classList.add("qna-tapsee");
+
+                if (i == 0) {
+                    document.getElementById("list1").style.display = "block";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "none";
+                }
+                else if (i == 1) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "block";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "none";
+                }
+                else if (i == 2) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "block";
+                    document.getElementById("list4").style.display = "none";
+                }
+                else if (i == 3) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "block";
+                }
+            });
+        }
+        function clearQnaTap() {
+            for (let i = 0; i < qnaTapList.length; i++) {
+                qnaTapList[i].classList.remove("qna-tapsee");
+            }
+        }
+
+        // QNA 질문 누르면 답변 display block
+        const qnaAnswerList = document.querySelectorAll(".listq");
+
+        for (let i = 0; i < qnaAnswerList.length; i++) {
+            qnaAnswerList[i].addEventListener("click", function () {
+
+                clearQnaAnswer();
+                this.style.color = "rgb(95, 155, 189)";
+                this.nextElementSibling.classList.add("qna-answer-see");
+            });
+        }
+        function clearQnaAnswer() {
+            for (let i = 0; i < qnaAnswerList.length; i++) {
+                qnaAnswerList[i].style.color = "black";
+                qnaAnswerList[i].nextElementSibling.classList.remove("qna-answer-see");
+            }
+        }
+
+        // QNA 넘버 클릭 (탭메뉴 넘버)
+        const qnaNumbers = document.querySelectorAll(".faq .number > span");
+        for (let i = 0; i < qnaNumbers.length; i++) {
+            qnaNumbers[i].addEventListener("click", function () {
+
+                clearPage();
+                this.classList.add("numberPic");
+            });
+        }
+        function clearPage() {
+            for (let i = 0; i < qnaNumbers.length; i++) {
+                qnaNumbers[i].classList.remove("numberPic");
+            }
+        }
+
+        // 자주 묻는 질문 display block
+        const bestAnswerList = document.querySelectorAll(".best-listq");
+
+        for (let i = 0; i < bestAnswerList.length; i++) {
+            bestAnswerList[i].addEventListener("click", function () {
+
+                clearBestAnswer();
+                this.style.color = "rgb(95, 155, 189)";
+                this.nextElementSibling.style.display = "block";
+            });
+        }
+        function clearBestAnswer() {
+            for (let i = 0; i < bestAnswerList.length; i++) {
+                bestAnswerList[i].style.color = "black";
+                bestAnswerList[i].nextElementSibling.style.display = "none";
+            }
+        }
+    </script>
+
+
+<footer>
+    <div>
+        <div>
+            <img
+                src="image/logo-kia-white.svg">
+        </div>
+        <ul class="display-flex-flow">
+            <li>판매 네트워크
+                <ul class="pc">
+                    <li>지점/대리점</li>
+                    <li>영업담당</li>
+                    <li>전시 차량</li>
+                    <li>시승 거점</li>
+                    <li>출고 센터</li>
+                </ul>
+            </li>
+            <li>견적 내기
+                <ul class="pc">
+                    <li>EV & PBV</li>
+                    <li>승용</li>
+                    <li>RV</li>
+                    <li>택시 & 상용</li>
+                </ul>
+            </li>
+            <li>구매 상담 신청</li>
+            <li>시승 신청</li>
+            <li>기아렌터카
+                <ul class="pc">
+                    <li>기아플렉스</li>
+                    <li>원하는 상품 찾기</li>
+                    <li>제공 서비스</li>
+                    <li>기아플렉스 모바일 앱</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="display-flex-flow mo">
+            <img
+                src="image/logo-kia-members.png">
+            <img
+                src="image/icon-facebook.svg">
+            <img
+                src="image/icon-instagram.svg">
+            <img
+                src="image/icon-youtube.svg">
+        </div>
+        <div>
+            <h3>kia center</h3>
+            <ul>
+                <li>고객센터 080-200-2000</li>
+                <li>평일 : 08:30 ~ 18:00</li>
+                <li>점심: 12:00 ~ 13:00</li>
+                <li>주말, 공휴일 휴무 입니다.</li>
+            </ul>
+        </div>
+        <ul>
+            <li><span>개인정보 처리방침</span></li>
+            <li>프라이버시 센터</li>
+            <li>이용약관</li>
+            <li>윤리경영 사이버감사실</li>
+            <li>전자공고</li>
+            <li>사이트맵</li>
+        </ul>
+        <div>
+            <div class="pc-flex">
+                <img
+                src="image/logo-kia-members.png">
+            <img
+                src="image/icon-facebook.svg">
+            <img
+                src="image/icon-instagram.svg">
+            <img
+                src="image/icon-youtube.svg">
+            </div>
+            <p><span>© Kia Corp</span>. All rights reserved</p>
+            <div class="select-menu">
+                <div>
+                    <ul class="options">
+                        <li class="option">
+                            <span class="option-text">현대자동차그룹</span>
+                        </li>
+                        <li class="option">
+                            <span class="option-text">기아멤버스</span>
+                        </li>
+                        <li class="option">
+                            <span class="option-text">기아 드라이빙 아카데미</span>
+                        </li>
+                        <li class="option">
+                            <span class="option-text">인재채용</span>
+                        </li>
+                        <li class="option">
+                            <span class="option-text">IR</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="select-btn" id="site-select-button">
+                    <span class="sBtn-text active">Family site</span>
+                    <img src="image/icon-footer-select.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="calculator">
+    <div>
+        <p class="close-calculator" onclick="closeCalculator()">✕</p>
+        <h3>할부 계산기</h3>
+        <ul id="cal-listtap">
+            <li class="tapsee">카니발</li>
+            <li>3.5 가솔린</li>
+            <li>프레스티지</li>
+        </ul>
+        <div class="pay">
+            <p>선수금</p>
+            <div class="slidecontainer flex_between_center">
+                <div class="pst">
+                    <p class="p2-1">32만원</p>
+                    <p class="p2-2">2,882만원</p>
+                    <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                        tooltips="">
+                </div>
+                <p class="box"><span id="demo"></span> 만원</p>
+            </div>
+        </div>
+        <div>
+            <p>할부 기간</p>
+            <div class="slidecontainer flex_between_center">
+                <div class="pst">
+                    <p class="p2-1">3개월</p>
+                    <p class="p2-2">60개월</p>
+                    <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                </div>
+                <p class="box"><span id="value"></span> 개월</p>
+            </div>
+        </div>
+        <button><a>할부 상품 자세히 보기</a></button>
+    </div>
+    <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
+</div>
+
+
+<div class="model">
+    <div>
+        <p class="close-model" onclick="closeModel()">✕</p>
+        <h3>모델 비교</h3>
+        <ul id="model-listtap">
+            <li class="tapsee">카니발</li>
+            <li>3.5 가솔린</li>
+            <li>프레스티지</li>
+        </ul>
+        <div>
+            <section class="model1" id="model-list1">
+                <div>
+                    <div>
+                        <div>
+                            <img src="image/icon-plus.png">
+                            <p>비교할 모델을 추가해주세요.</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>가격<br>
+                            <span>31,800,000원</span>
+                        </li>
+                        <li>복합 연비<br>
+                            <span>9.1 km/ℓ</span>
+                        </li>
+                        <li>최고 출력<br>
+                            <span>294 ps / 6,400 rpm</span>
+                        </li>
+                        <li>최대 토크<br>
+                            <span>36.2 kg.m / 5,000 rpm</span>
+                        </li>
+                        <li>3년 유지비<br>
+                            <span>14,107,685원</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="model2" id="model-list2">
+                <div>
+                    <div>
+                        <div>
+                            <img src="image/icon-plus.png">
+                            <p>비교할 모델을 추가해주세요.</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>가격<br>
+                            <span>40,730,000원</span>
+                        </li>
+                        <li>복합 연비<br>
+                            <span>15.2 km/ℓ</span>
+                        </li>
+                        <li>최고 출력<br>
+                            <span>180 ps / 5,500 rpm</span>
+                        </li>
+                        <li>최대 토크<br>
+                            <span>27 kg.m / 1,500~4,500 rpm</span>
+                        </li>
+                        <li>3년 유지비<br>
+                            <span>10,123,011원</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="model3" id="model-list3">
+                <div>
+                    <div>
+                        <div>
+                            <img src="image/icon-plus.png">
+                            <p>비교할 모델을 추가해주세요.</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>가격<br>
+                            <span>55,340,000원</span>
+                        </li>
+                        <li>복합 연비<br>
+                            <span> 9.3 km/ℓ</span>
+                        </li>
+                        <li>최고 출력<br>
+                            <span>257 ps / 3,800 rpm</span>
+                        </li>
+                        <li>최대 토크<br>
+                            <span>36.2 kg.m / 1,500~3,000 rpm</span>
+                        </li>
+                        <li>3년 유지비<br>
+                            <span>15,322,685원</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="model-black"></div> <!---창 띄우면 바깥배경 어둡게? -->
+</div>
+
+
+<div class="search-pop">
+    <div>
+        <div class="display-flex-flow">
+            <input type="text" placeholder="search">
+            <img src="image/icon-search-white.png">
+        </div>
+        <div class="display-flex-flow">
+            <p>인기 검색어</p>
+            <div>
+                <button>카니발</button>
+                <button>소렌토</button>
+                <button>스포티지</button>
+                <button>K5</button>
+            </div>
+        </div>
+        <div>
+            <button class="close-search">닫기</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+</html>
