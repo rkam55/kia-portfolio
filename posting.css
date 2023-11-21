@@ -381,12 +381,6 @@ header{
     display: block !important;
 }
 
-.faq>div .qna-contents section>div>:last-child img {
-    width: 100%;
-    max-width: 200px;
-    margin: 20px auto 0;
-}
-
 .qna-tapsee {
     color: white;
     background-color: #2d2d37;
