@@ -1,678 +1,632 @@
-body {
-    color: black;
-}
-
-h1,
-h2,
-h3 {
-    text-transform: uppercase;
-}
-
-h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-}
-
-h4 {
-    font-size: 1rem;
-}
-
-p,
-li {
-    font-size: 0.8rem;
-}
-
-li {
-    transition: 0.5s;
-}
-
-article>div:not(.news>div) {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 80px 8%;
-}
-
-article>div>h2 {
-    margin-bottom: 40px;
-    text-transform: uppercase;
+article > div:not(.news > div) {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 8%;
 }
 
 /*design*/
 
-main>div {
-    position: relative;
+main > div {
+  position: relative;
 }
 
 /* .main-slide */
 
-main>div>:last-child section {
-    position: relative;
-    text-align: center;
-    height: 600px;
+.main-slide section {
+  position: relative;
+  text-align: center;
+  height: 600px;
 }
 
-main>div>:last-child section>:first-child {
-    position: absolute;
-    top: 20%;
-    left: 8%;
-    transform: translateY(30%);
-    z-index: 1;
-    color: white;
-    width: 84%;
-    max-width: 900px;
+.main-slide section > :first-child {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  transform: translateY(30%);
+  z-index: 1;
+  color: white;
+  width: 84%;
+  max-width: 900px;
 }
 
-main>div>:last-child section>:first-child h4 {
-    font-weight: 300;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 1s;
+.main-slide section > :first-child p {
+  opacity: 0;
+  font-weight: 300;
+  transform: translateY(30px);
+  transition: 1s;
 }
 
-main>div>:last-child section>:first-child h1 {
-    margin: 10px 0 30px;
-    font-size: 1.5rem;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 1.5s;
-    font-family: 'Cabin', sans-serif;
+.main-slide section > :first-child h1 {
+  margin: 10px 0 30px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1.5s;
+  font-family: "Cabin", sans-serif;
 }
 
-main>div>:last-child section>:first-child div {
-    width: 65%;
-    max-width: 190px;
-    margin: 0 auto;
-    opacity: 0;
-    transform: translateY(60px);
-    transition: 2s;
+.main-slide section > :first-child div {
+  width: 65%;
+  max-width: 190px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 2s;
 }
 
-main>div>:last-child section>:first-child div button {
-    cursor: pointer;
+.main-slide section > :first-child div button {
+  cursor: pointer;
+}
+
+.main-slide section > :last-child > div > img {
+  width: 100%;
 }
 
 .price-btn {
-    background-color: #262846;
-    border: 1px solid transparent;
-    transition: 0.3s;
+  background-color: #262846;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
 
 .price-btn:hover {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 
 .price-btn a {
-    color: white;
-    font-weight: 300;
+  color: white;
+  font-weight: 300;
 }
 
 .price-btn a:hover {
-    color: white;
+  color: white;
 }
 
 .more-btn a:hover {
-    color: rgb(29, 92, 134);
+  color: rgb(29, 92, 134);
 }
 
-main>div>:last-child section>:last-child {
-    width: 100%;
-    position: relative;
+main > div > :last-child section > :last-child {
+  width: 100%;
+  position: relative;
 }
 
-main>div>:last-child section>:last-child img {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
+main > div > :last-child section > :last-child img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
 }
 
-main>div>:last-child section>:last-child>:last-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.9) 80%);
+main > div > :last-child section > :last-child > :last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.9) 80%);
 }
 
 /* 메인 Slick*/
 /* 점dots 커스텀 */
 .main-slide .slick-dots {
-    width: 40%;
-    max-width: 200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    left: 50%;
-    bottom: 120px;
-    transform: translateX(-50%);
+  width: 40%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  bottom: 120px;
+  transform: translateX(-50%);
 }
 
-.main-slide .slick-dots>li {
-    width: 20px;
-    height: 5px;
-    display: block;
+.main-slide .slick-dots > li {
+  width: 20px;
+  height: 5px;
+  display: block;
 }
 
-.main-slide .slick-dots>li>button::before {
-    content: "";
-    width: 20px;
-    height: 3px;
-    background: white;
-    transition: 0.8s;
+.main-slide .slick-dots > li > button::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: white;
+  transition: 0.8s;
 }
 
 /* 버튼 제거*/
 .main-slide .slick-next,
 .main-slide .slick-prev {
-    position: relative;
-    height: 0;
-    width: 0;
+  position: relative;
+  height: 0;
+  width: 0;
 }
 
 .main-slide .slick-next::before,
 .main-slide .slick-prev::before {
-    display: none;
+  display: none;
 }
 
 .slick-dotted.slick-slider {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* 글자 수직으로 움직임 aos 느낌*/
-.slick-slide.slick-active section>:first-child h4 {
-    opacity: 1;
-    transform: translateY(0px);
+.slick-slide.slick-active section > :first-child p {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-.slick-slide.slick-active section>:first-child h1 {
-    opacity: 1;
-    transform: translateY(0px);
+.slick-slide.slick-active section > :first-child h1 {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-.slick-slide.slick-active section>:first-child div {
-    opacity: 1;
-    transform: translateY(0px);
+.slick-slide.slick-active section > :first-child div {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .check-estimate {
-    display: flex;
-    justify-content: space-between;
-    width: 84%;
-    max-width: 700px;
-    margin: 0 auto;
-    position: absolute;
-    top: 580px;
-    left: 50%;
-    transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: absolute;
+  top: 580px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.check-estimate section {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #262846;
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-    width: 48%;
+.check-estimate button {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #262846;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 48%;
 }
 
-.check-estimate section:hover {
-    background-color: rgb(29, 92, 134);
+.check-estimate button:hover {
+  background-color: rgb(29, 92, 134);
 }
 
-.check-estimate section h4 {
-    font-weight: 300;
-    font-size: 0.8rem;
+.check-estimate button p {
+  font-weight: 300;
 }
 
-.check-estimate section img {
-    width: 15px;
-    height: 15px;
-    margin: auto 0;
-    filter: invert(1);
+.check-estimate button img {
+  width: 15px;
+  height: 15px;
+  margin: auto 0;
+  filter: invert(1);
 }
 
 .bottomMenu {
-    background-color: white;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0px;
-    z-index: 10;
-    box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.3);
-    transition: 0.8s;
+  background-color: white;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  z-index: 10;
+  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.8s;
 }
 
 .bottomMenu div img {
-    width: 20px;
-    height: 20px;
-    margin: auto;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .bottomMenu div h2 {
-    font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 .bottomMenu div p {
-    font-weight: bold;
-    font-size: 0.7rem;
-    margin-top: 10px;
-    color: #555;
-    text-align: center;
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin-top: 10px;
+  color: #555;
+  text-align: center;
 }
 
-.kia-data>div>h2 {
-    margin-bottom: 0;
+.kia-data > div > h1 span {
+  font-family: "Cabin", sans-serif;
 }
 
-.kia-data>div>h2 span {
-    font-family: 'Cabin', sans-serif;
+.kia-data > div > p {
+  margin: 10px 0 40px;
 }
 
-.kia-data>div>p {
-    margin: 8px 0 40px;
+.kia-data > div > :nth-child(3) > :first-child {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.kia-data>div>:nth-child(3)>:first-child {
-    max-width: 490px;
-    width: 100%;
-    margin: 0 auto;
+.kia-data > div > :nth-child(3) > :last-child {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.kia-data>div>:nth-child(3)>:last-child {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+.kia-data > div > :nth-child(3) > :first-child section {
+  padding: 20px 0;
 }
 
-.kia-data>div>:nth-child(3)>:first-child section {
-    padding: 20px 0;
+.kia-data > div > :nth-child(3) > :first-child section:first-of-type {
+  border-bottom: 1px solid #ccc;
 }
 
-.kia-data>div>:nth-child(3)>:first-child section:first-of-type {
-    border-bottom: 1px solid #ccc;
+.kia-data > div > :nth-child(3) > :first-child section p {
+  font-weight: bold;
 }
 
-.kia-data>div>:nth-child(3)>:first-child section p {
-    font-weight: bold;
+.kia-data > div > :nth-child(3) > :first-child section p:last-of-type {
+  font-size: 1.5rem;
 }
 
-.kia-data>div>:nth-child(3)>:first-child section h3 {
-    font-size: 1.5rem;
+.kia-data > div > :nth-child(3) > :first-child > div p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 8px 0;
 }
 
-.kia-data>div>:nth-child(3)>:first-child>:last-child {
-    margin-top: 20px;
-    padding: 30px 5% 70px;
-    text-align: left;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #ccc;
+.kia-data > div > :nth-child(3) > :first-child > div p:last-of-type {
+  font-size: 1.5rem;
 }
 
-.kia-data>div>:nth-child(3)>:first-child>:last-child img {
-    position: absolute;
-    right: -40px;
-    bottom: 30px;
-    width: 55%;
+.kia-data > div > :nth-child(3) > :first-child > :last-child {
+  margin-top: 20px;
+  padding: 30px 5% 70px;
+  text-align: left;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ccc;
 }
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div {
-    margin-top: 40px;
+.kia-data > div > :nth-child(3) > :first-child > :last-child img {
+  position: absolute;
+  right: -40px;
+  bottom: 30px;
+  width: 55%;
 }
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div {
-    width: 15%;
+.kia-data > div > :nth-child(3) > :nth-child(2) > div {
+  margin-top: 40px;
 }
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div .graph {
-    background-color: #eee;
-    width: 100%;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div {
+  width: 15%;
 }
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div .graph span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(69, 145, 189);
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div .graph {
+  background-color: #eee;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
 }
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div .stack1 span {
-    background-color: #262846;
-    height: 70%;
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div .graph span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(69, 145, 189);
 }
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div .stack2 span {
-    height: 32%;
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div .stack1 span {
+  background-color: #262846;
+  height: 70%;
 }
 
-
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div .stack3 span {
-    height: 20%;
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div .stack2 span {
+  height: 32%;
 }
 
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div .stack3 span {
+  height: 20%;
+}
 
-.kia-data>div>:nth-child(3)>:nth-child(2)>div>div p {
-    font-weight: bold;
-    margin-top: 10px;
+.kia-data > div > :nth-child(3) > :nth-child(2) > div > div p {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .event {
-    background-color: #19191f;
-    color: white;
+  background-color: #19191f;
+  color: white;
 }
 
-.event>div>h2 {
-    margin-bottom: 0;
+.event > div > p {
+  margin: 8px 0 60px;
 }
 
-.event>div>p {
-    margin: 8px 0 60px;
+.event > div > p a {
+  color: white;
 }
 
-.event>div>p a {
-    color: white;
+.event > div > div {
+  position: relative;
+  padding-bottom: 50px;
 }
 
-.event>div>div {
-    position: relative;
-    padding-bottom: 50px;
+.event > div > div > :first-child,
+.event > div > div > :last-child {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-.event>div>div>:first-child,
-.event>div>div>:last-child {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
+.event > div > div > :first-child section {
+  margin-bottom: 30px;
 }
 
-.event>div>div>:first-child section {
-    margin-bottom: 30px;
+.event > div > div > :first-child section > div {
+  margin-bottom: 30px;
+  display: flex;
+  text-align: left;
 }
 
-.event>div>div>:first-child section>div {
-    margin-bottom: 30px;
-    display: flex;
-    text-align: left;
+.event > div > div > :first-child section > div h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-right: 20px;
 }
 
-.event>div>div>:first-child section>div h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-right: 20px;
-    padding: 10px;
+.event > div > div > :first-child section > div h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 0 auto;
 }
 
-.event>div>div>:first-child section>div h1::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    margin: 10px auto 0;
+.event > div > div > :first-child section > div p {
+  margin-top: 8px;
 }
 
-.event>div>div>:first-child section>div div {
-    margin: auto 0;
+.event > div > div > :first-child section > div > div {
+    padding-top: 10px; 
+  margin: auto 0;
 }
 
-.event>div>div>:first-child section img {
-    width: 100%;
+.event > div > div > :first-child section img {
+  width: 100%;
 }
 
 /* event-car-main slick arrow style */
 .event-arrows {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .event-arrows button {
-    background: none;
-    border: 1px solid #aaa;
-    color: white;
-    padding: 5px;
-    cursor: pointer;
+  background: none;
+  border: 1px solid #aaa;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .event-arrows button img {
-    width: 15px;
-    height: 15px;
-    margin: auto;
-    filter: invert(0.5);
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  filter: invert(0.5);
 }
 
 .event-arrows button:first-of-type img {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .event-arrows button:last-of-type img {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
-
-/* event-car Slick 버튼 없애ㅐ*/
 
 .event-car .slick-next,
 .event-car .slick-prev {
-    position: relative;
-    height: 0;
-    width: 0;
+  position: relative;
+  height: 0;
+  width: 0;
 }
 
 .event-car .slick-next::before,
 .event-car .slick-prev::before {
-    display: none;
+  display: none;
 }
 
-.event>div>div>:last-child section div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    background-color: black;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 5px 0;
-    color: white;
-    text-align: left;
+.event > div > div > :last-child section div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: black;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 5px 0;
+  color: white;
+  text-align: left;
 }
 
-.event>div>div>:last-child section div h2 {
-    margin: auto 0;
+.event > div > div > :last-child section div h2 {
+  margin: auto 0;
 }
 
-.event>div>div>:last-child section div img {
-    width: 120px;
+.event > div > div > :last-child section div img {
+  width: 120px;
 }
 
-.event>div>div>:last-child section div p {
-    margin: auto 0;
-    width: 80px;
-    font-size: 0.7rem;
+.event > div > div > :last-child section div p {
+  margin: auto 0;
+  width: 80px;
+  font-size: 0.7rem;
 }
 
-.best>div>h2 {
-    font-family: 'Cabin', sans-serif;
+.best > div > h1 {
+  font-family: "Cabin", sans-serif;
 }
 
-.best>div ul {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ccc;
-    font-weight: bold;
-    max-width: 400px;
-    margin: 40px auto;
+.best > div ul {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  max-width: 400px;
+  margin: 40px auto;
 }
 
-.best>div ul li {
-    color: #777;
-    cursor: pointer;
+.best > div ul li {
+  color: #777;
+  cursor: pointer;
 }
 
-.best>div ul li:hover {
-    color: rgb(29, 92, 134);
+.best > div ul li:hover {
+  color: rgb(7, 101, 163);
 }
 
-/*
-.best>div div>div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-*/
-
-.best>div div>div section {
-    padding: 30px 8%;
-    width: 100%;
-    margin: 8px 0;
-    border: 1px solid #ccc;
+.best > div div > div section {
+  padding: 30px 8%;
+  width: 100%;
+  margin: 8px 0;
+  border: 1px solid #ccc;
 }
 
-.best>div div>div section>:first-child h3 span {
-    word-break: keep-all;
-    font-size: 0.7rem;
-    line-height: 1.8rem;
-    vertical-align: middle;
-    border-radius: 10px;
-    padding: 2px 10px;
-    color: white;
-    background-color: #222;
-    text-transform: uppercase;
+.best > div div > div section > :first-child h2 span {
+  font-size: 0.8rem;
+  line-height: 40px;
+  margin-left: 5px;
+  border-radius: 12px;
+  padding: 2px 10px;
+  color: white;
+  background-color: #222;
+  text-transform: uppercase;
 }
 
-.best>div div>div section>:first-child p {
-    color: #aaa;
+.best > div div > div section > :first-child p {
+  color: #555;
 }
 
-.best>div div>div section>:nth-child(2) {
-    margin: 30px 0;
+.best > div div > div section > :nth-child(2) {
+  margin: 30px 0;
 }
 
-.best>div div>div section>:nth-child(2) img {
-    width: 100%;
+.best > div div > div section > :nth-child(2) img {
+  width: 100%;
 }
 
-.best>div div>div section>:nth-child(2) div {
-    background: url("image/icon-share-product.png") no-repeat center #eee;
-    background-size: 40%;
-    width: 30px;
-    border-radius: 50%;
-    padding: 20px;
-    margin-bottom: 20px;
-    float: right;
-    transition: 0.3s;
+.best > div div > div section > :nth-child(2) div {
+  background: url("image/icon-share-product.png") no-repeat center #eee;
+  background-size: 40%;
+  width: 30px;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: right;
+  transition: 0.3s;
 }
 
-.best>div div>div section>:nth-child(2) div:hover {
-    transform: scale(1.2);
+.best > div div > div section > :nth-child(2) div:hover {
+  transform: scale(1.2);
 }
 
-.best>div div>div section>:nth-child(3) {
-    clear: both;
-    height: 150px;
-    overflow-y: scroll;
+.best > div div > div section > :nth-child(3) {
+  clear: both;
+  height: 150px;
+  overflow-y: scroll;
 }
 
-.best>div div>div section>:nth-child(3)::-webkit-scrollbar {
-    width: 5px;
+.best > div div > div section > :nth-child(3)::-webkit-scrollbar {
+  width: 5px;
 }
 
-.best>div div>div section>:nth-child(3)::-webkit-scrollbar-button {
-    display: none;
+.best > div div > div section > :nth-child(3)::-webkit-scrollbar-button {
+  display: none;
 }
 
-.best>div div>div section>:nth-child(3)::-webkit-scrollbar-thumb {
-    background-color: #aaa;
-    border-radius: 20px;
+.best > div div > div section > :nth-child(3)::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 20px;
 }
 
-.best>div div>div section>:nth-child(3)::-webkit-scrollbar-track {
-    background-color: #eee;
+.best > div div > div section > :nth-child(3)::-webkit-scrollbar-track {
+  background-color: #eee;
 }
 
-.best>div div>div section>:nth-child(3) table {
-    width: 100%;
+.best > div div > div section > :nth-child(3) table {
+  width: 100%;
 }
 
-.best>div div>div section>:nth-child(3) tr td {
-    text-align: left;
-    padding: 10px 8px;
-    font-size: 0.8rem;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+.best > div div > div section > :nth-child(3) table tr td {
+  text-align: left;
+  padding: 10px 8px;
+  font-size: 0.8rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
-.best>div div>div section>:nth-child(3) tr td:first-of-type {
-    background-color: #f3f3f3;
-    font-weight: bold;
+.best > div div > div section > :nth-child(3) table tr td:first-of-type {
+  background-color: #f3f3f3;
+  width: 110px;
+  font-weight: bold;
 }
 
-.best>div div>div section>:nth-child(4) {
-    text-align: right;
-    margin: 15px 0 20px;
+.best > div div > div section > :nth-child(4) {
+  font-size: 1.2rem;
+  text-align: right;
+  margin: 15px 0 20px;
 }
 
-.best>div div>div section>:nth-child(4) span {
-    font-size: 1rem;
-    margin-left: 8px;
-    font-weight: 300;
+.best > div div > div section > :nth-child(4) span {
+  font-size: 1rem;
+  margin-left: 8px;
+  font-weight: 300;
 }
 
-.best>div div>div section button {
-    width: 100%;
+.best > div div > div section button {
+  width: 100%;
 }
 
-.best>div div>div section button:first-of-type {
-    border: 1px solid rgb(29, 92, 134);
+.best > div div > div section button:first-of-type {
+  border: 1px solid rgb(7, 101, 163);
 }
 
-.best>div div>div section button:last-of-type {
-    margin-top: 10px;
-    background-color: #262846;
+.best > div div > div section button:last-of-type {
+  margin-top: 10px;
+  background-color: rgb(38, 40, 70);
 }
 
-.best>div div>div section button:last-of-type a {
-    color: white;
-    font-weight: 300;
+.best > div div > div section button:last-of-type a {
+  color: white;
+  font-weight: 300;
 }
 
-.best>div>div>p:first-of-type {
-    margin: 8px 0;
-    font-weight: bold;
-    color: rgb(29, 92, 134);
+.best > div > div > p:first-of-type {
+  margin: 8px 0;
+  font-weight: bold;
+  color: rgb(7, 101, 163);
 }
 
 /* best JS*/
-.best>div ul .tapsee {
-    color: rgb(29, 92, 134);
+.best > div ul .tapsee {
+  color: rgb(7, 101, 163);
 }
 
 #best-list2,
 #best-list3,
 #best-list4 {
-    display: none;
+  display: none;
 }
 
 .new-best-product1,
@@ -683,614 +637,467 @@ main>div>:last-child section>:last-child>:last-child {
 .space-best-product2,
 .safe-best-product1,
 .safe-best-product2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .number {
-    margin: 20px 0 40px;
+  margin: 20px 0 40px;
 }
 
 .number span {
-    font-weight: bold;
-    margin: 10px;
-    cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .numberPic {
-    color: rgb(95, 155, 189);
-    font-size: 1.5rem;
+  color: rgb(69, 145, 189);
+  font-size: 1.5rem;
 }
 
 .new-best-product2,
 .efficiency-best-product2,
 .space-best-product2,
 .safe-best-product2 {
-    display: none;
+  display: none;
 }
 
 /* best Slick*/
 
 .best .slick-next,
 .best .slick-prev {
-    position: relative;
-    height: 0;
-    width: 0;
+  position: relative;
+  height: 0;
+  width: 0;
 }
 
 .best .slick-next::before,
 .best .slick-prev::before {
-    display: none;
+  display: none;
 }
 
 .news {
-    background: url("image/news-background.jpg") no-repeat center;
-    background-size: cover;
-    position: relative;
-    text-align: center;
+  background: url("image/news-background.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
 }
 
-.news>div>h2 {
-    font-family: 'Cabin', sans-serif;
+.news > div > h2 {
+  font-family: "Cabin", sans-serif;
 }
 
-.news>div {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
+.news > div {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
-.news>div>div {
-    padding: 80px 8%;
+.news > div > div {
+  padding: 80px 8%;
 }
 
-.news>div>div h2 {
-    margin-bottom: 40px;
-    text-transform: uppercase;
+.news > div > div h2 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
-.news>div>div section {
-    margin: 20px 0;
-    border: 1px solid white;
-    position: relative;
-    padding: 30px;
-    width: 100%;
+.news > div > div section {
+  margin: 20px 0;
+  border: 1px solid white;
+  position: relative;
+  padding: 30px;
+  width: 100%;
 }
 
-.news>div>div section h4 {
-    margin: 8px 0 20px;
+.news > div > div section h2 {
+  margin: 8px 0 20px;
 }
 
-.news>div>div section button {
-    background: none;
-    padding: 0;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
+.news > div > div section button {
+  background: none;
+  padding: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 
-.news>div>div section P:last-of-type {
-    margin-bottom: 50px;
-    color: #aaa;
-    height: 75px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+.news > div > div section p:last-of-type {
+  margin-bottom: 50px;
+  color: #aaa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
-.news>div>div section button {
-    filter: invert(1);
+.news > div > div section button {
+  filter: invert(1);
 }
 
-.news>div>div section button img {
-    width: 20px;
+.news > div > div section button img {
+  width: 20px;
 }
 
-.news>div>div>button {
-    margin-top: 30px;
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 8px 30px;
-    color: white;
+.news > div > div > button {
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 30px;
+  color: white;
 }
 
-.news>div>div>button:hover {
-    background-color: white;
-    color: black;
+.news > div > div > button:hover {
+  background-color: white;
+  color: black;
 }
 
-.map>div {
-    position: relative;
+.map > div {
+  position: relative;
 }
 
-.map>div>:nth-child(2) {
-    background-color: rgb(69, 145, 189);
-    padding: 40px 20px;
-    max-width: 350px;
-    margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    position: relative;
+.map > div > :nth-child(2) {
+  background-color: rgb(69, 145, 189);
+  padding: 40px 20px;
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.map>div>:nth-child(2) h2 {
-    font-weight: 300;
-    color: white;
-    margin-bottom: 30px;
+.map > div > :nth-child(2) h1 {
+  font-weight: 300;
+  color: white;
+  margin-bottom: 30px;
 }
 
-.map>div>:nth-child(2) h2 span {
-    font-weight: bold;
+.map > div > :nth-child(2) h1 span {
+  font-weight: bold;
 }
 
-.map>div>:nth-child(2)>:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-    border-bottom: 1px solid white;
+.map > div > :nth-child(2) > form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
 }
 
-.map>div>:nth-child(2) div input {
-    width: 100%;
-    padding: 5px 0;
-    border: 0 solid;
-    background: transparent;
+.map > div > :nth-child(2) > form > label > input {
+  width: 100%;
+  padding: 5px 0;
+  border: 0 solid;
+  background: transparent;
 }
 
-.map>div>:nth-child(2) div input::placeholder {
-    color: white;
+.map > div > :nth-child(2) > form > label > input::placeholder {
+  color: white;
 }
 
-.map>div>:nth-child(2) div .local-search-btn {
-    width: 25px;
-    height: 25px;
-    margin: auto;
-    cursor: pointer;
+.map > div > :nth-child(2) form img {
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  cursor: pointer;
 }
 
 .local-search-pop {
-    padding: 30px 5% 50px;
-    border: 1px solid #ccc;
-    position: absolute;
-    width: 90%;
-    bottom: -230px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    transition: 0.5s;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
+  padding: 30px 5% 50px;
+  border: 1px solid #ccc;
+  position: absolute;
+  width: 90%;
+  bottom: -230px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.local-search-pop>:first-child p {
-    font-weight: bold;
-    color: rgb(29, 92, 134);
-    width: 28%;
-    text-align: left;
+.local-search-pop > :first-child p {
+  font-weight: bold;
+  color: rgb(7, 101, 163);
+  width: 28%;
+  text-align: left;
 }
 
-.local-search-pop>:first-child>div {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+.local-search-pop > :first-child > div {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.local-search-pop>:first-child>div button {
-    border: 1px solid #aaa;
-    padding: 5px;
-    font-weight: 300;
+.local-search-pop > :first-child > div button {
+  border: 1px solid #aaa;
+  padding: 5px;
+  font-weight: 300;
 }
 
-.local-search-pop>:first-child>div button:hover {
-    background-color: #19191f;
-    color: white;
+.local-search-pop > :first-child > div button:hover {
+  background-color: #19191f;
+  color: white;
 }
 
-.local-search-pop>:last-child {
-    text-align: right;
-    margin-top: 120px;
+.local-search-pop > :last-child {
+  text-align: right;
+  margin-top: 120px;
 }
 
-.local-search-pop>:last-child button {
-    padding: 8px 25px;
-    cursor: pointer;
-    border: 1px solid #222;
+.local-search-pop > :last-child button {
+  padding: 8px 25px;
+  cursor: pointer;
+  border: 1px solid #222;
 }
 
-.local-search-pop>:last-child button:hover {
-    background-color: #222;
-    color: white;
+.local-search-pop > :last-child button:hover {
+  background-color: #222;
+  color: white;
 }
 
-.map>div>:nth-child(3) div {
-    justify-content: center;
-    max-width: 500px;
-    margin: auto;
+.map > div > :nth-child(3) div {
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
 }
 
-.map>div>:nth-child(3) h3 {
-    margin: 20px 0;
+.map > div > :nth-child(3) h2 {
+  margin: 20px 0;
 }
 
-.map>div>:nth-child(3) div section {
-    width: 45%;
-    font-weight: bold;
-    margin: 10px 0 5px;
-    cursor: pointer;
+.map > div > :nth-child(3) > div > button {
+  width: 45%;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  cursor: pointer;
 }
 
-.map>div>:nth-child(3) div section div {
-    background-color: #eee;
-    background-size: 55%;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    margin: auto;
-    position: relative;
+.map > div > :nth-child(3) > div > button > div {
+  background-color: #eee;
+  background-size: 55%;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  position: relative;
 }
 
-.map>div>:nth-child(3) div section div img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    filter: brightness(0%);
+.map > div > :nth-child(3) > div > button > div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  filter: brightness(0%);
 }
 
-.map>div>:nth-child(3) div section p {
-    margin-top: 15px;
+.map > div > :nth-child(3) > div > button p {
+  margin-top: 15px;
+  height: 0px;
 }
 
-.map>div>:nth-child(3) div section div:hover {
-    transition: 0.3s ease-in-out;
-    box-shadow: 0px 0px 8px rgb(95, 155, 189);
-    border: 0;
+.map > div > :nth-child(3) > div > button div:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 8px rgb(95, 155, 189);
+  border: 0;
 }
-
-.cs {
-    background-color: #19191f;
-    color: white;
-}
-
-.cs>div>:first-child {
-    margin-bottom: 40px;
-}
-
-.cs>div>:first-child h2 span {
-    font-family: 'Cabin', sans-serif;
-}
-
-.cs>div>:last-child>div {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto 0;
-}
-
-.cs>div>:last-child div h3 {
-    text-align: left;
-    margin-bottom: 8px;
-}
-
-.cs>div>:last-child div input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 0;
-    margin: 8px 0;
-    border-radius: 3px;
-    background-color: #2d2d37;
-}
-
-.cs>div>:last-child div input[type="text"]::placeholder {
-    color: #ccc
-}
-
-.cs>div>:last-child div textarea {
-    width: 100%;
-    padding: 5px 10px;
-    border: 0;
-    margin: 8px 0;
-    border-radius: 3px;
-    background-color: #2d2d37;
-}
-
-.cs>div>:last-child div textarea::placeholder {
-    color: #ccc;
-}
-
-.cs>div>:last-child>:first-child>:nth-child(4) {
-    margin-top: 10px;
-}
-
-.cs>div>:last-child div input[type="checkbox"] {
-    display: none;
-}
-
-.cs>div>:last-child div input[type="checkbox"]+label {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #2d2d37;
-    position: relative;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.cs>div>:last-child div input[id="check1"]:checked+label::after {
-    content: "✔";
-    position: absolute;
-    bottom: -2px;
-    left: 1px;
-    color: #ccc;
-}
-
-.cs>div>:last-child div p {
-    color: #ccc;
-    font-weight: bold;
-    margin: auto 8px;
-}
-
-.cs>div>:last-child>:first-child button {
-    background: none;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    padding: 3px 10px;
-}
-
-.cs>div>:last-child>:first-child button a {
-    color: #ccc;
-}
-
-.cs>div>:last-child>button {
-    width: 100%;
-    max-width: 480px;
-    margin: auto;
-    background-color: white;
-    margin-top: 30px;
-}
-
-.cs>div>:last-child>button a {
-    color: black;
-}
-
 
 /* laptop 1366px*/
 
 @media screen and (min-width: 1366px) {
+  article > div:not(.news > div) {
+    padding: 120px 0;
+  }
 
-    h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        line-height: 3.5rem;
-    }
+  .main-slide section {
+    height: 800px;
+  }
 
-    h2 {
-        font-size: 2rem;
-    }
+  .main-slide section > :last-child img {
+    height: 800px;
+  }
 
-    h3 {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
+  .main-slide .slick-dots > li {
+    height: 12px;
+  }
 
-    h4 {
-        font-size: 1.2rem;
-    }
+  .main-slide section {
+    text-align: left;
+  }
 
-    p,
-    li {
-        font-size: 0.9rem;
-    }
+  .main-slide section > :first-child {
+    top: 30%;
+    left: 17%;
+  }
 
-    article>div:not(.news>div) {
-        padding: 120px 0;
-    }
+  .main-slide section > :first-child > p {
+    font-size: 1.2rem;
+  }
 
-    main>div>:last-child section {
-        height: 800px;
-    }
+  .main-slide section > :first-child h1 {
+    margin: 20px 0 30px;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-    main>div>:last-child section>:last-child img {
-        height: 800px;
-    }
+  .main-slide section > :first-child div {
+    margin: 0;
+  }
 
-    .main-slide .slick-dots>li {
-        height: 12px;
-    }
+  .toggle-btn {
+    display: none;
+  }
 
-    main>div>:last-child section {
-        text-align: left;
-    }
+  .main-slide .slick-dots {
+    bottom: 150px;
+  }
 
-    main>div>:last-child section>:first-child {
-        top: 30%;
-        left: 17%;
-    }
+  .check-estimate {
+    top: 750px;
+  }
 
-    main>div>:last-child section>:first-child h1 {
-        margin: 20px 0 30px;
-        font-size: 3rem;
-        opacity: 0;
-        transform: translateY(30px);
-    }
+  .check-estimate button {
+    padding: 50px 30px;
+  }
 
-    main>div>:last-child section>:first-child div {
-        margin: 0;
-    }
+  .check-estimate button p {
+    font-size: 1.2rem;
+  }
 
-    .toggle-btn {
-        display: none;
-    }
+  .bottomMenu {
+    position: unset;
+    width: 1000px;
+    margin: 100px auto 0;
+    padding: 50px 0;
+    border-radius: 0;
+    box-shadow: 0px 0px 0px #ddd;
+  }
 
-    .main-slide .slick-dots {
-        bottom: 150px;
-    }
+  .bottomMenu > :first-child {
+    width: 250px;
+    margin: auto 0;
+  }
 
-    .check-estimate {
-        top: 750px;
-    }
+  .bottomMenu > :first-child p {
+    text-align: left;
+    line-height: 1.5rem;
+  }
 
-    .check-estimate section {
-        padding: 50px 30px;
-    }
+  .bottomMenu div img {
+    width: 50px;
+    height: 50px;
+  }
 
-    .check-estimate section h4 {
-        font-size: 1.2rem;
-    }
-    
-    .bottomMenu {
-        position: unset;
-        width: 1000px;
-        margin: 100px auto 0;
-        padding: 50px 0;
-        border-radius: 0;
-        box-shadow: 0px 0px 0px #ddd;
-    }
+  .bottomMenu div p {
+    font-size: 1rem;
+  }
 
-    .bottomMenu>:first-child {
-        width: 250px;
-        margin: auto 0;
-    }
+  .kia-data {
+    margin-bottom: 120px;
+  }
 
-    .bottomMenu>:first-child p {
-        text-align: left;
-    }
+  .kia-data > div > :nth-child(3) > :first-child > :last-child {
+    padding: 30px 5% 100px;
+  }
 
-    .bottomMenu div img {
-        width: 50px;
-        height: 50px;
-    }
+  .kia-data > div > :nth-child(3) > :first-child {
+    margin: auto 0;
+  }
 
-    .bottomMenu div p {
-        font-size: 1rem;
-    }
+  .kia-data > div > :nth-child(3) > :nth-child(2) > div {
+    margin-top: 0px;
+  }
 
-    .kia-data {
-        margin-bottom: 120px;
-    }
+  .kia-data > div > :nth-child(3) > :nth-child(2) > div > div .graph {
+    height: 300px;
+  }
 
-    .kia-data>div>:nth-child(3)>:first-child>:last-child {
-        padding: 30px 5% 100px;
-    }
+  .kia-data > div > :nth-child(3) > :last-child {
+    margin: auto 0;
+  }
 
-    .kia-data>div>:nth-child(3)>:first-child {
-        margin: auto 0;
-    }
+  .event > div > div {
+    padding-bottom: 0px;
+  }
 
-    .kia-data>div>:nth-child(3)>:nth-child(2)>div {
-        margin-top: 0px;
-    }
+  .event > div > div > :first-child section {
+    margin-bottom: 40px;
+  }
 
-    .kia-data>div>:nth-child(3)>:nth-child(2)>div>div .graph {
-        height: 300px;
-    }
+  .best > div > div > p:first-of-type {
+    margin: 50px 0 8px;
+  }
 
-    .kia-data>div>:nth-child(3)>:last-child {
-        margin: auto 0;
-    }
+  .best > div ul,
+  .calculator > :first-child ul,
+  .model > :first-child > ul {
+    justify-content: space-around;
+  }
 
-    .event>div>div {
-        padding-bottom: 0px;
-    }
+  .best > div div > div section {
+    width: 320px;
+    padding: 20px;
+  }
 
-    .event>div>div>:first-child section {
-        margin-bottom: 40px;
-    }
+  .numberPic {
+    font-size: 2rem;
+  }
 
-    .best>div>div>p:first-of-type {
-        margin: 50px 0 8px;
-    }
+  .news > div > div {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0;
+  }
 
-    .best>div ul,
-    .calculator>:first-child ul,
-    .model>:first-child>ul {
-        justify-content: space-around;
-    }
+  .news > div > div section {
+    width: 240px;
+  }
 
-    .best>div div>div section {
-        width: 320px;
-        padding: 20px;
-    }
+  .map > div > :first-child {
+    display: block;
+    filter: grayscale(0.4);
+  }
 
-    .numberPic {
-        font-size: 2rem;
-    }
+  .map > div > :nth-child(2) {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    transform: translate(-0%, -50%);
+    padding: 40px;
+  }
 
-    .news>div>div {
-        width: 1000px;
-        margin: 0 auto;
-        padding: 150px 0;
-    }
+  .map > div > :nth-child(2) h1 {
+    font-size: 1.2rem;
+  }
 
-    .news>div>div section {
-        width: 240px;
-    }
+  .map > div > :nth-child(3) h2 {
+    text-align: left;
+    margin: 35px 0 20px;
+  }
 
-    .news>div>div section P:last-of-type {
-        height: 85px;
-    }
+  .map > div > :nth-child(3) > div {
+    margin: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 600px;
+  }
 
-    .map>div>:first-child {
-        display: block;
-        filter: grayscale(0.4);
-    }
+  .map > div > :nth-child(3) > div > button {
+    width: 90px;
+    padding: 0;
+    margin: 0;
+  }
 
-    .map>div>:nth-child(2) {
-        position: absolute;
-        bottom: 10%;
-        right: 5%;
-        transform: translate(-0%, -50%);
-        padding: 40px;
-    }
-
-    .map>div>:nth-child(2) h2 {
-        font-size: 1.2rem;
-    }
-
-    .map>div>:nth-child(3) h3 {
-        text-align: left;
-        margin: 35px 0 20px;
-    }
-
-    .map>div>:nth-child(3) div {
-        margin: 0;
-    }
-
-    .map>div>:nth-child(3) div section {
-        width: 90px;
-    }
-
-    .map>div>:nth-child(3) div {
-        justify-content: space-between;
-        width: 600px;
-    }
-
-    .local-search-pop {
-        width: 350px;
-        margin: auto;
-        right: 10%;
-    }
-
-    .cs>div>:last-child>div {
-        margin: 0;
-    }
-
-    .cs>div>:last-child>:nth-child(2) button {
-        width: 100%;
-        max-width: 490px;
-        background-color: white;
-        margin-top: 30px;
-    }
-
-    .cs>div>:last-child>:nth-child(2)button a {
-        color: black;
-    }
-
+  .local-search-pop {
+    width: 350px;
+    margin: auto;
+    right: 10%;
+  }
 }

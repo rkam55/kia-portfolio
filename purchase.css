@@ -1,43 +1,6 @@
 body {
-    color: black;
     position: relative;
     overflow-x: hidden;
-}
-
-h1,
-h2,
-h3 {
-    text-transform: uppercase;
-}
-
-h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    font-family: 'Cabin', sans-serif;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-}
-
-h4 {
-    font-size: 1rem;
-}
-
-p,
-li {
-    font-size: 0.8rem;
-    line-height: 1rem;
-}
-
-li {
-    transition: 0.5s;
 }
 
 article>div {
@@ -67,13 +30,13 @@ main>div>:first-child {
     overflow: hidden;
 }
 
-main>:first-child>:first-child img {
+main>div>:first-child img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-main>:first-child>:nth-child(2) {
+main>div>:nth-child(2) {
     width: 400px;
     position: absolute;
     bottom: -50px;
@@ -82,11 +45,11 @@ main>:first-child>:nth-child(2) {
     overflow-x: hidden;
 }
 
-main>:first-child>:nth-child(2) img {
+main>div>:nth-child(2) img {
     width: 600px;
 }
 
-main>:first-child>:last-child {
+main>div>:last-child {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -97,7 +60,7 @@ main>:first-child>:last-child {
     left: 0;
 }
 
-main>:first-child>:last-child>div {
+main>div>:last-child>div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,24 +69,23 @@ main>:first-child>:last-child>div {
     max-width: 1000px;
 }
 
-main>:first-child>:last-child>div h4 span {
+main>div>:last-child>div h4 span {
     font-weight: 300;
 }
 
-main>:first-child>:last-child>div h3 {
-    margin: 5px 0 15px;
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.5rem;
+main>div>:last-child>div h1 {
+    margin: 0 0 15px;
+    font-family: 'Cabin', sans-serif; 
 }
 
-main>:first-child>:last-child>div h4 {
-    color: rgb(69, 145, 189);
-    font-size: 1.2rem;
+main>:first-child>:last-child>div h2 {
+    color: rgb(68, 162, 215);
 }
 
-main>:first-child>:last-child>div h4 span {
-    font-size: 0.8rem;
+main>:first-child>:last-child>div h2 span {
     color: white;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 main>:first-child>:last-child>div p:last-of-type {
@@ -208,137 +170,6 @@ main>:first-child>:last-child>div p:last-of-type {
 
 .information>div>:nth-child(3)>:last-child button:first-of-type {
     border: 1px solid #222;
-}
-
-.calculator {
-    display: none;
-}
-
-.calculator>:first-child {
-    padding: 25px 30px;
-    padding-bottom: 50px;
-    border-radius: 10px;
-    background-color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 1000px;
-    z-index: 61;
-    text-align: center;
-}
-
-.calculator>:last-child {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 60;
-}
-
-.calculator>:first-child ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px auto 30px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    font-weight: bold;
-    max-width: 400px;
-}
-
-.calculator>:first-child ul li {
-    color: #777;
-    cursor: pointer;
-}
-
-.calculator>:first-child ul li:hover {
-    color: rgb(69, 145, 189);
-}
-
-.calculator>:first-child div {
-    max-width: 400px;
-    margin: auto;
-}
-
-.calculator>:first-child ul .tapsee {
-    color: rgb(69, 145, 189);
-}
-
-.calculator>:first-child>:nth-child(4)>:first-child,
-.calculator>:first-child>:nth-child(5)>:first-child {
-    text-align: left;
-    font-weight: bold;
-}
-
-.calculator>:first-child div .pst {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.calculator>:first-child div input {
-    width: 100%;
-    margin: 20px 0;
-    background: #eee;
-    outline: none;
-    -webkit-appearance: none;
-    accent-color: #262846;
-}
-
-.calculator>:first-child div input[type=range] {
-    -webkit-appearance: none;
-    height: 3px;
-}
-
-.calculator>:first-child div input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.calculator>:first-child div input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background: #262846;
-    height: 20px;
-    width: 20px;
-    margin-top: -10px;
-    border-radius: 50%;
-}
-
-.calculator>:first-child>div>:last-child>:last-child {
-    font-weight: bold;
-    padding: 8px;
-    background-color: #eee;
-    margin-bottom: 30px;
-}
-
-.close-calculator {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: right;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close-calculator:hover {
-    color: #aaa;
-}
-
-.calculator>:first-child button {
-    background-color: #262846;
-}
-
-.calculator>:first-child button:hover {
-    background-color: rgb(69, 145, 189);
-}
-
-.calculator>:first-child button a {
-    color: white;
-    font-weight: 300;
 }
 
 .color>div>:nth-child(2)>div {
@@ -447,7 +278,7 @@ main>:first-child>:last-child>div p:last-of-type {
     width: 100%;
 }
 
-.color>div>:nth-child(2)>:nth-child(2)>div h4 {
+.color>div>:nth-child(2)>:nth-child(2)>div h2 {
     padding: 15px 0;
 }
 
@@ -500,7 +331,7 @@ main>:first-child>:last-child>div p:last-of-type {
     cursor: pointer;
 }
 
-.color>div>:nth-child(2)>:nth-child(2)>div .effic-con section h4 {
+.color>div>:nth-child(2)>:nth-child(2)>div .effic-con section h3 {
     background-color: #eee;
     padding: 10px 5px;
     margin-bottom: 15px;
@@ -510,8 +341,9 @@ main>:first-child>:last-child>div p:last-of-type {
     margin: 15px 0;
 }
 
-.color>div>:nth-child(2)>:nth-child(2)>div .effic-con section>div h5 {
+.color>div>:nth-child(2)>:nth-child(2)>div .effic-con section>div h4 {
     margin-bottom: 5px;
+    font-size: 0.9rem;
 }
 
 .color>div>:nth-child(2)>:nth-child(2)>div .effic-con ul {
@@ -519,7 +351,7 @@ main>:first-child>:last-child>div p:last-of-type {
 }
 
 .color>div>:nth-child(2)>:nth-child(2)>div .effic-con ul li {
-    color: #aaa;
+    color: #777;
     margin: 8px 0;
 }
 
@@ -540,21 +372,18 @@ main>:first-child>:last-child>div p:last-of-type {
     width: 100%;
 }
 
-.brand>div>:nth-child(2)>div div {
+.brand>div>:nth-child(2)>div >div {
     padding: 20px 0;
 }
 
-.brand>div>:nth-child(2)>div div h5 {
+.brand>div>:nth-child(2)>div div h2 {
     margin-bottom: 8px;
+    font-size: 1rem;
 }
 
 .brand>div>:nth-child(3) {
     max-width: 420px;
     margin: 0 auto;
-}
-
-.brand>div>:nth-child(3)>:first-child h5 {
-    margin-bottom: 8px;
 }
 
 .brand>div>:nth-child(3)>:nth-child(2) {
@@ -654,6 +483,10 @@ main>:first-child>:last-child>div p:last-of-type {
     text-align: left;
 }
 
+.option-pop section>:last-child h1 {
+    font-size: 1.2rem;
+}
+
 .option-pop section>:last-child p {
     margin-top: 20px;
 }
@@ -731,16 +564,16 @@ main>:first-child>:last-child>div p:last-of-type {
 }
 
 .feature>div>:last-child section>:last-child p:first-of-type {
-    color: rgb(69, 145, 189);
+    color: rgb(68, 162, 215);
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
 }
 
-.feature>div>:last-child section>:last-child h3 {
+.feature>div>:last-child section>:last-child h2 {
     margin: 5px 0 20px;
 }
 
-.accessories>div>:first-child h2 {
+.accessories>div>:first-child h1 {
     font-family: 'Cabin', sans-serif;
 }
 
@@ -801,140 +634,9 @@ main>:first-child>:last-child>div p:last-of-type {
     text-align: left;
 }
 
-.cs {
-    background-color: #19191f;
-    color: white;
-}
-
-.cs>div>:first-child {
-    margin-bottom: 40px;
-}
-
-.cs>div>:first-child h2 span {
-    font-family: 'Cabin', sans-serif;
-}
-
-.cs>div>:last-child>div {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto 0;
-}
-
-.cs>div>:last-child div h3 {
-    text-align: left;
-    margin-bottom: 8px;
-}
-
-.cs>div>:last-child div input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 0;
-    margin: 8px 0;
-    border-radius: 3px;
-    background-color: #2d2d37;
-}
-
-.cs>div>:last-child div input[type="text"]::placeholder {
-    color: #ccc
-}
-
-.cs>div>:last-child div textarea {
-    width: 100%;
-    padding: 5px 10px;
-    border: 0;
-    margin: 8px 0;
-    border-radius: 3px;
-    background-color: #2d2d37;
-}
-
-.cs>div>:last-child div textarea::placeholder {
-    color: #ccc;
-}
-
-.cs>div>:last-child>:first-child>:nth-child(4) {
-    margin-top: 10px;
-}
-
-.cs>div>:last-child div input[type="checkbox"] {
-    display: none;
-}
-
-.cs>div>:last-child div input[type="checkbox"]+label {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #2d2d37;
-    position: relative;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.cs>div>:last-child div input[id="check1"]:checked+label::after {
-    content: "✔";
-    position: absolute;
-    bottom: -2px;
-    left: 1px;
-    color: #ccc;
-}
-
-.cs>div>:last-child div p {
-    color: #ccc;
-    font-weight: bold;
-    margin: auto 8px;
-}
-
-.cs>div>:last-child>:first-child button {
-    background: none;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    padding: 3px 10px;
-    font-size: 0.7rem;
-}
-
-.cs>div>:last-child>:first-child button a {
-    color: #ccc;
-}
-
-.cs>div>:last-child>button {
-    width: 100%;
-    max-width: 480px;
-    margin: auto;
-    background-color: white;
-    margin-top: 30px;
-}
-
-.cs>div>:last-child>button a {
-    color: black;
-}
-
-
 /* laptop 1366px*/
 
 @media screen and (min-width: 1366px) {
-
-    h1 {
-        font-size: 3rem;
-        font-weight: bold;
-        line-height: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
-
-    p,
-    li {
-        font-size: 0.9rem;
-    }
 
     article>div {
         padding: 120px 0;
@@ -960,24 +662,12 @@ main>:first-child>:last-child>div p:last-of-type {
         text-align: left;
     }
 
-    main>:first-child>:last-child>div h3 {
-        margin: 20px 0 45px;
-        font-family: 'Cabin', sans-serif;
+    main>:first-child>:last-child>div h1 {
         font-size: 3rem;
     }
 
-    main>:first-child>:last-child>div h4 {
+    main>:first-child>:last-child>div h2 {
         font-size: 2rem;
-    }
-
-    main>:first-child>:last-child>div h4 span {
-        font-size: 1.2rem;
-        color: white;
-    }
-
-    main>:first-child>:last-child>div p:last-of-type {
-        margin: 10px 0 0;
-        color: #ccc;
     }
 
     .information>div>:nth-child(2){
@@ -1071,16 +761,16 @@ main>:first-child>:last-child>div p:last-of-type {
         margin: 0;
     }
 
-    .brand>div>:nth-child(3)>div h2 {
-        color: rgb(69, 145, 189);
+    .brand>div>:nth-child(3)>div h1 {
+        color: rgb(68, 162, 215);
         font-size: 1.5rem;
     }
 
-    .brand>div>:nth-child(3)>div h2::after {
+    .brand>div>:nth-child(3)>div h1::after {
         content: "";
         width: 150px;
         height: 3px;
-        background-color: rgb(69, 145, 189);
+        background-color: rgb(68, 162, 215);
         position: absolute;
         top: 23px;
         right: -170px;
@@ -1088,7 +778,11 @@ main>:first-child>:last-child>div p:last-of-type {
     }
 
     .brand>div>:nth-child(3)>div p {
-        margin: 45px 0 20px;
+        margin: 30px 0;
+    }
+
+    .option-pop section>:last-child h1 {
+        font-size: 1.2rem;
     }
 
     .detail>div>:first-child {
@@ -1097,10 +791,6 @@ main>:first-child>:last-child>div p:last-of-type {
 
     .detail>div>:last-child {
         margin: 0;
-    }
-
-    .calculator>:first-child {
-        padding: 50px;
     }
 
     .option>div>:nth-child(2)>img {
@@ -1169,26 +859,9 @@ main>:first-child>:last-child>div p:last-of-type {
         top: 50%;
     }
 
-    .accessories>div>:nth-child(2) section>:last-child h5 {
+    .accessories>div>:nth-child(2) section>:last-child h3 {
+        font-size: 1rem;
         margin: 10px 0 20px;
-    }
-
-    .cs>div>:last-child>div {
-        margin: 0;
-    }
-
-    .cs>div>:last-child>:nth-child(2) button {
-        width: 480px;
-        background-color: white;
-        margin-top: 30px;
-    }
-
-    .cs>div>:last-child>:nth-child(2)button a {
-        color: black;
-    }
-
-    .cs>div>:last-child>:first-child>:nth-child(4) {
-        justify-content: left;
     }
 
 }

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-    <title>KIA KJE</title>
+    <title>기아 자동차</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <style type="text/css"></style>
@@ -32,199 +32,208 @@
     </script>
 
 
-    <main>
+    <header id="nav-scroll">
         <div>
-            <header id="nav-scroll">
+
+            <a href="index.html">
+                <img class="logo-img" alt="기아 홈 이동"
+                src="image/logo-kia-white.svg">
+            </a>
+
+            <nav class="menu-nav" id="menu-nav" aria-label="navigation">
                 <div>
-
-                    <a href="index.html">
-                        <img class="logo-img" src="image/logo-kia-white.svg">
-                    </a>
-
-                    <nav class="menu-nav" id="menu-nav">
+                    <div class="mo">
+                        <p class="nav-close-btn" onclick="closeNavMenu()" role="button" aria-label="닫기">✕</p>
+                        <div class="display-flex-flow">
+                            <button id="members-btn" class="black-btn">
+                                <img
+                                    src="image/icon-members.svg" alt="기아 멤버스로 이동">
+                                <a>기아 멤버스</a>
+                            </button>
+                            <button id="driving-btn"><a>드라이빙 아카데미</a></button>
+                        </div>
                         <div>
-                            <div class="mo">
-                                <p class="nav-close-btn" onclick="closeNavMenu()">✕</p>
-                                <div class="display-flex-flow">
-                                    <button id="members-btn" class="black-btn" onclick="pleaseLogin()">
-                                        <img src="image/icon-members.svg">
-                                        <a>기아 멤버스</a>
-                                    </button>
-                                    <button id="driving-btn" onclick="pleaseLogin()"><a>드라이빙 아카데미</a></button>
+                            <div class="display-flex-flow">
+                                <div>
+                                    <p>로그인 <span>해주세요</span></p>
+                                    <p>회원가입 후 더 많은 혜택을 받아보세요</p>
                                 </div>
                                 <div>
-                                    <div class="display-flex-flow">
-                                        <div>
-                                            <h4>로그인 <span>해주세요</span></h4>
-                                            <p>회원가입 후 더 많은 혜택을 받아보세요</p>
-                                        </div>
-                                        <div>
-                                            <a href="join.html">+ 간편회원가입</a>
-                                        </div>
-                                    </div>
-                                    <div class="display-flex-flow">
-                                        <button><a href="login.html">로그인</a></button>
-                                        <button><a href="login.html">장바구니</a></button>
-                                    </div>
-                                </div>
-                                <div class="display-flex">
-                                    <input type="text" placeholder="궁금하신 제품을 찾아보세요.">
-                                    <img src="image/icon-search-white.png">
+                                    <a href="join.html">+ 간편회원가입</a>
                                 </div>
                             </div>
-                            <ul id="mainMenu" class="mainMenu">
-                                <li><a href="purchase.html">purchase</a></li>
-                                <li><a href="news.html">news</a></li>
-                                <li><a href="event.html">event</a></li>
-                                <li><a href="qna.html">qna</a></li>
-                                <li><a href="faq.html">faq</a></li>
-                                <li><a href="login.html">login</a></li>
-                                <li><a href="join.html">join us</a></li>
-                                <li><a href="remove.html">remove</a></li>
-                            </ul>
-                            <div class="display-flex-flow mo">
-                                <section class="navCateButton" id="nav-calculator" onclick="openCalculator()">
-                                    <img src="image/icon-calculator.svg">
-                                    <p>견적 내기</p>
-                                </section>
-                                <section class="navCateButton" id="nav-model" onclick="openModel()">
-                                    <img src="image/icon-calculator2.svg">
-                                    <p>카탈로그/가격표</p>
-                                </section>
-                                <section class="navCateButton" id="cate-btn3" onclick="openPreparing()">
-                                    <img src="image/icon-cartest.svg">
-                                    <p>시승 신청</p>
-                                </section>
-                                <section class="navCateButton" id="cate-btn4" onclick="openPreparing()">
-                                    <img src="image/icon-present.svg">
-                                    <p>KIA 이벤트</p>
-                                </section>
-                            </div>
+                            <div class="display-flex-flow">
+                                <button><a href="login.html">로그인</a></button>
+                                <button><a href="login.html">장바구니</a></button>
+                            </div> 
                         </div>
-                    </nav>
-
-                    <div class="header-icons">
-                        <div class="pc">
-                            <a href="login.html"><img src="image/icon-mypage.png"></a>
-                        </div>
-                        <div class="select-lan">
-                            <img class="language-btn" src="image/icon-language-global.svg">
-                            <ul class="lan-options">
-                                <li class="lan-option">kr</li>
-                                <li class="lan-option">en</li>
-                                <li class="lan-option">cn</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <img class="search-btn" src="image/icon-search-white.png">
-                        </div>
-                        <div class="mo">
-                            <img class="nav-open-btn" id="nav-open-btn" src="image/icon-menu.png">
-                        </div>
+                        <form class="display-flex">
+                            <label for="purchase-search">
+                                <input type="text" id="purchase-search" placeholder="궁금하신 제품을 찾아보세요.">
+                            </label>
+                            <button type="submit">
+                                <img src="image/icon-search-white.png" alt="제품 검색">
+                            </button>
+                        </form>
                     </div>
-
+                    <ul id="mainMenu" class="mainMenu">
+                        <li><a href="purchase.html">purchase</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="event.html">event</a></li>
+                        <li><a href="qna.html">qna</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="login.html">login</a></li>
+                        <li><a href="join.html">join us</a></li>
+                        <li><a href="remove.html">remove</a></li>
+                    </ul>
+                    <div class="display-flex-flow mo">
+                        <section class="navCateButton" id="nav-calculator">
+                            <img
+                                src="image/icon-calculator.svg" alt="견적내기">
+                            <p>견적 내기</p>
+                        </section>
+                        <section class="navCateButton" id="nav-model">
+                            <img
+                                src="image/icon-calculator2.svg" alt="카탈로그/가격표">
+                            <p>카탈로그/가격표</p>
+                        </section>
+                        <section class="navCateButton" id="cate-btn3">
+                            <img
+                                src="image/icon-cartest.svg" alt="시승 신청">
+                            <p>시승 신청</p>
+                        </section>
+                        <section class="navCateButton" id="cate-btn4">
+                            <img
+                                src="image/icon-present.svg" alt="기아 이벤트">
+                            <p>KIA 이벤트</p>
+                        </section>
+                    </div>
                 </div>
-            </header>
+            </nav>
 
-            <div>
-                <div class="main-slide">
-                    <section>
-                        <div>
-                            <h4>새로운 도심 엔트리 EV</h4>
-                            <h1>The Kia Ray EV</h1>
-                            <div class="display-flex-flow">
-                                <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
-                                <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="mo">
-                                <img src="image/main-banner1.jpg">
-                            </div>
-                            <div class="pc">
-                                <img src="image/main-banner1_pc.jpg">
-                            </div>
-                            <div></div> <!---검정 그라데이션-->
-                         </div>
-                    </section>
-                    <section>
-                        <div>
-                            <h4>호남지역 최초 기아 모빌리티 체험공간</h4>
-                            <h1>기아 광주 플래그십스토어 Open</h1>
-                            <div>
-                                <button onclick="openModel()"><a>바로 가기</a></button>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="mo">
-                                <img src="image/main-banner2.jpg">
-                            </div>
-                            <div class="pc">
-                                <img src="image/main-banner2_pc.jpg">
-                            </div>
-                            <div></div> <!---검정 그라데이션-->
-                        </div>
-                    </section>
-                    <section>
-                        <div>
-                            <h4>The Mainstream</h4>
-                            <h1>The New Sorento</h1>
-                            <div class="display-flex-flow">
-                                <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
-                                <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="mo">
-                                <img src="image/main-banner3.jpg">
-                            </div>
-                            <div class="pc">
-                                <img src="image/main-banner3_pc.jpg">
-                            </div>
-                            <div></div> <!---검정 그라데이션-->
-                        </div>
-                    </section>
-                    <section>
-                        <div>
-                            <h4>도심 밀착 모빌리티</h4>
-                            <h1>The New Morning</h1>
-                            <div class="display-flex-flow">
-                                <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
-                                <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="mo">
-                                <img src="image/main-banner4.jpg">
-                            </div>
-                            <div class="pc">
-                                <img src="image/main-banner4_pc.jpg">
-                            </div>
-                            <div></div> <!---검정 그라데이션-->
-                        </div>
-                    </section>
-                    <section>
-                        <div>
-                            <h4>모두에게 처음</h4>
-                            <h1>The Kia EV9</h1>
-                            <div class="display-flex-flow">
-                                <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
-                                <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="mo">
-                                <img src="image/main-banner5.jpg">
-                            </div>
-                            <div class="pc">
-                                <img src="image/main-banner5_pc.jpg">
-                            </div>
-                            <div></div> <!---검정 그라데이션-->
-                        </div>
-                    </section>
+            <div class="header-icons">
+                <div class="pc">
+                    <a href="login.html"><img src="image/icon-mypage.png" alt="로그인"></a>
+                </div>
+                <div class="select-lan">
+                    <img class="language-btn"
+                        src="image/icon-language-global.svg" alt="언어설정">
+                    <ul class="lan-options">
+                        <li class="lan-option">kr</li>
+                        <li class="lan-option">en</li>
+                        <li class="lan-option">cn</li>
+                    </ul>
+                </div>
+                <div>
+                    <img class="search-btn"
+                        src="image/icon-search-white.png" alt="검색">
+                </div>
+                <div class="mo">
+                    <img class="nav-open-btn" id="nav-open-btn"
+                        src="image/icon-menu.png" alt="메뉴">
                 </div>
             </div>
 
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main-slide">
+            <section>
+                <div>
+                    <p>새로운 도심 엔트리 EV</p>
+                    <h1>The Kia Ray EV</h1>
+                    <div class="display-flex-flow">
+                        <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
+                        <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="mo">
+                        <img src="image/main-banner1.jpg" alt="새로운 도심 엔트리 EV 배너">
+                    </div>
+                    <div class="pc">
+                        <img src="image/main-banner1_pc.jpg" alt="새로운 도심 엔트리 EV 배너">
+                    </div>
+                    <div></div> <!---검정 그라데이션-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>호남지역 최초 기아 모빌리티 체험공간</p>
+                    <h1>기아 광주 플래그십스토어 Open</h1>
+                    <div>
+                        <button onclick="openModel()"><a>바로 가기</a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="mo">
+                        <img src="image/main-banner2.jpg" alt="기아 광주 플래그십스토어 Open 배너">
+                    </div>
+                    <div class="pc">
+                        <img src="image/main-banner2_pc.jpg" alt="기아 광주 플래그십스토어 Open 배너">
+                    </div>
+                    <div></div> <!---검정 그라데이션-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>The Mainstream</p>
+                    <h1>The New Sorento</h1>
+                    <div class="display-flex-flow">
+                        <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
+                        <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="mo">
+                        <img src="image/main-banner3.jpg" alt="소렌토 신상 프로모션 배너">
+                    </div>
+                    <div class="pc">
+                        <img src="image/main-banner3_pc.jpg" alt="소렌토 신상 프로모션 배너">
+                    </div>
+                    <div></div> <!---검정 그라데이션-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>도심 밀착 모빌리티</p>
+                    <h1>The New Morning</h1>
+                    <div class="display-flex-flow">
+                        <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
+                        <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="mo">
+                        <img src="image/main-banner4.jpg" alt="모닝 신상 프로모션 배너">
+                    </div>
+                    <div class="pc">
+                        <img src="image/main-banner4_pc.jpg" alt="모닝 신상 프로모션 배너">
+                    </div>
+                    <div></div> <!---검정 그라데이션-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>모두에게 처음</p>
+                    <h1>The Kia EV9</h1>
+                    <div class="display-flex-flow">
+                        <button class="more-btn" onclick="openModel()"><a>자세히 보기</a></button>
+                        <button class="price-btn" onclick="openCalculator()"><a>견적 내기</a></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="mo">
+                        <img src="image/main-banner5.jpg" alt="The Kia EV9 배너">
+                    </div>
+                    <div class="pc">
+                        <img src="image/main-banner5_pc.jpg" alt="The Kia EV9 배너">
+                    </div>
+                    <div></div> <!---검정 그라데이션-->
+                </div>
+            </section>
         </div>
     </main>
 
@@ -247,14 +256,14 @@
 
 
     <div class="check-estimate">
-        <section id="cal-pop" onclick="openCalculator()">
-            <h4>차량별 할부 계산기</h4>
-            <img src="image/icon-arrow-button1.png">
-        </section>
-        <section id="model-pop" onclick="openModel()">
-            <h4>모델 비교</h4>
-            <img src="image/icon-arrow-button1.png">
-        </section>
+        <button id="cal-pop" onclick="openCalculator()">
+            <p>차량별 할부 계산기</p>
+            <img src="image/icon-arrow-button1.png" alt="차량별 할부 계산기 이동">
+        </button>
+        <button id="model-pop" onclick="openModel()">
+            <p>모델 비교</p>
+            <img src="image/icon-arrow-button1.png" alt="모델 비교 이동">
+        </button>
     </div>
 
 
@@ -300,45 +309,45 @@
         </div>
         <div class="bottomMenu-btn">
             <div class="mo">
-                <img onclick="openCalculator()" src="image/icon-calculator.svg" style="filter: brightness(0);">
+                <img onclick="openCalculator()" src="image/icon-calculator.svg" style="filter: brightness(0);" role="button" alt="견적내기 이동">
                 <p>견적내기</p>
             </div>
             <div class="pc" id="productsee-btn">
-                <img src="image/icon-note.png">
+                <img src="image/icon-note.png" role="button" alt="상품 목록 이동">
                 <p>상품보기</p>
             </div>
         </div>
         <div class="bottomMenu-btn">
             <div class="mo">
-                <img onclick="openModel()" src="image/icon-model.png">
+                <img onclick="openModel()" src="image/icon-model.png" role="button" alt="모델비교 이동">
                 <p>모델 비교</p>
             </div>
             <div class="pc" id="news-btn">
-                <img src="image/icon-news.png">
+                <img src="image/icon-news.png" role="button" alt="뉴스 이동">
                 <p>뉴스</p>
             </div>
         </div>
         <div class="bottomMenu-btn">
             <div>
                 <a href="login.html">
-                    <img src="image/icon-mypage.png">
+                    <img src="image/icon-mypage.png" alt="마이페이지">
                 </a>
                 <p>마이페이지</p>
             </div>
         </div>
         <div class="bottomMenu-btn" id="cs-btn">
             <div>
-                 <img src="image/icon-qna.png">
+                 <img src="image/icon-qna.png" alt="문의하기">
                 <p>문의하기</p>
             </div>
         </div>
         <div class="bottomMenu-btn">
             <div class="mo">
-                <img class="all-menu" onclick="openNavMenu()" src="image/icon-menu.png">
+                <img class="all-menu" onclick="openNavMenu()" src="image/icon-menu.png" alt="전체 메뉴">
                 <p>전체 메뉴</p>
             </div>
             <div class="pc" id="cate-menu-btn">
-                <img src="image/icon-menu.png">
+                <img src="image/icon-menu.png" alt="메인페이지 멘 위로 이동">
                 <p>메뉴</p>
             </div>
         </div>
@@ -371,25 +380,25 @@
     <article class="kia-data">
         <div>
 
-            <h2>빅데이터로 보는 <span>kia</span></h2>
+            <h1>빅데이터로 보는 <span>kia</span></h1>
             <p>문의부터 계약까지, 한눈에 보는 KIA 현황</p>
 
             <div class="display-flex-flow">
                 <div>
                     <section class="display-flex-flow">
                         <p>금주 문의</p>
-                        <h3 class="count-ani1"><span class="data-count1"></span></h3>
+                        <p class="count-ani1"><span class="data-count1"></span></p>
                     </section>
                     <section class="display-flex-flow">
                         <p>누적 문의</p>
-                        <h3 class="count-ani2"><span class="data-count2"></span></h3>
+                        <p class="count-ani2"><span class="data-count2"></span></p>
                     </section>
                     <div class="display-flex-flow">
                         <div>
-                            <h3>금주 계약차량 BEST</h3>
-                            <h2>카니발</h2>
+                            <p>금주 계약차량 BEST</p>
+                            <p>카니발</p>
                         </div>
-                        <img data-aos="fade-left" src="image/main-product-carnival.png">
+                        <img data-aos="fade-left" src="image/main-product-carnival.png" alt="카니발">
                     </div>
                 </div>
                 <div>
@@ -467,102 +476,102 @@
     <article class="event">
         <div>
 
-            <h2>이 달의 구매 혜택</h2>
+            <h1>이 달의 구매 혜택</h1>
             <p><a>전체 혜택 보기 ></a></p>
 
             <div class="display-flex-flow">
                 <div class="event-car-main">
                     <section>
                         <div>
-                            <h1>1</h1>
+                            <h2>1</h2>
                             <div>
                                 <h3>소렌토</h3>
                                 <p>2.2 디젤 | 5인승 프레스티지 2WD DCT</p>
                             </div>
                         </div>
-                        <img src="image/main-product-sorento.png">
+                        <img src="image/main-product-sorento.png" alt="소렌토">
                     </section>
                     <section>
                         <div>
-                            <h1>2</h1>
+                            <h2>2</h2>
                             <div>
                                 <h3>스포티지</h3>
                                 <p>1.6 터보 하이브리드 | 프레스티지 2WD A/T</p>
                             </div>
                         </div>
-                        <img src="image/main-product-sportage.png">
+                        <img src="image/main-product-sportage.png" alt="스포티지">
                     </section>
                     <section>
                         <div>
-                            <h1>3</h1>
+                            <h2>3</h2>
                             <div>
                                 <h3>K8</h3>
                                 <p>1.6 하이브리드 | 노블레스 A/T</p>
                             </div>
                         </div>
-                        <img src="image/main-product-k8.png">
+                        <img src="image/main-product-k8.png" alt="K8">
                     </section>
                     <section>
                         <div>
-                            <h1>4</h1>
+                            <h2>4</h2>
                             <div>
                                 <h3>K9</h3>
                                 <p>3.3 가솔린 터보 | 플래티넘 AWD</p>
                             </div>
                         </div>
-                        <img src="image/main-product-k9.png">
+                        <img src="image/main-product-k9.png" alt="K9">
                     </section>
                     <section>
                         <div>
-                            <h1>5</h1>
+                            <h2>5</h2>
                             <div>
                                 <h3>모하비</h3>
                                 <p>3.0 디젤 | 6인승 플래티넘 그래비티 4WD A/T</p>
                             </div>
                         </div>
-                        <img src="image/main-product-mohave.png">
+                        <img src="image/main-product-mohave.png" alt="모하비">
                     </section>
                 </div>
                 <div class="event-arrows">
                     <button class="event-prev"><img src="image/icon-arrow-button1.png
-                        "></button>
+                        " alt="이전으로 이동"></button>
                     <button class="event-next"><img src="image/icon-arrow-button1.png
-                        "></button>
+                        " alt="다음으로 이동"></button>
                 </div>
 
                 <div class="event-car">
                     <section>
                         <div>
                             <h2>1</h2>
-                            <img src="image/main-product-sorento.png">
+                            <img src="image/main-product-sorento.png" alt="소렌토">
                             <p>소렌토<br>월 697,387 <span>원</span></p>
                         </div>
                     </section>
                     <section>
                         <div>
                             <h2>2</h2>
-                            <img src="image/main-product-sportage.png">
+                            <img src="image/main-product-sportage.png" alt="스포티지">
                             <p>스포티지<br>월 636,197 <span>원</span></p>
                         </div>
                     </section>
                     <section>
                         <div>
                             <h2>3</h2>
-                            <img src="image/main-product-k8.png">
+                            <img src="image/main-product-k8.png" alt="K8">
                             <p>K8<br>월 806,762 <span>원</span></p>
                         </div>
                     </section>
                     <section>
                         <div>
                             <h2>4</h2>
-                            <img src="image/main-product-k9.png">
+                            <img src="image/main-product-k9.png" alt="K9">
                             <p>K9<br>월 1,272,887 <span>원</span></p>
                         </div>
                     </section>
                     <section>
                         <div>
                             <h2>5</h2>
-                            <img src="image/main-product-mohave.png">
+                            <img src="image/main-product-mohave.png" alt="모하비">
                             <p>모하비<br>월 1,005,997 <span>원</span></p>
                         </div>
                     </section>
@@ -605,7 +614,7 @@
     <article class="best">
         <div>
 
-            <h2>best kia</h2>
+            <h1>best kia</h1>
 
             <div>
                 <ul class="display-flex-flow" id="listtap">
@@ -618,15 +627,15 @@
                     <div class="new-best-product1">
                         <section>
                             <div>
-                                <h3>The 2024 K8 <span>top 1</span></h3>
+                                <h2>The 2024 K8 <span>top 1</span></h2>
                                 <p>1.6 하이브리드 | 시그니처 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k8.png">
+                                <img src="image/main-product-k8.png" alt="The 2024 K8">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>출시일</td>
                                         <td>2023-10-04</td>
@@ -655,15 +664,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>The Kia Ray EV <span>top 2</span></h3>
+                                <h2>The Kia Ray EV <span>top 2</span></h2>
                                 <p>EV전기차 | 에어 A/T 2WD</p>
                             </div>
                             <div>
-                                <img src="image/main-product-ray-ev-blue.png">
+                                <img src="image/main-product-ray-ev-blue.png" alt="The Kia Ray EV">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>출시일</td>
                                         <td>2023-09-21</td>
@@ -692,15 +701,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>The New Sorento <span>top 3</span></h3>
+                                <h2>The New Sorento <span>top 3</span></h2>
                                 <p>1.6 하이브리드 | 7인승 시그니처 그래비티</p>
                             </div>
                             <div>
-                                <img src="image/main-product-sorento.png">
+                                <img src="image/main-product-sorento.png" alt="The New Sorento">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>출시일</td>
                                         <td>2023-08-18</td>
@@ -731,15 +740,15 @@
                     <div class="new-best-product2">
                         <section>
                             <div>
-                                <h3>The 2024 K3 <span>top 4</span></h3>
+                                <h2>The 2024 K3 <span>top 4</span></h2>
                                 <p>1.6 가솔린 | 시그니처 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-the-2024-k3.png">
+                                <img src="image/main-product-the-2024-k3.png" alt="The 2024 K3">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>출시일</td>
                                         <td>2023-07-04</td>
@@ -768,15 +777,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>The 2024 K3 GT <span>top 5</span></h3>
+                                <h2>The 2024 K3 GT <span>top 5</span></h2>
                                 <p>1.6 가솔린 터보 | GT DCT</p>
                             </div>
                             <div>
-                                <img src="image/main-product-the-2024-k3-gt.png">
+                                <img src="image/main-product-the-2024-k3-gt.png" alt="The 2024 K3 GT">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>출시일</td>
                                         <td>2023-07-19</td>
@@ -805,15 +814,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>The new K5 <span>top 6</span></h3>
+                                <h2>The new K5 <span>top 6</span></h2>
                                 <p>2.0 하이브리드 | 시그니처 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k5.png">
+                                <img src="image/main-product-k5.png" alt="The new K5">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>출시일</td>
                                         <td>2023-11-02</td>
@@ -850,15 +859,15 @@
                     <div class="efficiency-best-product1">
                         <section>
                             <div>
-                                <h3>니로 <span>top 1</span></h3>
+                                <h2>니로 <span>top 1</span></h2>
                                 <p>1.6 하이브리드 | 트렌디 2WD DCT</p>
                             </div>
                             <div>
-                                <img src="image/main-product-niro.png">
+                                <img src="image/main-product-niro.png" alt="니로">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>복합 연비</td>
                                         <td>20.8 km/ℓ</td>
@@ -887,15 +896,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>K5 <span>top 2</span></h3>
+                                <h2>K5 <span>top 2</span></h2>
                                 <p>2.0 하이브리드 | 트렌디 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k5.png">
+                                <img src="image/main-product-k5.png" alt="K5">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>복합 연비</td>
                                         <td>20.1 km/ℓ</td>
@@ -924,15 +933,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>K8 <span>top 3</span></h3>
+                                <h2>K8 <span>top 3</span></h2>
                                 <p>1.6 하이브리드 | 시그니처 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k8.png">
+                                <img src="image/main-product-k8.png" alt="K8">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>복합 연비</td>
                                         <td>17.1 km/ℓ</td>
@@ -963,15 +972,15 @@
                     <div class="efficiency-best-product2">
                         <section>
                             <div>
-                                <h3>스포티지 <span>top 4</span></h3>
+                                <h2>스포티지 <span>top 4</span></h2>
                                 <p>1.6 터보 하이브리드 | 30th Edition 4WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-sportage.png">
+                                <img src="image/main-product-sportage.png" alt="스포티지">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>복합 연비</td>
                                         <td>15.1 km/ℓ</td>
@@ -1000,15 +1009,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>모닝 <span>top 5</span></h3>
+                                <h2>모닝 <span>top 5</span></h2>
                                 <p>1.0 가솔린 | 트렌디 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-morning.png">
+                                <img src="image/main-product-morning.png" alt="모닝">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>복합 연비</td>
                                         <td>15.1 km/ℓ</td>
@@ -1037,15 +1046,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>the new carnival <span>top 6</span></h3>
+                                <h2>the new carnival <span>top 6</span></h2>
                                 <p>3.5 가솔린 프레스티지 9인승 기준</p>
                             </div>
                             <div>
-                                <img src="image/main-product-the-new-carnival.png">
+                                <img src="image/main-product-the-new-carnival.png" alt="the new carnival">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>복합 연비</td>
                                         <td>9.0 km/ℓ</td>
@@ -1082,15 +1091,15 @@
                     <div class="space-best-product1">
                         <section>
                             <div>
-                                <h3>카니발 <span>top 1</span></h3>
+                                <h2>카니발 <span>top 1</span></h2>
                                 <p>3.5 가솔린 | 7인승 시그니처 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-carnival.png">
+                                <img src="image/main-product-carnival.png" alt="카니발">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>트렁크 용량</td>
                                         <td>1,672 ℓ</td>
@@ -1115,15 +1124,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>소렌토 <span>top 2</span></h3>
+                                <h2>소렌토 <span>top 2</span></h2>
                                 <p>1.6 하이브리드 | 5인승 시그니처 2WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-sorento.png">
+                                <img src="image/main-product-sorento.png" alt="소렌토">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>트렁크 용량</td>
                                         <td>706 ℓ</td>
@@ -1148,15 +1157,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>스포티지 <span>top 3</span></h3>
+                                <h2>스포티지 <span>top 3</span></h2>
                                 <p>1.6 터보 하이브리드 | 시그니처 2WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-sportage.png">
+                                <img src="image/main-product-sportage.png" alt="스포티지">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>트렁크 용량</td>
                                         <td>637 ℓ</td>
@@ -1183,15 +1192,15 @@
                     <div class="space-best-product2">
                         <section>
                             <div>
-                                <h3>모하비 <span>top 4</span></h3>
+                                <h2>모하비 <span>top 4</span></h2>
                                 <p>3.0 디젤 | 5인승 플래티넘 그래비티 4WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-mohave.png">
+                                <img src="image/main-product-mohave.png" alt="모하비">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>트렁크 용량</td>
                                         <td>580 ℓ</td>
@@ -1216,15 +1225,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>K5 <span>top 5</span></h3>
+                                <h2>K5 <span>top 5</span></h2>
                                 <p>2.0 하이브리드 | 프레스티지 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k5.png">
+                                <img src="image/main-product-k5.png" alt="K5">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>트렁크 용량</td>
                                         <td>510 ℓ</td>
@@ -1249,15 +1258,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>K9 <span>top 6</span></h3>
+                                <h2>K9 <span>top 6</span></h2>
                                 <p>3.3 가솔린 터보</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k9.png">
+                                <img src="image/main-product-k9.png" alt="K9">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>트렁크 용량</td>
                                         <td>455 ℓ</td>
@@ -1290,15 +1299,15 @@
                     <div class="safe-best-product1">
                         <section>
                             <div>
-                                <h3>스포티지 <span>top 1</span></h3>
+                                <h2>스포티지 <span>top 1</span></h2>
                                 <p>1.6 터보 하이브리드 | 시그니처 그래피티</p>
                             </div>
                             <div>
-                                <img src="image/main-product-sportage.png">
+                                <img src="image/main-product-sportage.png" alt="스포티지">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>종합 안전 등급</td>
                                         <td>1등급</td>
@@ -1327,15 +1336,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>K8 <span>top 2</span></h3>
+                                <h2>K8 <span>top 2</span></h2>
                                 <p>1.6 하이브리드 | 시그니처 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-k8.png">
+                                <img src="image/main-product-k8.png" alt="K8">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>종합 안전 등급</td>
                                         <td>1등급</td>
@@ -1364,15 +1373,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>카니발 <span>top 3</span></h3>
+                                <h2>카니발 <span>top 3</span></h2>
                                 <p>2.2 디젤 | 9인승 노블레스 내비적용 A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-carnival.png">
+                                <img src="image/main-product-carnival.png" alt="카니발">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>종합 안전 등급</td>
                                         <td>1등급</td>
@@ -1403,15 +1412,15 @@
                     <div class="safe-best-product2">
                         <section>
                             <div>
-                                <h3>셀토스 <span>top 4</span></h3>
+                                <h2>셀토스 <span>top 4</span></h2>
                                 <p>1.6 가솔린 | 트렌디 2WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-seltos.png">
+                                <img src="image/main-product-seltos.png" alt="셀토스">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>종합 안전 등급</td>
                                         <td>1등급</td>
@@ -1440,15 +1449,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>EV6 <span>top 5</span></h3>
+                                <h2>EV6 <span>top 5</span></h2>
                                 <p>EV전기차 | 롱레인지 GT-line 4WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-ev6.png">
+                                <img src="image/main-product-ev6.png" alt="EV6">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>종합 안전 등급</td>
                                         <td>1등급</td>
@@ -1477,15 +1486,15 @@
                         </section>
                         <section>
                             <div>
-                                <h3>EV6 GT <span>top 6</span></h3>
+                                <h2>EV6 GT <span>top 6</span></h2>
                                 <p>EV전기차 | GT 4WD A/T</p>
                             </div>
                             <div>
-                                <img src="image/main-product-ev6-gt.png">
+                                <img src="image/main-product-ev6-gt.png" alt="EV6 GT">
                                 <div></div>
                             </div>
                             <div>
-                                <table>
+                                <table role="presentation">
                                     <tr>
                                         <td>종합 안전 등급</td>
                                         <td>1등급</td>
@@ -1689,39 +1698,39 @@
     <article class="news">
         <div>
             <div>
-                <h2>news</h2>
+                <h1>news</h1>
                 <div class="display-flex-flow">
                     <section class="news-list">
                         <p>기아 소식</p>
-                        <h4>기아, '2023 기아 EV 데이' 개최</h4>
+                        <h2>기아, '2023 기아 EV 데이' 개최</h2>
                         <p>기아가 12일(목) 경기도 여주시에 위치한 마임비전빌리지에서 '2023 기아 EV 데이'를 개최하고 EV 시대로의 전환을 앞당기기 위한 청사진을 공개했다.</p>
-                        <button><img src="image/icon-arrow-button1.png"></button>
+                        <button><img src="image/icon-arrow-button1.png" alt="기아, '2023 기아 EV 데이' 개최 상세 내용 보기"></button>
                     </section>
                     <section class="news-list">
                         <p>기아 뉴스</p>
-                        <h4>기아, '서울 ADEX 2023' 참가</h4>
+                        <h2>기아, '서울 ADEX 2023' 참가</h2>
                         <p>기아가 대한민국 최대 항공우주·방위산업 전시회인 '서울 ADEX 2023'에 참가한다.서울 ADEX(Aerospace & Defense Exhibition)는
                             1996년 첫 전시 이후 격년으로 개최돼 올해 14회째를 맞이했다. 올해는 오늘부터 22일(일)까지 경기도 성남시 서울공항에서 개최되며 34개국 550여 개 업체가
                             참여를 확정해 역대 최대 규모로 진행될 예정이다.</p>
-                        <button><img src="image/icon-arrow-button1.png"></button>
+                        <button><img src="image/icon-arrow-button1.png" alt="기아, '서울 ADEX 2023' 참가 상세 내용 보기"></button>
                     </section>
                     <section class="news-list">
                         <p>기아 뉴스</p>
-                        <h4>EV 가속화 등 중장기 사업전략 공유</h4>
+                        <h2>EV 가속화 등 중장기 사업전략 공유</h2>
                         <p>기아가 2018년 이후 5년 만에 전 세계 대리점 대회를 열었다. 신종 코로나바이러스 감염증(코로나19) 사태 이후 전 세계에서 기아의 영업 일선을 책임지는 인사들이
                             처음으로 한 자리에 모였다. 13일(금) 기아는 지난 10일부터 3박 4일 일정으로 ‘전 세계 대리점 대회’를 개최했다고 밝혔다.</p>
-                        <button><img src="image/icon-arrow-button1.png"></button>
+                        <button><img src="image/icon-arrow-button1.png" alt="EV 가속화 등 중장기 사업전략 공유 상세 내용 보기"></button>
                     </section>
                     <section class="news-list">
                         <p>기아 공지</p>
-                        <h4>홈페이지 이용약관 변경 안내</h4>
+                        <h2>홈페이지 이용약관 변경 안내</h2>
                         <p>안녕하세요. 기아 홈페이지 입니다.
                             항상 기아 홈페이지를 이용해주시는 회원 여러분들께 감사드립니다.
                             기아 홈페이지 이용약관 변경 관련 안내드립니다.</p>
-                        <button><img src="image/icon-arrow-button1.png"></button>
+                        <button><img src="image/icon-arrow-button1.png" alt="기아 공지 상세 내용 보기"></button>
                     </section>
                 </div>
-                <button>더보기</button>
+                <button type="button">더보기</button>
             </div>
         </div>
     </article>
@@ -1759,11 +1768,13 @@
                 width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div>
-                <h2>현재 고객님과 가까운<br><span>kia 매장 안내</span>를 해드립니다.</h2>
-                <div>
-                    <input type="text" placeholder="지역명 검색" style="color: white;">
-                    <img class="local-search-btn" onclick="openLocalSearch()" src="image/icon-search-white.png">
-                </div>
+                <h1>현재 고객님과 가까운<br><span>kia 매장 안내</span>를 해드립니다.</h1>
+                <form>
+                    <label for="local-input">
+                        <input type="text" id="local-input" placeholder="지역명 검색" style="color: white;">
+                    </label>
+                    <img class="local-search-btn" onclick="openLocalSearch()" src="image/icon-search-white.png" role="button" alt="지역명 검색">
+                </form>
                 <div class="local-search-pop">
                     <div class="display-flex-flow">
                         <p>자주 찾으시는 매장</p>
@@ -1779,34 +1790,34 @@
                 </div>
             </div>
             <div>
-                <h3>이런 서비스를 찾으시나요?</h3>
+                <h2>이런 서비스를 찾으시나요?</h2>
                 <div class="display-flex-flow">
-                    <section onclick="openCalculator()">
+                    <button onclick="openCalculator()">
                         <div>
-                            <img src="image/icon-calculator.svg">
+                            <img src="image/icon-calculator.svg" alt="견적 내기">
                         </div>
                         <p>견적내기</p>
-                    </section>
-                    <section onclick="openModel()">
+                    </button>
+                    <button onclick="openModel()">
                         <div>
-                            <img src="image/icon-model.png">
+                            <img src="image/icon-model.png" alt="모델 비교">
                         </div>
                         <p>모델비교</p>
-                    </section>
-                    <section>
+                    </button>
+                    <button>
                         <div>
                             <a href="faq.html">
-                                <img src="image/icon-qna.png">
+                                <img src="image/icon-qna.png" alt="faq 페이지 이동">
                             </a>
                         </div>
                         <p>자주 묻는 질문</p>
-                    </section>
-                    <section class="present-btn">
+                    </button>
+                    <button class="present-btn">
                         <div>
-                            <img src="image/icon-present.svg">
+                            <img src="image/icon-present.svg" alt="이 달의 구매 혜택 이동">
                         </div>
                         <p>이 달의 구매 혜택</p>
-                    </section>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1849,37 +1860,37 @@
     <article class="cs">
         <div>
             <div>
-                <h2><span>kia</span> 빠른 상담 문의</h2>
+                <h1><span>kia</span> 빠른 상담 문의</h1>
             </div>
-            <div class="display-flex-flow">
-                <div>
+            <form>
+                <div class="display-flex-flow">
                     <div>
-                        <h3 class="pc">이름</h3>
-                        <input type="text" placeholder="이름을 입력해주세요." style="color:#ccc;">
+                        <div>
+                            <label class="pc" for="cs-name">이름</label>
+                            <input type="text" id="cs-name" placeholder="이름을 입력해주세요." style="color:#ccc;">
+                        </div>
+                        <div>
+                            <label class="pc" for="cs-tel">연락처</label>
+                            <input type="text" id="cs-tel" placeholder="연락처를 입력해주세요." style="color:#ccc;">
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="pc">연락처</h3>
-                        <input type="text" placeholder="연락처를 입력해주세요." style="color:#ccc;">
-                    </div>
-                    <div class="mo">
-                        <textarea placeholder="상담내용을 입력해주세요." cols="30" rows="5" style="color: #ccc;"></textarea>
-                    </div>
-                    <div class="display-flex-flow">
+                    <div class="display-flex">
                         <div class="display-flex-flow">
                             <input type="checkbox" id="check1">
-                            <label for="check1"></label>
+                            <label for="check1">
+                                <input type="checkbox" id="check1">
+                            </label>
                             <p>개인정보수집 및 이용 동의</p>
                         </div>
-                        <button><a>자세히 보기</a></button>
+                        <button type="button"><a>자세히 보기</a></button>
                     </div>
+                    <div>
+                        <label class="pc" for="cs-contents">상담내용</label>
+                        <textarea id="cs-contents" placeholder="상담내용을 입력해주세요." cols="30" rows="5" style="color: #ccc;"></textarea>
+                    </div>
+                    <button type="submit"><a>신청하기</a></button>
                 </div>
-                <div class="pc">
-                    <h3 class="pc">상담내용</h3>
-                    <textarea placeholder="상담내용을 입력해주세요." cols="30" rows="10" style="color:#ccc;"></textarea>
-                    <button><a>신청하기</a></button>
-                </div>
-                <button class="mo"><a>신청하기</a></button>
-            </div>
+            </form>
         </div>
     </article>
 
@@ -1887,7 +1898,8 @@
     <footer>
         <div>
             <div>
-                <img src="image/logo-kia-white.svg">
+                <img
+                    src="image/logo-kia-white.svg" alt="기아 로고">
             </div>
             <ul class="display-flex-flow">
                 <li>판매 네트워크
@@ -1919,10 +1931,14 @@
                 </li>
             </ul>
             <div class="display-flex-flow mo">
-                <img src="image/logo-kia-members.png">
-                <img src="image/icon-facebook.svg">
-                <img src="image/icon-instagram.svg">
-                <img src="image/icon-youtube.svg">
+                <img
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
+                <img
+                    src="image/icon-facebook.svg" alt="페이스북">
+                <img
+                    src="image/icon-instagram.svg" alt="인스타그램">
+                <img
+                    src="image/icon-youtube.svg" alt="유투브">
             </div>
             <div>
                 <h3>kia center</h3>
@@ -1943,10 +1959,14 @@
             </ul>
             <div>
                 <div class="pc-flex">
-                    <img src="image/logo-kia-members.png">
-                    <img src="image/icon-facebook.svg">
-                    <img src="image/icon-instagram.svg">
-                    <img src="image/icon-youtube.svg">
+                    <img
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
+                <img
+                    src="image/icon-facebook.svg" alt="페이스북">
+                <img
+                    src="image/icon-instagram.svg" alt="인스타그램">
+                <img
+                    src="image/icon-youtube.svg" alt="유투브">
                 </div>
                 <p><span>© Kia Corp</span>. All rights reserved</p>
                 <div class="select-menu">
@@ -1971,7 +1991,7 @@
                     </div>
                     <div class="select-btn" id="site-select-button">
                         <span class="sBtn-text active">Family site</span>
-                        <img src="image/icon-footer-select.png">
+                        <img src="image/icon-footer-select.png" alt="family site 선택">
                     </div>
                 </div>
             </div>
@@ -1980,9 +2000,9 @@
 
 
     <div class="calculator">
-        <div>
-            <p class="close-calculator" onclick="closeCalculator()">✕</p>
-            <h3>할부 계산기</h3>
+        <form>
+            <p class="close-calculator" onclick="closeCalculator()" role="button" aria-label="닫기">✕</p>
+            <h1>할부 계산기</h1>
             <ul id="cal-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -1992,10 +2012,14 @@
                 <p>선수금</p>
                 <div class="slidecontainer flex_between_center">
                     <div class="pst">
-                        <p class="p2-1">32만원</p>
-                        <p class="p2-2">2,882만원</p>
-                        <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                        <div class="display-flex">
+                            <p class="p2-1">32만원</p>
+                            <p class="p2-2">2,882만원</p>
+                        </div>
+                        <label for="myRange">
+                            <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
                             tooltips="">
+                        </label>
                     </div>
                     <p class="box"><span id="demo"></span> 만원</p>
                 </div>
@@ -2004,23 +2028,27 @@
                 <p>할부 기간</p>
                 <div class="slidecontainer flex_between_center">
                     <div class="pst">
-                        <p class="p2-1">3개월</p>
-                        <p class="p2-2">60개월</p>
-                        <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        <div class="display-flex">
+                            <p class="p2-1">3개월</p>
+                            <p class="p2-2">60개월</p>
+                        </div>
+                        <label for="myRange1">
+                            <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        </label>
                     </div>
                     <p class="box"><span id="value"></span> 개월</p>
                 </div>
             </div>
-            <button><a>할부 상품 자세히 보기</a></button>
-        </div>
+            <button type="button"><a>할부 상품 자세히 보기</a></button>
+        </form>
         <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
     </div>
-
-
+    
+    
     <div class="model">
         <div>
-            <p class="close-model" onclick="closeModel()">✕</p>
-            <h3>모델 비교</h3>
+            <p class="close-model" onclick="closeModel()" role="button" aria-label="닫기">✕</p>
+            <h1>모델 비교</h1>
             <ul id="model-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -2031,7 +2059,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -2058,7 +2086,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -2085,7 +2113,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -2195,10 +2223,14 @@
 
     <div class="search-pop">
         <div>
-            <div class="display-flex-flow">
-                <input type="text" placeholder="search">
-                <img src="image/icon-search-white.png">
-            </div>
+            <form class="display-flex-flow">
+                <label for="search-pop">
+                    <input type="text" id="search-pop" placeholder="search">
+                </label>
+                <button type="submit">
+                    <img src="image/icon-search-white.png" alt="검색">
+                </button>
+            </form>
             <div class="display-flex-flow">
                 <p>인기 검색어</p>
                 <div>
@@ -2209,7 +2241,7 @@
                 </div>
             </div>
             <div>
-                <button class="close-search">닫기</button>
+                <button class="close-search" type="button">닫기</button>
             </div>
         </div>
     </div>

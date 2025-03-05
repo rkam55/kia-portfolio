@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-    <title>KIA PURCHASE KJE</title>
+    <title>기아 제품 상세 페이지</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="purchase.css">
     <style type="text/css"></style>
@@ -37,16 +37,18 @@
         <div>
 
             <a href="index.html">
-                <img class="logo-img" src="image/logo-kia-white.svg">
+                <img class="logo-img" alt="기아 홈 이동"
+                src="image/logo-kia-white.svg">
             </a>
 
-            <nav class="menu-nav" id="menu-nav">
+            <nav class="menu-nav" id="menu-nav" aria-label="navigation">
                 <div>
                     <div class="mo">
-                        <p class="nav-close-btn" onclick="closeNavMenu()">✕</p>
+                        <p class="nav-close-btn" onclick="closeNavMenu()" role="button" aria-label="닫기">✕</p>
                         <div class="display-flex-flow">
                             <button id="members-btn" class="black-btn">
-                                <img src="image/icon-members.svg">
+                                <img
+                                    src="image/icon-members.svg" alt="기아 멤버스로 이동">
                                 <a>기아 멤버스</a>
                             </button>
                             <button id="driving-btn"><a>드라이빙 아카데미</a></button>
@@ -54,7 +56,7 @@
                         <div>
                             <div class="display-flex-flow">
                                 <div>
-                                    <h4>로그인 <span>해주세요</span></h4>
+                                    <p>로그인 <span>해주세요</span></p>
                                     <p>회원가입 후 더 많은 혜택을 받아보세요</p>
                                 </div>
                                 <div>
@@ -64,12 +66,16 @@
                             <div class="display-flex-flow">
                                 <button><a href="login.html">로그인</a></button>
                                 <button><a href="login.html">장바구니</a></button>
-                            </div>
+                            </div> 
                         </div>
-                        <div class="display-flex">
-                            <input type="text" placeholder="궁금하신 제품을 찾아보세요.">
-                            <img src="image/icon-search-white.png">
-                        </div>
+                        <form class="display-flex">
+                            <label for="purchase-search">
+                                <input type="text" id="purchase-search" placeholder="궁금하신 제품을 찾아보세요.">
+                            </label>
+                            <button type="submit">
+                                <img src="image/icon-search-white.png" alt="제품 검색">
+                            </button>
+                        </form>
                     </div>
                     <ul id="mainMenu" class="mainMenu">
                         <li><a href="purchase.html">purchase</a></li>
@@ -83,19 +89,23 @@
                     </ul>
                     <div class="display-flex-flow mo">
                         <section class="navCateButton" id="nav-calculator">
-                            <img src="image/icon-calculator.svg">
+                            <img
+                                src="image/icon-calculator.svg" alt="견적내기">
                             <p>견적 내기</p>
                         </section>
                         <section class="navCateButton" id="nav-model">
-                            <img src="image/icon-calculator2.svg">
+                            <img
+                                src="image/icon-calculator2.svg" alt="카탈로그/가격표">
                             <p>카탈로그/가격표</p>
                         </section>
                         <section class="navCateButton" id="cate-btn3">
-                            <img src="image/icon-cartest.svg">
+                            <img
+                                src="image/icon-cartest.svg" alt="시승 신청">
                             <p>시승 신청</p>
                         </section>
                         <section class="navCateButton" id="cate-btn4">
-                            <img src="image/icon-present.svg">
+                            <img
+                                src="image/icon-present.svg" alt="기아 이벤트">
                             <p>KIA 이벤트</p>
                         </section>
                     </div>
@@ -104,10 +114,11 @@
 
             <div class="header-icons">
                 <div class="pc">
-                    <a href="login.html"><img src="image/icon-mypage.png"></a>
+                    <a href="login.html"><img src="image/icon-mypage.png" alt="로그인"></a>
                 </div>
                 <div class="select-lan">
-                    <img class="language-btn" src="image/icon-language-global.svg">
+                    <img class="language-btn"
+                        src="image/icon-language-global.svg" alt="언어설정">
                     <ul class="lan-options">
                         <li class="lan-option">kr</li>
                         <li class="lan-option">en</li>
@@ -115,10 +126,12 @@
                     </ul>
                 </div>
                 <div>
-                    <img class="search-btn" src="image/icon-search-white.png">
+                    <img class="search-btn"
+                        src="image/icon-search-white.png" alt="검색">
                 </div>
                 <div class="mo">
-                    <img class="nav-open-btn" id="nav-open-btn" src="image/icon-menu.png">
+                    <img class="nav-open-btn" id="nav-open-btn"
+                        src="image/icon-menu.png" alt="메뉴">
                 </div>
             </div>
 
@@ -127,25 +140,23 @@
 
 
     <main>
-
         <div>
             <div>
-                <img src="image/purchase-main-background.jpg">
+                <img src="image/purchase-main-background.jpg" alt="제품 상세 페이지 배너 이미지">
             </div>
             <div data-aos="fade-left">
-                <img src="image/main-product-ray-ev-blue.png">
+                <img src="image/main-product-ray-ev-blue.png" alt="제품 상세 페이지 자동차 이미지">
             </div>
             <div>
                 <div>
                     <p data-aos="fade-right">작지만 가장 넓게 쓰이는, 생활 EV의 시작</p>
-                    <h3 data-aos="fade-right">the kia ray ev</h3>
-                    <h4 data-aos="fade-right">27,750,000<span> 원 부터</span></h4>
+                    <h1 data-aos="fade-right">the kia ray ev</h1>
+                    <h2 data-aos="fade-right">27,750,000<span> 원 부터</span></h2>
                     <p data-aos="fade-right">서울시 기준 보조금 수령 시 2,128만원 부터<br>4인승 승용 라이트 기준</p>
                     <div></div> <!---검정배경-->
                 </div>
             </div>
         </div>
-
     </main>
 
 
@@ -156,7 +167,7 @@
                     <button onclick="openPreparing()">시승 신청</button>
                     <button onclick="openCalculator()" class="black-btn">견적 내기</button>
                 </div>
-                <h2>information</h2>
+                <h1>information</h1>
             </div>
             <div class="display-flex-flow">
                 <table>
@@ -191,15 +202,15 @@
             <div>
                 <div class="display-flex-flow">
                     <section>
-                        <img src="image/icon-purchase-charge.svg">
+                        <img src="image/icon-purchase-charge.svg" alt="최대주행 아이콘">
                         <p>205km 1회충전 최대주행<br>(도심 233km)</p>
                     </section>
                     <section>
-                        <img src="image/icon-purchase-maximum.svg">
+                        <img src="image/icon-purchase-maximum.svg" alt="최고출력 아이콘">
                         <p>64.3kW 최고출력</p>
                     </section>
                     <section>
-                        <img src="image/icon-purchase-battery.svg">
+                        <img src="image/icon-purchase-battery.svg" alt="배터리 아이콘">
                         <p>10년/20만km 고전압 배터리</p>
                     </section>
                 </div>
@@ -213,48 +224,48 @@
 
 
     <div class="calculator">
-        <div>
-
-            <p class="close-calculator" onclick="closeCalculator()">✕</p>
-            <h3>할부 계산기</h3>
-
+        <form>
+            <p class="close-calculator" onclick="closeCalculator()" role="button" aria-label="닫기">✕</p>
+            <h1>할부 계산기</h1>
             <ul id="cal-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
                 <li>프레스티지</li>
             </ul>
-
             <div class="pay">
                 <p>선수금</p>
                 <div class="slidecontainer flex_between_center">
                     <div class="pst">
-                        <p class="p2-1">32만원</p>
-                        <p class="p2-2">2,882만원</p>
-                        <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                        <div class="display-flex">
+                            <p class="p2-1">32만원</p>
+                            <p class="p2-2">2,882만원</p>
+                        </div>
+                        <label for="myRange">
+                            <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
                             tooltips="">
+                        </label>
                     </div>
                     <p class="box"><span id="demo"></span> 만원</p>
                 </div>
             </div>
-
             <div>
                 <p>할부 기간</p>
                 <div class="slidecontainer flex_between_center">
                     <div class="pst">
-                        <p class="p2-1">3개월</p>
-                        <p class="p2-2">60개월</p>
-                        <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        <div class="display-flex">
+                            <p class="p2-1">3개월</p>
+                            <p class="p2-2">60개월</p>
+                        </div>
+                        <label for="myRange1">
+                            <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        </label>
                     </div>
                     <p class="box"><span id="value"></span> 개월</p>
                 </div>
             </div>
-
-            <button><a>할부 상품 자세히 보기</a></button>
-
-        </div>
-
-        <div id="cal-black"></div>
-        <!---창 띄우면 바깥배경 어둡게 -->
+            <button type="button"><a>할부 상품 자세히 보기</a></button>
+        </form>
+        <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
     </div>
 
 
@@ -275,7 +286,7 @@
         <div>
 
             <div>
-                <h2>specifications</h2>
+                <h1>specifications</h1>
             </div>
 
             <div class="display-flex-flow">
@@ -283,18 +294,18 @@
                 <div>
                     <div class="carColor-slide">
                         <section>
-                            <img src="image/purchase-product-ray-ev-white.png">
+                            <img src="image/purchase-product-ray-ev-white.png" alt="하얀색">
                         </section>
                         <section>
-                            <img src="image/purchase-product-ray-ev-begie.png">
+                            <img src="image/purchase-product-ray-ev-begie.png" alt="베이지색">
                         </section>
                         <section>
-                            <img src="image/main-product-ray-ev-blue.png">
+                            <img src="image/main-product-ray-ev-blue.png" alt="파란색">
                         </section>
                     </div>
                     <div class="color-arrows">
-                        <button class="color-prev"><img src="image/icon-arrow-button1.png"></button>
-                        <button class="color-next"><img src="image/icon-arrow-button1.png"></button>
+                        <button class="color-prev"><img src="image/icon-arrow-button1.png" alt="이전 색상 확인"></button>
+                        <button class="color-next"><img src="image/icon-arrow-button1.png" alt="다음 색상 확인"></button>
                     </div>
                     <p>상기 차량 이미지와 사양 구성은 차종, 차급 및 선택 사양에 따라 다르게 적용되며 색상은 실제 색상과 차이가 있을 수 있습니다.</p>
                 </div>
@@ -302,21 +313,21 @@
                 <div class="display-flex-flow">
 
                     <div>
-                        <h4>제원</h4>
+                        <h2>제원</h2>
                         <div class="display-flex-flow">
                             <section>
                                 <div>
-                                    <img src="image/purchase-specifications1.png">
+                                    <img src="image/purchase-specifications1.png" alt="차량 전면">
                                 </div>
                             </section>
                             <section>
                                 <div>
-                                    <img src="image/purchase-specifications2.png">
+                                    <img src="image/purchase-specifications2.png" alt="차량 뒷면">
                                 </div>
                             </section>
                             <section>
                                 <div>
-                                    <img src="image/purchase-specifications3.png">
+                                    <img src="image/purchase-specifications3.png" alt="차량 옆면">
                                 </div>
                             </section>
                         </div>
@@ -324,44 +335,44 @@
 
                     <div>
                         <div>
-                            <h4>에너지 소비 효율</h4>
+                            <h2>에너지 소비 효율</h2>
                         </div>
                         <div class="effic-con" id="energy-con">
                             <section>
-                                <h4>EV</h4>
+                                <h3>EV</h3>
                                 <div>
-                                    <h5>EV 2WD</h5>
+                                    <h4>EV 2WD</h4>
                                     <p>14인치 타이어</p>
                                 </div>
                                 <div>
-                                    <h5>전비 (km/kWh)</h5>
+                                    <h4>전비 (km/kWh)</h4>
                                     <p>복합 : 5.1 | 도심 : 6.0 | 고속도로 : 4.4</p>
                                 </div>
                                 <div>
-                                    <h5>1회 충전 주행거리 (km)</h5>
+                                    <h4>1회 충전 주행거리 (km)</h4>
                                     <p>복합 : 205 | 도심 : 233 | 고속도로 : 171</p>
                                 </div>
                                 <div>
-                                    <h5>연료 | 공차중량 (kg) | 축전지 정격전압 (V) | 용량 (Ah)</h5>
+                                    <h4>연료 | 공차중량 (kg) | 축전지 정격전압 (V) | 용량 (Ah)</h4>
                                     <p>전기 | 공차중량 : 1,295 | 정격전압 : 265 | 용량 : 133.5</p>
                                 </div>
                             </section>
                             <section>
-                                <h4>EV (1인승 / 2인승)</h4>
+                                <h3>EV (1인승 / 2인승)</h3>
                                 <div>
-                                    <h5>EV 2WD (1인승 / 2인승)</h5>
+                                    <h4>EV 2WD (1인승 / 2인승)</h4>
                                     <p>14인치 타이어</p>
                                 </div>
                                 <div>
-                                    <h5>전비 (km/kWh)</h5>
+                                    <h4>전비 (km/kWh)</h4>
                                     <p>복합 : 5.1 | 도심 : 6.0 | 고속도로 : 4.4</p>
                                 </div>
                                 <div>
-                                    <h5>1회 충전 주행거리 (km)</h5>
+                                    <h4>1회 충전 주행거리 (km)</h4>
                                     <p>복합 : 205 | 도심 : 233 | 고속도로 : 171</p>
                                 </div>
                                 <div>
-                                    <h5>연료 | 공차중량 (kg) | 축전지 정격전압 (V) | 용량 (Ah)</h5>
+                                    <h4>연료 | 공차중량 (kg) | 축전지 정격전압 (V) | 용량 (Ah)</h4>
                                     <p>전기 | 공차중량 : 1,290 | 정격전압 : 265 | 용량 : 133.5</p>
                                 </div>
                             </section>
@@ -370,25 +381,25 @@
 
                     <div>
                         <div>
-                            <h4>타이어 소비 효율</h4>
+                            <h2>타이어 소비 효율</h2>
                         </div>
                         <div class="effic-con" id="tire-con">
                             <section>
-                                <h4>Kumho</h4>
+                                <h3>Kumho</h3>
                                 <div>
-                                    <h5>모델명</h5>
+                                    <h4>모델명</h4>
                                     <p>금호 (SOLUS TA51)</p>
                                 </div>
                                 <div>
-                                    <h5>회전저항(계수) 등급(RRC)</h5>
+                                    <h4>회전저항(계수) 등급(RRC)</h4>
                                     <p>2</p>
                                 </div>
                                 <div>
-                                    <h5>젖은 노면 제동력지수 등급(G)</h5>
+                                    <h4>젖은 노면 제동력지수 등급(G)</h4>
                                     <p>3</p>
                                 </div>
                                 <div>
-                                    <h5>타이어 소음도 표시 등급</h5>
+                                    <h4>타이어 소음도 표시 등급</h4>
                                     <p>A</p>
                                 </div>
                             </section>
@@ -435,22 +446,22 @@
         <div class="display-flex-flow">
 
             <div>
-                <h2>brand</h2>
+                <h1>brand</h1>
                 <p>생활 EV의 시작, The Kia Ray EV</p>
             </div>
 
             <div>
                 <div>
-                    <img src="image/purchase-brand1.jpg">
+                    <img src="image/purchase-brand1.jpg" alt="기아 브랜드 소개 이미지1">
                     <div class="mo">
-                        <h5>지구가 칭찬할 것만 같은 기분이 드는 생활 EV</h5>
+                        <h2>지구가 칭찬할 것만 같은 기분이 드는 생활 EV</h2>
                         <p>작지만 우리들의 일상에 가장 넓게 사용되는 지구환경적인 Kia Ray EV 입니다.</p>
                     </div>
                 </div>
                 <div>
-                    <img src="image/purchase-brand2.jpg">
+                    <img src="image/purchase-brand2.jpg" alt="기아 브랜드 소개 이미지2">
                     <div class="mo">
-                        <h5>EAT. CHARGE.LOVE</h5>
+                        <h2>EAT. CHARGE.LOVE</h2>
                         <p>100% 충전으로 마음이 꽉 찬 여러분에게 어울리는 Kia Ray EV 입니다.</p>
                     </div>
                 </div>
@@ -458,13 +469,13 @@
 
             <div>
                 <div class="pc">
-                    <h2>Noice Canceling</h2>
+                    <h1>Noice Canceling</h1>
                     <p>어떤 순간도 방해되지 않도록 모든사람들에게 사랑받을 수 있는 기술을 가지고 있습니다. 파워풀하지만 조용한 무소음 주행을 원하시다면 Kia Ray EV를 기억해주세요.</p>
                 </div>
                 <div>
-                    <img src="image/icon-purchase-videoplay.svg">
-                    <img class="mo" src="image/purchase-brand3.jpg">
-                    <img class="pc" src="image/purchase-brand3_pc.jpg">
+                    <img src="image/icon-purchase-videoplay.svg" alt="기아 브랜드 소개 영상">
+                    <img class="mo" src="image/purchase-brand3.jpg" alt="기아 브랜드 소개 이미지1">
+                    <img class="pc" src="image/purchase-brand3_pc.jpg" alt="기아 브랜드 소개 이미지1">
                 </div>
             </div>
 
@@ -476,40 +487,40 @@
         <div>
 
             <div>
-                <h2>high-tech space</h2>
+                <h1>high-tech space</h1>
                 <p>경형 최대 하이테크 공간</p>
             </div>
 
             <div>
-                <img src="image/main-product-ray-ev-blue.png">
+                <img src="image/main-product-ray-ev-blue.png" alt="ray ev 제품 이미지">
                 <div class="display-flex-flow" id="detail-options">
-                    <section onclick="openOption1()">
+                    <section onclick="openOption1()" role="button">
                         <div>
-                            <img src="image/purchase-hightech1.jpg">
+                            <img src="image/purchase-hightech1.jpg" alt="레버 상세 설명 보기">
                         </div>
                         <p>lever</p>
                     </section>
-                    <section onclick="openOption2()">
+                    <section onclick="openOption2()" role="button">
                         <div>
-                            <img src="image/purchase-hightech2.jpg">
+                            <img src="image/purchase-hightech2.jpg" alt="바퀴 상세 설명 보기">
                         </div>
                         <p>wheel</p>
                     </section>
-                    <section onclick="openOption3()">
+                    <section onclick="openOption3()" role="button">
                         <div>
-                            <img src="image/purchase-hightech3.jpg">
+                            <img src="image/purchase-hightech3.jpg" alt="코스터 상세 설명 보기">
                         </div>
                         <p>cluster</p>
                     </section>
-                    <section onclick="openOption4()">
+                    <section onclick="openOption4()" role="button">
                         <div>
-                            <img src="image/purchase-hightech4.jpg">
+                            <img src="image/purchase-hightech4.jpg" alt="아이 패달 상세 설명 보기">
                         </div>
                         <p>i-pedal</p>
                     </section>
-                    <section class="pc" onclick="openOption5()">
+                    <section class="pc" onclick="openOption5()" role="button">
                         <div>
-                            <img src="image/purchase-hightech5.jpg">
+                            <img src="image/purchase-hightech5.jpg" alt="언더 트레이 상세 설명 보기">
                         </div>
                         <p>under-tray</p>
                     </section>
@@ -523,50 +534,50 @@
     <div class="option-pop">
         <section class="option-con" id="option1">
             <div>
-                <img src="image/purchase-hightech1.jpg">
+                <img src="image/purchase-hightech1.jpg" alt="컬럼 타입 전자식 변속 레버">
             </div>
             <div>
-                <h3>컬럼 타입 전자식 변속 레버</h3>
+                <h1>컬럼 타입 전자식 변속 레버</h1>
                 <p>시동 버튼이 통합된 컬럼 타입 전자식 변속 레버가 적용되어 직관적인 조작이 가능하며 보다 심플하고 클린한 센터페시아를 구현하였습니다.</p>
                 <button onclick="closeOption()">닫기</button>
             </div>
         </section>
         <section class="option-con" id="option2">
             <div>
-                <img src="image/purchase-hightech2-pop.jpg">
+                <img src="image/purchase-hightech2-pop.jpg" alt="EV 전용 14인치 알로이 휠">
             </div>
             <div>
-                <h3>14인치 알로이 휠 (EV 전용)</h3>
+                <h1>14인치 알로이 휠 (EV 전용)</h1>
                 <p>아이코닉한 4포크로 모던하고 균형이 잡힌 그래픽 재미를 전달합니다.</p>
                 <button onclick="closeOption()">닫기</button>
             </div>
         </section>
         <section class="option-con" id="option3">
             <div>
-                <img src="image/purchase-hightech3.jpg">
+                <img src="image/purchase-hightech3.jpg" alt="슈퍼비전 클러스터">
             </div>
             <div>
-                <h3>슈퍼비전 클러스터(10.25인치 칼라 TFT LCD)</h3>
+                <h1>슈퍼비전 클러스터(10.25인치 칼라 TFT LCD)</h1>
                 <p>뛰어난 시인성과 다양한 컨텐츠를 제공하는 10.25인치 칼라 TFT LCD 클러스터를 적용하였습니다.</p>
                 <button onclick="closeOption()">닫기</button>
             </div>
         </section>
         <section class="option-con" id="option4">
             <div>
-                <img src="image/purchase-hightech4.jpg">
+                <img src="image/purchase-hightech4.jpg" alt="아이 페달 모드">
             </div>
             <div>
-                <h3>i-pedal 모드</h3>
+                <h1>i-pedal 모드</h1>
                 <p>브레이크 없이 감속과 제동이 가능합니다. 기어의ㅣ 단수를 올리고 내리는 기능이 아닌 회생 제동 레벨을 조절하거나 i-PEDAL을 활성화하는 기능을 합니다.</p>
                 <button onclick="closeOption()">닫기</button>
             </div>
         </section>
         <section class="option-con" id="option5">
             <div>
-                <img src="image/purchase-hightech5.jpg">
+                <img src="image/purchase-hightech5.jpg" alt="동승석 시트 언더트레이">
             </div>
             <div>
-                <h3>동승석 시트 언더트레이</h3>
+                <h1>동승석 시트 언더트레이</h1>
                 <p>운전석 등받이를 앞으로 접을 수 있게 설계해 앞좌석에서 뒷좌석, 그리고 러기지 공간을 잇는 풀 플랫 실내공간을 제공합니다. 동승석 시트 아래 수납공간을 마련하여 적재성 및
                     공간활용성을 높였습니다. 앞좌석 센터콘솔에 서랍장이 내장되어 있어 작은 소품들을 수납할 수 있습니다.</p>
                 <button onclick="closeOption()">닫기</button>
@@ -642,17 +653,17 @@
         <div>
 
             <div>
-                <h2>feature</h2>
+                <h1>feature</h1>
             </div>
 
             <div class="display-flex-flow">
                 <section data-aos="fade-up">
                     <div>
-                        <img src="image/purchase-feature1.jpg">
+                        <img src="image/purchase-feature1.jpg" alt="차량 특징1">
                     </div>
                     <div>
                         <p>Modern and Simple</p>
-                        <h3>모던하고 심플한 디자인</h3>
+                        <h2>모던하고 심플한 디자인</h2>
                         <p>모던하고 견고한 디자인에 심플함을 더한 Ray EV만의 새로운 매력을 선보입니다. 클린한 센터 가니쉬 위에 육각형 충전구 적용을 통해 전체적인 통일감을 유지하면서
                             십플함을
                             더합니다.</p>
@@ -660,11 +671,11 @@
                 </section>
                 <section data-aos="fade-up">
                     <div>
-                        <img src="image/purchase-feature2.jpg">
+                        <img src="image/purchase-feature2.jpg" alt="차량 특징2">
                     </div>
                     <div>
-                        <p>No tress of driving</p>
-                        <h3>도심 주행 스트레스 <span>ZERO</span></h3>
+                        <p>No stress of driving</p>
+                        <h2>도심 주행 스트레스 <span>ZERO</span></h2>
                         <p>차로 변경을 위해 방향 지시등 스위치 조작 시, 후측방 차량과 충돌 위험이 감지되면 경고를 해줍니다. 평행 주차 상태에서 전진 출차 중 후측방 차량과 충돌 위험이
                             감지되면
                             자동으로 제동을 도와줍니다.</p>
@@ -672,11 +683,11 @@
                 </section>
                 <section data-aos="fade-up">
                     <div>
-                        <img src="image/purchase-feature3.jpg">
+                        <img src="image/purchase-feature3.jpg" alt="차량 특징3">
                     </div>
                     <div>
                         <p>Smart business life</p>
-                        <h3>스마트한 비즈니스 생활</h3>
+                        <h2>스마트한 비즈니스 생활</h2>
                         <p>2인승 밴인 Ray EV는 넓은 공간과 동승자 시트를 함께 갖춰 다양한 모빌리티 라이프를 즐길 수 있습니다. 함께하는 공간이라 더 즐거운 여유를 즐겨볼 수 있습니다.
                         </p>
                     </div>
@@ -689,16 +700,16 @@
     <article class="accessories">
         <div>
             <div>
-                <h2>kia genuine accessories</h2>
+                <h1>kia genuine accessories</h1>
                 <p>기아 순정 액세서리</p>
             </div>
             <div class="acc-flex-container">
                 <section class="acc-section">
                     <div></div>
                     <div class="acc-text">
-                        <h3>carging cable</h3>
+                        <h2>carging cable</h2>
                         <div class="pc">
-                            <h5>비상용 완속 충전 케이블</h5>
+                            <h3>비상용 완속 충전 케이블</h3>
                             <p>W_ICCB 사양의 비상용 완속 충전 케이블입니다. 가정 전기를 사용할 경우, 전기요금 및 전기 부하 문제가 발생할 수 있으니 주의 부탁드립니다.</p>
                         </div>
                     </div>
@@ -706,9 +717,9 @@
                 <section class="acc-section">
                     <div></div>
                     <div class="acc-text">
-                        <h3>sunglasses case</h3>
+                        <h2>sunglasses case</h2>
                         <div class="pc">
-                            <h5>선바이저 선글라스 케이스</h5>
+                            <h3>선바이저 선글라스 케이스</h5>
                             <p>차량 실내 선바이저에 간편하게 장착하여 사용 가능한 선글라스 케이스입니다. 케이스 내부는 부드러운 재질로 되어있어 안전하게 보관하기 좋습니다.</p>
                         </div>
                     </div>
@@ -716,9 +727,9 @@
                 <section class="acc-section">
                     <div></div>
                     <div class="acc-text">
-                        <h3>Seatback Organizer</h3>
+                        <h2>Seatback Organizer</h2>
                         <div class="pc">
-                            <h5>시트백 오거나이저</h5>
+                            <h3>시트백 오거나이저</h3>
                             <p>1열 시트 후면에 장착하여, 다양한 포켓을 원하는 위치에 부착하고 여러 물품을 적재할 수 있습니다. 타 차종과 호환이 가능합니다.</p>
                         </div>
                     </div>
@@ -727,9 +738,9 @@
                     <div>
                     </div>
                     <div class="acc-text">
-                        <h3>Seatback Organizer</h3>
+                        <h2>Seatback Organizer</h2>
                         <div class="pc">
-                            <h5>시트백 오거나이저 </h5>
+                            <h3>시트백 오거나이저 </h3>
                             <p>2열 시트 후면에 장착하여, 다양한 포켓을 원하는 위치에 부착하고 여러 물품을 적재할 수 있습니다. 타 차종과의 호환이 가능합니다.</p>
                         </div>
                     </div>
@@ -762,37 +773,37 @@
     <article class="cs">
         <div>
             <div>
-                <h2><span>kia</span> 빠른 상담 문의</h2>
+                <h1><span>kia</span> 빠른 상담 문의</h1>
             </div>
-            <div class="display-flex-flow">
-                <div>
+            <form>
+                <div class="display-flex-flow">
                     <div>
-                        <h3 class="pc">이름</h3>
-                        <input type="text" placeholder="이름을 입력해주세요." style="color:#ccc;">
-                    </div>
-                    <div>
-                        <h3 class="pc">연락처</h3>
-                        <input type="text" placeholder="연락처를 입력해주세요." style="color:#ccc;">
-                    </div>
-                    <div class="mo">
-                        <textarea placeholder="상담내용을 입력해주세요." cols="30" rows="5" style="color: #ccc;"></textarea>
+                        <div>
+                            <label class="pc" for="cs-name">이름</label>
+                            <input type="text" id="cs-name" placeholder="이름을 입력해주세요." style="color:#ccc;">
+                        </div>
+                        <div>
+                            <label class="pc" for="cs-tel">연락처</label>
+                            <input type="text" id="cs-tel" placeholder="연락처를 입력해주세요." style="color:#ccc;">
+                        </div>
                     </div>
                     <div class="display-flex">
-                        <div class="display-flex">
+                        <div class="display-flex-flow">
                             <input type="checkbox" id="check1">
-                            <label for="check1"></label>
+                            <label for="check1">
+                                <input type="checkbox" id="check1">
+                            </label>
                             <p>개인정보수집 및 이용 동의</p>
                         </div>
-                        <button><a>자세히 보기</a></button>
+                        <button type="button"><a>자세히 보기</a></button>
                     </div>
+                    <div>
+                        <label class="pc" for="cs-contents">상담내용</label>
+                        <textarea id="cs-contents" placeholder="상담내용을 입력해주세요." cols="30" rows="5" style="color: #ccc;"></textarea>
+                    </div>
+                    <button type="submit"><a>신청하기</a></button>
                 </div>
-                <div class="pc">
-                    <h3 class="pc">상담내용</h3>
-                    <textarea placeholder="상담내용을 입력해주세요." cols="30" rows="10" style="color:#ccc;"></textarea>
-                    <button><a>신청하기</a></button>
-                </div>
-                <button class="mo"><a>신청하기</a></button>
-            </div>
+            </form>
         </div>
     </article>
 
@@ -800,7 +811,8 @@
     <footer>
         <div>
             <div>
-                <img src="image/logo-kia-white.svg">
+                <img
+                    src="image/logo-kia-white.svg" alt="기아 로고">
             </div>
             <ul class="display-flex-flow">
                 <li>판매 네트워크
@@ -832,10 +844,14 @@
                 </li>
             </ul>
             <div class="display-flex-flow mo">
-                <img src="image/logo-kia-members.png">
-                <img src="image/icon-facebook.svg">
-                <img src="image/icon-instagram.svg">
-                <img src="image/icon-youtube.svg">
+                <img
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
+                <img
+                    src="image/icon-facebook.svg" alt="페이스북">
+                <img
+                    src="image/icon-instagram.svg" alt="인스타그램">
+                <img
+                    src="image/icon-youtube.svg" alt="유투브">
             </div>
             <div>
                 <h3>kia center</h3>
@@ -856,10 +872,14 @@
             </ul>
             <div>
                 <div class="pc-flex">
-                    <img src="image/logo-kia-members.png">
-                    <img src="image/icon-facebook.svg">
-                    <img src="image/icon-instagram.svg">
-                    <img src="image/icon-youtube.svg">
+                    <img
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
+                <img
+                    src="image/icon-facebook.svg" alt="페이스북">
+                <img
+                    src="image/icon-instagram.svg" alt="인스타그램">
+                <img
+                    src="image/icon-youtube.svg" alt="유투브">
                 </div>
                 <p><span>© Kia Corp</span>. All rights reserved</p>
                 <div class="select-menu">
@@ -884,7 +904,7 @@
                     </div>
                     <div class="select-btn" id="site-select-button">
                         <span class="sBtn-text active">Family site</span>
-                        <img src="image/icon-footer-select.png">
+                        <img src="image/icon-footer-select.png" alt="family site 선택">
                     </div>
                 </div>
             </div>
@@ -892,10 +912,52 @@
     </footer>
 
 
+    <div class="calculator">
+        <form>
+            <p class="close-calculator" onclick="closeCalculator()" role="button" aria-label="닫기">✕</p>
+            <h1>할부 계산기</h1>
+            <ul id="cal-listtap">
+                <li class="tapsee">카니발</li>
+                <li>3.5 가솔린</li>
+                <li>프레스티지</li>
+            </ul>
+            <div class="pay">
+                <p>선수금</p>
+                <div class="slidecontainer flex_between_center">
+                    <div class="pst">
+                        <p class="p2-1">32만원</p>
+                        <p class="p2-2">2,882만원</p>
+                        <label for="myRange">
+                            <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                            tooltips="">
+                        </label>
+                    </div>
+                    <p class="box"><span id="demo"></span> 만원</p>
+                </div>
+            </div>
+            <div>
+                <p>할부 기간</p>
+                <div class="slidecontainer flex_between_center">
+                    <div class="pst">
+                        <p class="p2-1">3개월</p>
+                        <p class="p2-2">60개월</p>
+                        <label for="myRange1">
+                            <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        </label>
+                    </div>
+                    <p class="box"><span id="value"></span> 개월</p>
+                </div>
+            </div>
+            <button type="submit"><a>할부 상품 자세히 보기</a></button>
+        </form>
+        <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
+    </div>
+    
+    
     <div class="model">
         <div>
-            <p class="close-model" onclick="closeModel()">✕</p>
-            <h3>모델 비교</h3>
+            <p class="close-model" onclick="closeModel()" role="button" aria-label="닫기">✕</p>
+            <h1>모델 비교</h1>
             <ul id="model-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -906,7 +968,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -933,7 +995,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -960,7 +1022,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -991,10 +1053,14 @@
 
     <div class="search-pop">
         <div>
-            <div class="display-flex-flow">
-                <input type="text" placeholder="search">
-                <img src="image/icon-search-white.png">
-            </div>
+            <form class="display-flex-flow">
+                <label for="search-pop">
+                    <input type="text" id="search-pop" placeholder="search">
+                </label>
+                <button type="submit">
+                    <img src="image/icon-search-white.png" alt="검색">
+                </button>
+            </form>
             <div class="display-flex-flow">
                 <p>인기 검색어</p>
                 <div>
@@ -1005,7 +1071,7 @@
                 </div>
             </div>
             <div>
-                <button class="close-search">닫기</button>
+                <button class="close-search" type="button">닫기</button>
             </div>
         </div>
     </div>

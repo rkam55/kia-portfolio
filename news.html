@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-    <title>KIA-NEWS-KJE</title>
+    <title>기아 뉴스</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="posting.css">
     <style type="text/css"></style>
@@ -21,18 +21,20 @@
 
     <header id="nav-scroll">
         <div>
-
+    
             <a href="index.html">
-                <img class="logo-img" src="image/logo-kia-white.svg">
+                <img class="logo-img" alt="기아 홈 이동"
+                src="image/logo-kia-white.svg">
             </a>
-
-            <nav class="menu-nav" id="menu-nav">
+    
+            <nav class="menu-nav" id="menu-nav" aria-label="navigation">
                 <div>
                     <div class="mo">
-                        <p class="nav-close-btn" onclick="closeNavMenu()">✕</p>
+                        <p class="nav-close-btn" onclick="closeNavMenu()" role="button" aria-label="닫기">✕</p>
                         <div class="display-flex-flow">
                             <button id="members-btn" class="black-btn">
-                                <img src="image/icon-members.svg">
+                                <img
+                                    src="image/icon-members.svg" alt="기아 멤버스로 이동">
                                 <a>기아 멤버스</a>
                             </button>
                             <button id="driving-btn"><a>드라이빙 아카데미</a></button>
@@ -40,7 +42,7 @@
                         <div>
                             <div class="display-flex-flow">
                                 <div>
-                                    <h4>로그인 <span>해주세요</span></h4>
+                                    <p>로그인 <span>해주세요</span></p>
                                     <p>회원가입 후 더 많은 혜택을 받아보세요</p>
                                 </div>
                                 <div>
@@ -50,12 +52,16 @@
                             <div class="display-flex-flow">
                                 <button><a href="login.html">로그인</a></button>
                                 <button><a href="login.html">장바구니</a></button>
-                            </div>
+                            </div> 
                         </div>
-                        <div class="display-flex">
-                            <input type="text" placeholder="궁금하신 제품을 찾아보세요.">
-                            <img src="image/icon-search-white.png">
-                        </div>
+                        <form class="display-flex">
+                            <label for="purchase-search">
+                                <input type="text" id="purchase-search" placeholder="궁금하신 제품을 찾아보세요.">
+                            </label>
+                            <button type="submit">
+                                <img src="image/icon-search-white.png" alt="제품 검색">
+                            </button>
+                        </form>
                     </div>
                     <ul id="mainMenu" class="mainMenu">
                         <li><a href="purchase.html">purchase</a></li>
@@ -69,31 +75,36 @@
                     </ul>
                     <div class="display-flex-flow mo">
                         <section class="navCateButton" id="nav-calculator">
-                            <img src="image/icon-calculator.svg">
+                            <img
+                                src="image/icon-calculator.svg" alt="견적내기">
                             <p>견적 내기</p>
                         </section>
                         <section class="navCateButton" id="nav-model">
-                            <img src="image/icon-calculator2.svg">
+                            <img
+                                src="image/icon-calculator2.svg" alt="카탈로그/가격표">
                             <p>카탈로그/가격표</p>
                         </section>
                         <section class="navCateButton" id="cate-btn3">
-                            <img src="image/icon-cartest.svg">
+                            <img
+                                src="image/icon-cartest.svg" alt="시승 신청">
                             <p>시승 신청</p>
                         </section>
                         <section class="navCateButton" id="cate-btn4">
-                            <img src="image/icon-present.svg">
+                            <img
+                                src="image/icon-present.svg" alt="기아 이벤트">
                             <p>KIA 이벤트</p>
                         </section>
                     </div>
                 </div>
             </nav>
-
+    
             <div class="header-icons">
                 <div class="pc">
-                    <a href="login.html"><img src="image/icon-mypage.png"></a>
+                    <a href="login.html"><img src="image/icon-mypage.png" alt="로그인"></a>
                 </div>
                 <div class="select-lan">
-                    <img class="language-btn" src="image/icon-language-global.svg">
+                    <img class="language-btn"
+                        src="image/icon-language-global.svg" alt="언어설정">
                     <ul class="lan-options">
                         <li class="lan-option">kr</li>
                         <li class="lan-option">en</li>
@@ -101,20 +112,22 @@
                     </ul>
                 </div>
                 <div>
-                    <img class="search-btn" src="image/icon-search-white.png">
+                    <img class="search-btn"
+                        src="image/icon-search-white.png" alt="검색">
                 </div>
                 <div class="mo">
-                    <img class="nav-open-btn" id="nav-open-btn" src="image/icon-menu.png">
+                    <img class="nav-open-btn" id="nav-open-btn"
+                        src="image/icon-menu.png" alt="메뉴">
                 </div>
             </div>
-
+    
         </div>
     </header>
 
 
     <article class="news">
 
-        <img src="image/logo-kia-white.svg">
+        <img src="image/logo-kia-white.svg" alt="기아 로고">
         <h1>news</h1>
 
         <div>
@@ -123,24 +136,28 @@
                 <p>kIA 소식을 한 눈에 모아보세요.</p>
             </div>
             <div>
-                <h5>총 <span>102</span>건</h5>
+                <p>총 <span>102</span>건</p>
                 <div class="display-flex">
-                    <select>
+                    <select aria-label="뉴스 필터 검색">
                         <option>전체</option>
                         <option>제목</option>
                         <option>내용</option>
                     </select>
-                    <div class="display-flex">
-                        <input type="text" placeholder="검색어를 입력하세요.">
-                        <img src="image/icon-search-white.png">
-                    </div>
+                    <form class="display-flex">
+                        <label for="news-search">
+                            <input type="text" id="news-search" placeholder="검색어를 입력하세요.">
+                        </label>
+                        <button type="submit">
+                            <img src="image/icon-search-white.png" alt="검색">
+                        </button>
+                    </form>
                 </div>
                 <section>
                     <div>
-                        <img src="image/news-con1.jpg">
+                        <img src="image/news-con1.jpg" alt="뉴스 메인 사진">
                     </div>
                     <div>
-                        <h4>기아, 온실가스 감축 위한 ‘다자 협력’ 나선다</h4>
+                        <h3>기아, 온실가스 감축 위한 ‘다자 협력’ 나선다</h3>
                         <p>기아가 민·관 협력을 통해 온실가스 줄이기에 본격적으로 나선다. 차세대 자원순환 방법으로 평가받는 ‘바이오차(Bio-char)’ 프로젝트 투자를 통해 국내 온실가스
                             감축에 기여하고 ESG 활동도 강화한다는 계획이다.</p>
                         <p>2023-11-14</p>
@@ -148,10 +165,10 @@
                 </section>
                 <section>
                     <div>
-                        <img src="image/news-con2.jpg">
+                        <img src="image/news-con2.jpg" alt="뉴스 메인 사진">
                     </div>
                     <div>
-                        <h4>기아, ‘더 뉴 카니발’ 사전계약 개시</h4>
+                        <h3>기아, ‘더 뉴 카니발’ 사전계약 개시</h3>
                         <p>기아가 이달 출시 예정인 ‘더 뉴 카니발’의 주요 사양과 가격을 공개하고 8일(수)부터 사전계약을 시작한다. 더 뉴 카니발은 2020년 8월 4세대 카니발 출시 이후
                             3년 만에 새롭게 선보이는 상품성 개선 모델이다.</p>
                         <p>2023-11-07</p>
@@ -159,10 +176,10 @@
                 </section>
                 <section>
                     <div>
-                        <img src="image/purchase-feature1.jpg">
+                        <img src="image/purchase-feature1.jpg" alt="뉴스 메인 사진">
                     </div>
                     <div>
-                        <h4>기아 레이 EV, 이제 카셰어링으로 만난다</h4>
+                        <h3>기아 레이 EV, 이제 카셰어링으로 만난다</h3>
                         <p>기아가 쏘카와 협업해 고객이 레이 EV를 보다 쉽게 경험할 수 있도록 한다.
 
                             기아와 쏘카는 전국의 쏘카 공유차량 대여지점인 쏘카존에 ‘더 기아 레이 EV(이하 레이 EV)’를 배치하고 차량 공유 서비스를 실시한다고 6일(월) 밝혔다.</p>
@@ -171,10 +188,10 @@
                 </section>
                 <section>
                     <div>
-                        <img src="image/news-con3.jpg">
+                        <img src="image/news-con3.jpg" alt="뉴스 메인 사진">
                     </div>
                     <div>
-                        <h4>기아, 더 뉴 K5 출시</h4>
+                        <h3>기아, 더 뉴 K5 출시</h3>
                         <p>기아가 ‘더 뉴 K5(The new K5, 이하 K5)’를 2일(목) 출시했다.
 
                             이날 기아가 출시한 K5는 지난 2019년 출시한 3세대 K5의 상품성 개선 모델로 미래적이고 역동적인 디자인과 다양한 첨단사양을 적용해 더욱 높은 상품성을 갖췄다.
@@ -184,10 +201,10 @@
                 </section>
                 <section>
                     <div>
-                        <img src="image/news-con4.jpg">
+                        <img src="image/news-con4.jpg" alt="뉴스 메인 사진">
                     </div>
                     <div>
-                        <h4>기아, 자동차 부품용 신소재 공동 개발</h4>
+                        <h3>기아, 자동차 부품용 신소재 공동 개발</h3>
                         <p>기아가 협력사와 함께 세계 최초 기술을 적용한 차량 부품 신소재 공동 개발에 성공했다. 협력사 관계자는 “기아가 오랜 기간 협력을 지원하고 상호 성장할 수 있게 해줘
                             감사하다”며, “앞으로도 기술개발을 위한 협력에 함께할 수 있기를 기대한다”고 밝혔다. </p>
                         <p>2023-11-02</p>
@@ -226,7 +243,8 @@
     <footer>
         <div>
             <div>
-                <img src="image/logo-kia-white.svg">
+                <img
+                    src="image/logo-kia-white.svg" alt="기아 로고">
             </div>
             <ul class="display-flex-flow">
                 <li>판매 네트워크
@@ -258,10 +276,14 @@
                 </li>
             </ul>
             <div class="display-flex-flow mo">
-                <img src="image/logo-kia-members.png">
-                <img src="image/icon-facebook.svg">
-                <img src="image/icon-instagram.svg">
-                <img src="image/icon-youtube.svg">
+                <img
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
+                <img
+                    src="image/icon-facebook.svg" alt="페이스북">
+                <img
+                    src="image/icon-instagram.svg" alt="인스타그램">
+                <img
+                    src="image/icon-youtube.svg" alt="유투브">
             </div>
             <div>
                 <h3>kia center</h3>
@@ -282,10 +304,14 @@
             </ul>
             <div>
                 <div class="pc-flex">
-                    <img src="image/logo-kia-members.png">
-                    <img src="image/icon-facebook.svg">
-                    <img src="image/icon-instagram.svg">
-                    <img src="image/icon-youtube.svg">
+                    <img
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
+                <img
+                    src="image/icon-facebook.svg" alt="페이스북">
+                <img
+                    src="image/icon-instagram.svg" alt="인스타그램">
+                <img
+                    src="image/icon-youtube.svg" alt="유투브">
                 </div>
                 <p><span>© Kia Corp</span>. All rights reserved</p>
                 <div class="select-menu">
@@ -310,7 +336,7 @@
                     </div>
                     <div class="select-btn" id="site-select-button">
                         <span class="sBtn-text active">Family site</span>
-                        <img src="image/icon-footer-select.png">
+                        <img src="image/icon-footer-select.png" alt="family site 선택">
                     </div>
                 </div>
             </div>
@@ -319,9 +345,9 @@
 
 
     <div class="calculator">
-        <div>
-            <p class="close-calculator" onclick="closeCalculator()">✕</p>
-            <h3>할부 계산기</h3>
+        <form>
+            <p class="close-calculator" onclick="closeCalculator()" role="button" aria-label="닫기">✕</p>
+            <h1>할부 계산기</h1>
             <ul id="cal-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -333,8 +359,10 @@
                     <div class="pst">
                         <p class="p2-1">32만원</p>
                         <p class="p2-2">2,882만원</p>
-                        <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                        <label for="myRange">
+                            <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
                             tooltips="">
+                        </label>
                     </div>
                     <p class="box"><span id="demo"></span> 만원</p>
                 </div>
@@ -345,21 +373,23 @@
                     <div class="pst">
                         <p class="p2-1">3개월</p>
                         <p class="p2-2">60개월</p>
-                        <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        <label for="myRange1">
+                            <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        </label>
                     </div>
                     <p class="box"><span id="value"></span> 개월</p>
                 </div>
             </div>
-            <button><a>할부 상품 자세히 보기</a></button>
-        </div>
+            <button type="submit"><a>할부 상품 자세히 보기</a></button>
+        </form>
         <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
     </div>
 
 
     <div class="model">
         <div>
-            <p class="close-model" onclick="closeModel()">✕</p>
-            <h3>모델 비교</h3>
+            <p class="close-model" onclick="closeModel()" role="button" aria-label="닫기">✕</p>
+            <h1>모델 비교</h1>
             <ul id="model-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -370,7 +400,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -397,7 +427,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -424,7 +454,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -455,10 +485,14 @@
 
     <div class="search-pop">
         <div>
-            <div class="display-flex-flow">
-                <input type="text" placeholder="search">
-                <img src="image/icon-search-white.png">
-            </div>
+            <form class="display-flex-flow">
+                <label for="search-pop">
+                    <input type="text" id="search-pop" placeholder="search">
+                </label>
+                <button type="submit">
+                    <img src="image/icon-search-white.png" alt="검색">
+                </button>
+            </form>
             <div class="display-flex-flow">
                 <p>인기 검색어</p>
                 <div>
@@ -469,7 +503,7 @@
                 </div>
             </div>
             <div>
-                <button class="close-search">닫기</button>
+                <button class="close-search" type="button">닫기</button>
             </div>
         </div>
     </div>

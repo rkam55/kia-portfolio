@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
-    <title>KIA-JOIN-KJE</title>
+    <title>기아 회원가입</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="membership.css">
     <style type="text/css"></style>
@@ -25,18 +25,18 @@
         <div>
     
             <a href="index.html">
-                <img class="logo-img"
+                <img class="logo-img" alt="기아 홈 이동"
                 src="image/logo-kia-white.svg">
             </a>
     
-            <nav class="menu-nav" id="menu-nav">
+            <nav class="menu-nav" id="menu-nav" aria-label="navigation">
                 <div>
                     <div class="mo">
-                        <p class="nav-close-btn" onclick="closeNavMenu()">✕</p>
+                        <p class="nav-close-btn" onclick="closeNavMenu()" role="button" aria-label="닫기">✕</p>
                         <div class="display-flex-flow">
                             <button id="members-btn" class="black-btn">
                                 <img
-                                    src="image/icon-members.svg">
+                                    src="image/icon-members.svg" alt="기아 멤버스로 이동">
                                 <a>기아 멤버스</a>
                             </button>
                             <button id="driving-btn"><a>드라이빙 아카데미</a></button>
@@ -44,7 +44,7 @@
                         <div>
                             <div class="display-flex-flow">
                                 <div>
-                                    <h4>로그인 <span>해주세요</span></h4>
+                                    <p>로그인 <span>해주세요</span></p>
                                     <p>회원가입 후 더 많은 혜택을 받아보세요</p>
                                 </div>
                                 <div>
@@ -56,10 +56,14 @@
                                 <button><a href="login.html">장바구니</a></button>
                             </div> 
                         </div>
-                        <div class="display-flex">
-                            <input type="text" placeholder="궁금하신 제품을 찾아보세요.">
-                            <img src="image/icon-search-white.png">
-                        </div>
+                        <form class="display-flex">
+                            <label for="purchase-search">
+                                <input type="text" id="purchase-search" placeholder="궁금하신 제품을 찾아보세요.">
+                            </label>
+                            <button type="submit">
+                                <img src="image/icon-search-white.png" alt="제품 검색">
+                            </button>
+                        </form>
                     </div>
                     <ul id="mainMenu" class="mainMenu">
                         <li><a href="purchase.html">purchase</a></li>
@@ -74,22 +78,22 @@
                     <div class="display-flex-flow mo">
                         <section class="navCateButton" id="nav-calculator">
                             <img
-                                src="image/icon-calculator.svg">
+                                src="image/icon-calculator.svg" alt="견적내기">
                             <p>견적 내기</p>
                         </section>
                         <section class="navCateButton" id="nav-model">
                             <img
-                                src="image/icon-calculator2.svg">
+                                src="image/icon-calculator2.svg" alt="카탈로그/가격표">
                             <p>카탈로그/가격표</p>
                         </section>
                         <section class="navCateButton" id="cate-btn3">
                             <img
-                                src="image/icon-cartest.svg">
+                                src="image/icon-cartest.svg" alt="시승 신청">
                             <p>시승 신청</p>
                         </section>
                         <section class="navCateButton" id="cate-btn4">
                             <img
-                                src="image/icon-present.svg">
+                                src="image/icon-present.svg" alt="기아 이벤트">
                             <p>KIA 이벤트</p>
                         </section>
                     </div>
@@ -98,11 +102,11 @@
     
             <div class="header-icons">
                 <div class="pc">
-                    <a href="login.html"><img src="image/icon-mypage.png"></a>
+                    <a href="login.html"><img src="image/icon-mypage.png" alt="로그인"></a>
                 </div>
                 <div class="select-lan">
                     <img class="language-btn"
-                        src="image/icon-language-global.svg">
+                        src="image/icon-language-global.svg" alt="언어설정">
                     <ul class="lan-options">
                         <li class="lan-option">kr</li>
                         <li class="lan-option">en</li>
@@ -111,11 +115,11 @@
                 </div>
                 <div>
                     <img class="search-btn"
-                        src="image/icon-search-white.png">
+                        src="image/icon-search-white.png" alt="검색">
                 </div>
                 <div class="mo">
                     <img class="nav-open-btn" id="nav-open-btn"
-                        src="image/icon-menu.png">
+                        src="image/icon-menu.png" alt="메뉴">
                 </div>
             </div>
     
@@ -124,87 +128,101 @@
     
 
     <article class="join">
-        <img src="image/logo-kia-white.svg">
+        <img src="image/logo-kia-white.svg" alt="기아 로고">
         <h1>join us</h1>
         <div>
-            <div>
-                <h2>회원가입</h2>
-                <p><span>KIA</span>의 다양한 서비스를 만나보세요.</p>
-            </div>
-            <div>
-                <h4>회원정보 입력</h4>
-                <div class="display-flex-flow">
-                    <p>아이디</p>
-                    <input type="text" id="id" placeholder="ex : kia123">
-                    <button class="black-btn">중복확인</button>
+            <form>
+                <div>
+                    <h2>회원가입</h2>
+                    <p><span>KIA</span>의 다양한 서비스를 만나보세요.</p>
                 </div>
                 <div>
-                    <p>비밀번호</p>
-                    <input type="text" id="pw" placeholder="비밀번호를 입력해주세요.">
-                </div>
-                <div>
-                    <p>비밀번호 확인</p>
-                    <input type="text" id="pw2" placeholder="비밀번호를 한번 더 입력해주세요.">
-                </div>
-                <div>
-                    <p>이름</p>
-                    <input type="text" id="name" placeholder="이름을 입력해주세요.">
-                </div>
-                <div>
-                    <p>이메일</p>
-                    <input type="email" id="mail" placeholder="이메일을 입력해주세요.">
-                </div>
-                <div class="display-flex-flow">
-                    <p>휴대전화</p>
-                    <input type="tel" id="phone" placeholder="숫자만 입력해주세요">
-                    <button class="black-btn">인증번호 받기</button>
-                </div>
-                <div class="display-flex-flow">
-                    <p>주소</p>
-                    <div class="display-flex">
-                        <input type="text" name="addr1" placeholder="도로명, 지번, 건물명 검색" readonly />
-                        <img onclick="openZipSearch()"
-                            src="https://www.kia.com/content/dam/kwp/kr/ko/common/icon/icon_top_util_search.svg">
-                    </div>
-                </div>
-                <div class="birth">
-                    <p>생년월일</p>
+                    <h3>회원정보 입력</h3>
                     <div>
-                        <select name="yy" id="year">
-                        </select> 년
-                        <select name="mm" id="month"></select> 월
-                        <select name="dd" id="day"></select> 일
-                    </div>
-                </div>
-                <div>
-                    <p>이용약관동의</p>
-                    <div class="checkbox-group">
+                        <label for="id">아이디</label>
                         <div class="display-flex">
-                            <input type="checkbox" name="all-agree" id="all-agree" class="check">
-                            <p>전체 동의하기</p>
+                            <input type="text" id="id" placeholder="ex : kia123">
+                        <button class="black-btn">중복확인</button>
                         </div>
+                    </div>
+                    <div>
+                        <label for="pw">비밀번호</label>
+                        <input type="password" id="pw" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div>
+                        <label for="pw2">비밀번호 확인</label>
+                        <input type="password" id="pw2" placeholder="비밀번호를 한번 더 입력해주세요.">
+                    </div>
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" placeholder="이름을 입력해주세요.">
+                    </div>
+                    <div>
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail" placeholder="이메일을 입력해주세요.">
+                    </div>
+                    <div>
+                        <label for="phone">휴대전화</label>
+                        <div class="display-flex">
+                            <input type="tel" id="phone" placeholder="숫자만 입력해주세요">
+                        <button class="black-btn">인증번호 받기</button>
+                        </div>
+                    </div>
+                    <div class="display-flex-flow">
+                        <label for="addr1">주소</label>
+                        <div class="display-flex">
+                            <input type="text" name="addr1" id="addr1" placeholder="도로명, 지번, 건물명 검색" readonly />
+                            <img onclick="openZipSearch()" role="button" aria-label="주소 검색"
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/common/icon/icon_top_util_search.svg">
+                        </div>
+                    </div>
+                    <div class="birth">
+                        <label for="birthday">생년월일</label>
                         <div>
-                            <div>
-                                <input type="checkbox" name="agree" id="use-agree" class="check">
-                                <p>이용약관 동의 <span>(필수)</span>
-                                </p>
-                                <button>약관보기</button>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="agree" id="info-agree" class="check">
-                                <p>개인정보 수집 및 이용 동의 <span>(필수)</span></p>
-                                <button>약관보기</button>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="agree" id="pro-agree" class="check">
-                                <p>프로모션 정보 수신 동의 <span>(선택)</span></p>
-                                <button>약관보기</button>
-                            </div>
+                            <select name="yy" id="year">
+                            </select> 년
+                            <select name="mm" id="month"></select> 월
+                            <select name="dd" id="day"></select> 일
                         </div>
-                        <button class="join-btn black-btn">가입하기</button>
+                    </div>
+                    <div>
+                        <p>이용약관동의</p>
+                        <div class="checkbox-group">
+                            <div class="display-flex">
+                                <label for="all-agree">
+                                    <input type="checkbox" name="all-agree" id="all-agree" class="check">
+                                </label>
+                                <p>전체 동의하기</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="use-agree">
+                                        <input type="checkbox" name="agree" id="use-agree" class="check">
+                                    </label>
+                                    <p>이용약관 동의 <span>(필수)</span>
+                                    </p>
+                                    <button>약관보기</button>
+                                </div>
+                                <div>
+                                    <label for="info-agree">
+                                        <input type="checkbox" name="agree" id="info-agree" class="check">
+                                    </label>
+                                    <p>개인정보 수집 및 이용 동의 <span>(필수)</span></p>
+                                    <button>약관보기</button>
+                                </div>
+                                <div>
+                                    <label for="pro-agree">
+                                        <input type="checkbox" name="agree" id="pro-agree" class="check">
+                                    </label>
+                                    <p>프로모션 정보 수신 동의 <span>(선택)</span></p>
+                                    <button type="button">약관보기</button>
+                                </div>
+                            </div>
+                            <button class="join-btn black-btn" type="submit">가입하기</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </article>
 
@@ -244,19 +262,19 @@
             const day = (now.getDate()) > 9 ? '' + (now.getDate()) : '0' + (now.getDate());
             //년도 selectbox만들기               
             for (let i = 1900; i <= year; i++) {
-                $('#year').append('<option value="' + i + '">' + i + '</option>');
+                $('#year').append('<option id="birthday" value="' + i + '">' + i + '</option>');
             }
 
             // 월별 selectbox 만들기            
             for (let i = 1; i <= 12; i++) {
                 let mm = i > 9 ? i : "0" + i;
-                $('#month').append('<option value="' + mm + '">' + mm + '</option>');
+                $('#month').append('<option id="birthday" value="' + mm + '">' + mm + '</option>');
             }
 
             // 일별 selectbox 만들기
             for (let i = 1; i <= 31; i++) {
                 let dd = i > 9 ? i : "0" + i;
-                $('#day').append('<option value="' + dd + '">' + dd + '</option>');
+                $('#day').append('<option id="birthday" value="' + dd + '">' + dd + '</option>');
             }
             $("#year  > option[value=" + year + "]").attr("selected", "true");
             $("#month  > option[value=" + mon + "]").attr("selected", "true");
@@ -267,7 +285,7 @@
 
     <article class="terms">
         <div>
-            <h2>이용약관</h2>
+            <h1>이용약관</h1>
             <p>
                 제1조 (목적)<br>
                 이 약관은 전기통신 사업법 및 동법 시행령에 의하여 기아(주) (이하 회사라 합니다.)가 제공하는 인터넷 홈페이지 서비스(이하 “서비스”라 합니다.)의 이용조건 및 절차에 관한 사항,
@@ -315,9 +333,9 @@
 
     <article class="sign">
         <div>
-            <h2>가입 완료</h2>
-            <img src="image/icon-mypage.png">
-            <h5><span>KIA</span> 가입을 환영합니다.</h5>
+            <h1>가입 완료</h1>
+            <img src="image/icon-mypage.png" alt="가입 완료">
+            <p><span>KIA</span> 가입을 환영합니다.</p>
             <div class="display-flex">
                 <button class="black-btn">
                     <a href="index.html">홈으로 가기</a></button>
@@ -332,7 +350,7 @@
         <div>
             <div>
                 <img
-                    src="image/logo-kia-white.svg">
+                    src="image/logo-kia-white.svg" alt="기아 로고">
             </div>
             <ul class="display-flex-flow">
                 <li>판매 네트워크
@@ -365,13 +383,13 @@
             </ul>
             <div class="display-flex-flow mo">
                 <img
-                    src="image/logo-kia-members.png">
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
                 <img
-                    src="image/icon-facebook.svg">
+                    src="image/icon-facebook.svg" alt="페이스북">
                 <img
-                    src="image/icon-instagram.svg">
+                    src="image/icon-instagram.svg" alt="인스타그램">
                 <img
-                    src="image/icon-youtube.svg">
+                    src="image/icon-youtube.svg" alt="유투브">
             </div>
             <div>
                 <h3>kia center</h3>
@@ -393,13 +411,13 @@
             <div>
                 <div class="pc-flex">
                     <img
-                    src="image/logo-kia-members.png">
+                    src="image/logo-kia-members.png" alt="기아 멤버스">
                 <img
-                    src="image/icon-facebook.svg">
+                    src="image/icon-facebook.svg" alt="페이스북">
                 <img
-                    src="image/icon-instagram.svg">
+                    src="image/icon-instagram.svg" alt="인스타그램">
                 <img
-                    src="image/icon-youtube.svg">
+                    src="image/icon-youtube.svg" alt="유투브">
                 </div>
                 <p><span>© Kia Corp</span>. All rights reserved</p>
                 <div class="select-menu">
@@ -424,7 +442,7 @@
                     </div>
                     <div class="select-btn" id="site-select-button">
                         <span class="sBtn-text active">Family site</span>
-                        <img src="image/icon-footer-select.png">
+                        <img src="image/icon-footer-select.png" alt="family site 선택">
                     </div>
                 </div>
             </div>
@@ -433,9 +451,9 @@
 
 
     <div class="calculator">
-        <div>
-            <p class="close-calculator" onclick="closeCalculator()">✕</p>
-            <h3>할부 계산기</h3>
+        <form>
+            <p class="close-calculator" onclick="closeCalculator()" role="button" aria-label="닫기">✕</p>
+            <h1>할부 계산기</h1>
             <ul id="cal-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -447,8 +465,10 @@
                     <div class="pst">
                         <p class="p2-1">32만원</p>
                         <p class="p2-2">2,882만원</p>
-                        <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
+                        <label for="myRange">
+                            <input type="range" min="32" max="2882" step="10" value="30" class="sliderRange" id="myRange"
                             tooltips="">
+                        </label>
                     </div>
                     <p class="box"><span id="demo"></span> 만원</p>
                 </div>
@@ -459,21 +479,23 @@
                     <div class="pst">
                         <p class="p2-1">3개월</p>
                         <p class="p2-2">60개월</p>
-                        <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        <label for="myRange1">
+                            <input type="range" min="3" max="60" step="1" value="3" class="sliderRange2" id="myRange1">
+                        </label>
                     </div>
                     <p class="box"><span id="value"></span> 개월</p>
                 </div>
             </div>
-            <button><a>할부 상품 자세히 보기</a></button>
-        </div>
+            <button type="submit"><a>할부 상품 자세히 보기</a></button>
+        </form>
         <div id="cal-black"></div> <!---창 띄우면 바깥배경 어둡게 -->
     </div>
     
     
     <div class="model">
         <div>
-            <p class="close-model" onclick="closeModel()">✕</p>
-            <h3>모델 비교</h3>
+            <p class="close-model" onclick="closeModel()" role="button" aria-label="닫기">✕</p>
+            <h1>모델 비교</h1>
             <ul id="model-listtap">
                 <li class="tapsee">카니발</li>
                 <li>3.5 가솔린</li>
@@ -484,7 +506,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -511,7 +533,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -538,7 +560,7 @@
                     <div>
                         <div>
                             <div>
-                                <img src="image/icon-plus.png">
+                                <img src="image/icon-plus.png" alt="비교 모델 선택">
                                 <p>비교할 모델을 추가해주세요.</p>
                             </div>
                         </div>
@@ -565,14 +587,18 @@
         </div>
         <div id="model-black"></div> <!---창 띄우면 바깥배경 어둡게? -->
     </div>
-    
-    
+
+
     <div class="search-pop">
         <div>
-            <div class="display-flex-flow">
-                <input type="text" placeholder="search">
-                <img src="image/icon-search-white.png">
-            </div>
+            <form class="display-flex-flow">
+                <label for="search-pop">
+                    <input type="text" id="search-pop" placeholder="search">
+                </label>
+                <button type="submit">
+                    <img src="image/icon-search-white.png" alt="검색">
+                </button>
+            </form>
             <div class="display-flex-flow">
                 <p>인기 검색어</p>
                 <div>
@@ -583,7 +609,7 @@
                 </div>
             </div>
             <div>
-                <button class="close-search">닫기</button>
+                <button class="close-search" type="button">닫기</button>
             </div>
         </div>
     </div>
